@@ -1,0 +1,1342 @@
+{
+  "summary": {
+    "n_variants": 40,
+    "pass_rate": 0.85,
+    "adjusted_count": 6,
+    "solver_limitations": "No full mechanistic co-simulation backend integrated here; coupling checks are deterministic perturbation proxies over generated artifact features."
+  },
+  "variants": [
+    {
+      "variant_id": "r00_005",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6524764450845293,
+          "expected_directionality": 0.9878631289777713,
+          "temporal_coherence": 0.9341053757520488,
+          "energy_demand_supply_consistency": 0.7569647108930425,
+          "cross_module_sensitivity_sign": 0.96098425236491
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18574296777378277,
+          "after_noise_scale": 0.18574296777378277,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7569647108930425,
+          "after_energy_consistency": 0.7569647108930425,
+          "novelty_guardrail_before": 0.21916238639935023,
+          "novelty_guardrail_after": 0.18916238639935024
+        }
+      }
+    },
+    {
+      "variant_id": "r00_017",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6913862351616311,
+          "expected_directionality": 0.9352927970506526,
+          "temporal_coherence": 0.9605516993137032,
+          "energy_demand_supply_consistency": 0.7602031451557663,
+          "cross_module_sensitivity_sign": 0.9479222481821779
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16376417142369837,
+          "after_noise_scale": 0.16376417142369837,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7602031451557663,
+          "after_energy_consistency": 0.7602031451557663,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_023",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6202040006573304,
+          "expected_directionality": 0.9234207129754175,
+          "temporal_coherence": 0.9991897540380195,
+          "energy_demand_supply_consistency": 0.71461653498601,
+          "cross_module_sensitivity_sign": 0.9613052335067185
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16813994485783862,
+          "after_noise_scale": 0.16813994485783862,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.71461653498601,
+          "after_energy_consistency": 0.71461653498601,
+          "novelty_guardrail_before": 0.6666666666666651,
+          "novelty_guardrail_after": 0.636666666666665
+        }
+      }
+    },
+    {
+      "variant_id": "r00_029",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7293282104250324,
+          "expected_directionality": 0.9136489176932459,
+          "temporal_coherence": 0.9640398836254538,
+          "energy_demand_supply_consistency": 0.7847127693903293,
+          "cross_module_sensitivity_sign": 0.9388444006593498
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.11023903722159648,
+          "after_noise_scale": 0.11023903722159648,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7847127693903293,
+          "after_energy_consistency": 0.7847127693903293,
+          "novelty_guardrail_before": 0.6666666666666679,
+          "novelty_guardrail_after": 0.6366666666666678
+        }
+      }
+    },
+    {
+      "variant_id": "r00_035",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.828467896036566,
+          "expected_directionality": 0.9202715147750071,
+          "temporal_coherence": 0.9712605502598237,
+          "energy_demand_supply_consistency": 0.8327562003154086,
+          "cross_module_sensitivity_sign": 0.9457660325174154
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1480932966138234,
+          "after_noise_scale": 0.1480932966138234,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8327562003154086,
+          "after_energy_consistency": 0.8327562003154086,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_041",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.738618863961515,
+          "expected_directionality": 0.9973358404844381,
+          "temporal_coherence": 0.9459425807420143,
+          "energy_demand_supply_consistency": 0.8033519255800052,
+          "cross_module_sensitivity_sign": 0.9716392106132262
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.20675831126730074,
+          "after_noise_scale": 0.20675831126730074,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8033519255800052,
+          "after_energy_consistency": 0.8033519255800052,
+          "novelty_guardrail_before": 0.6666666666666683,
+          "novelty_guardrail_after": 0.6366666666666683
+        }
+      }
+    },
+    {
+      "variant_id": "r00_059",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6388181902497858,
+          "expected_directionality": 0.9068617027954605,
+          "temporal_coherence": 0.8340880703293888,
+          "energy_demand_supply_consistency": 0.7176990280384379,
+          "cross_module_sensitivity_sign": 0.8704748865624247
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16695497142760646,
+          "after_noise_scale": 0.16695497142760646,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7176990280384379,
+          "after_energy_consistency": 0.7176990280384379,
+          "novelty_guardrail_before": 0.2954825045179765,
+          "novelty_guardrail_after": 0.2654825045179765
+        }
+      }
+    },
+    {
+      "variant_id": "r00_065",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.4328102767546331,
+          "expected_directionality": 0.9964068908494724,
+          "temporal_coherence": 0.9833048504620434,
+          "energy_demand_supply_consistency": 0.6314287530973107,
+          "cross_module_sensitivity_sign": 0.9898558706557579
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.22,
+          "after_noise_scale": 0.18039999999999998,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.6314287530973107,
+          "after_energy_consistency": 0.6491285468081869,
+          "novelty_guardrail_before": 0.04205078234526092,
+          "novelty_guardrail_after": 0.01205078234526092
+        }
+      }
+    },
+    {
+      "variant_id": "r00_071",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6907492605790455,
+          "expected_directionality": 0.9998361224963199,
+          "temporal_coherence": 0.9945252194495173,
+          "energy_demand_supply_consistency": 0.7889968896496539,
+          "cross_module_sensitivity_sign": 0.9971806709729186
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16336583516866082,
+          "after_noise_scale": 0.16336583516866082,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7889968896496539,
+          "after_energy_consistency": 0.7889968896496539,
+          "novelty_guardrail_before": 0.04721650472815072,
+          "novelty_guardrail_after": 0.01721650472815072
+        }
+      }
+    },
+    {
+      "variant_id": "r00_077",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6681157669937824,
+          "expected_directionality": 0.9222556812827255,
+          "temporal_coherence": 0.9243906486584109,
+          "energy_demand_supply_consistency": 0.7393388930289084,
+          "cross_module_sensitivity_sign": 0.9233231649705682
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1725593415795934,
+          "after_noise_scale": 0.1725593415795934,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7393388930289084,
+          "after_energy_consistency": 0.7393388930289084,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_083",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6803639925868988,
+          "expected_directionality": 0.93268106118197,
+          "temporal_coherence": 0.9838851976227737,
+          "energy_demand_supply_consistency": 0.7572244506163427,
+          "cross_module_sensitivity_sign": 0.9582831294023719
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.14672889135335282,
+          "after_noise_scale": 0.14672889135335282,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7572244506163427,
+          "after_energy_consistency": 0.7572244506163427,
+          "novelty_guardrail_before": 0.3749758343321357,
+          "novelty_guardrail_after": 0.34497583433213574
+        }
+      }
+    },
+    {
+      "variant_id": "r00_089",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8107852576725565,
+          "expected_directionality": 0.9982285684882379,
+          "temporal_coherence": 0.996078676654462,
+          "energy_demand_supply_consistency": 0.859884062962696,
+          "cross_module_sensitivity_sign": 0.99715362257135
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1410027383076688,
+          "after_noise_scale": 0.1410027383076688,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.859884062962696,
+          "after_energy_consistency": 0.859884062962696,
+          "novelty_guardrail_before": 0.3046675099586536,
+          "novelty_guardrail_after": 0.27466750995865363
+        }
+      }
+    },
+    {
+      "variant_id": "r00_095",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.3587254036182172,
+          "expected_directionality": 0.9297879301037437,
+          "temporal_coherence": 0.9807675744887426,
+          "energy_demand_supply_consistency": 0.5711420744267592,
+          "cross_module_sensitivity_sign": 0.9552777522962432
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1782458644397798,
+          "after_noise_scale": 0.14616160884061943,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5711420744267592,
+          "after_energy_consistency": 0.584225972222276,
+          "novelty_guardrail_before": 0.2954825045179765,
+          "novelty_guardrail_after": 0.2654825045179765
+        }
+      }
+    },
+    {
+      "variant_id": "r00_101",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.4045893584777812,
+          "expected_directionality": 0.9341620817073226,
+          "temporal_coherence": 0.9724718378860207,
+          "energy_demand_supply_consistency": 0.5970107265395329,
+          "cross_module_sensitivity_sign": 0.9533169597966716
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18354542956616743,
+          "after_noise_scale": 0.1505072522442573,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5970107265395329,
+          "after_energy_consistency": 0.6111752015608111,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_107",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6547625993824209,
+          "expected_directionality": 0.9401366325515176,
+          "temporal_coherence": 0.9658614689544677,
+          "energy_demand_supply_consistency": 0.7444759539016864,
+          "cross_module_sensitivity_sign": 0.9529990507529926
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.15481984162731227,
+          "after_noise_scale": 0.15481984162731227,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7444759539016864,
+          "after_energy_consistency": 0.7444759539016864,
+          "novelty_guardrail_before": 0.6666666666666682,
+          "novelty_guardrail_after": 0.6366666666666682
+        }
+      }
+    },
+    {
+      "variant_id": "r00_113",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8390507714585632,
+          "expected_directionality": 0.9977311915155342,
+          "temporal_coherence": 0.9995103893650381,
+          "energy_demand_supply_consistency": 0.8675721560643826,
+          "cross_module_sensitivity_sign": 0.9986207904402862
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1715392176792701,
+          "after_noise_scale": 0.1715392176792701,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8675721560643826,
+          "after_energy_consistency": 0.8675721560643826,
+          "novelty_guardrail_before": 0.30626710563229514,
+          "novelty_guardrail_after": 0.2762671056322952
+        }
+      }
+    },
+    {
+      "variant_id": "r00_119",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8530334919741915,
+          "expected_directionality": 0.9983656671789931,
+          "temporal_coherence": 0.9976096145042931,
+          "energy_demand_supply_consistency": 0.8659449322357065,
+          "cross_module_sensitivity_sign": 0.997987640841643
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.2099521543225835,
+          "after_noise_scale": 0.2099521543225835,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8659449322357065,
+          "after_energy_consistency": 0.8659449322357065,
+          "novelty_guardrail_before": 0.22017468450894018,
+          "novelty_guardrail_after": 0.19017468450894018
+        }
+      }
+    },
+    {
+      "variant_id": "r00_125",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5748126278361465,
+          "expected_directionality": 0.9584222318575103,
+          "temporal_coherence": 0.8457840904431039,
+          "energy_demand_supply_consistency": 0.7065743669290862,
+          "cross_module_sensitivity_sign": 0.9021031611503071
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16345033086669655,
+          "after_noise_scale": 0.16345033086669655,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7065743669290862,
+          "after_energy_consistency": 0.7065743669290862,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_131",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6824733135286665,
+          "expected_directionality": 0.9939205416539433,
+          "temporal_coherence": 0.8737163103485904,
+          "energy_demand_supply_consistency": 0.7761987325530633,
+          "cross_module_sensitivity_sign": 0.9338184260012669
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1857033345279112,
+          "after_noise_scale": 0.1857033345279112,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7761987325530633,
+          "after_energy_consistency": 0.7761987325530633,
+          "novelty_guardrail_before": 0.6666666666666644,
+          "novelty_guardrail_after": 0.6366666666666644
+        }
+      }
+    },
+    {
+      "variant_id": "r00_143",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8699044028658525,
+          "expected_directionality": 0.9506076967556327,
+          "temporal_coherence": 0.8665058144740897,
+          "energy_demand_supply_consistency": 0.8644785831720893,
+          "cross_module_sensitivity_sign": 0.9085567556148613
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16696920777665739,
+          "after_noise_scale": 0.16696920777665739,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8644785831720893,
+          "after_energy_consistency": 0.8644785831720893,
+          "novelty_guardrail_before": 0.2954825045179765,
+          "novelty_guardrail_after": 0.2654825045179765
+        }
+      }
+    },
+    {
+      "variant_id": "r00_149",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.525769309209269,
+          "expected_directionality": 0.9416161209149894,
+          "temporal_coherence": 0.8573475995621707,
+          "energy_demand_supply_consistency": 0.6694912234381111,
+          "cross_module_sensitivity_sign": 0.89948186023858
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.17363660415492826,
+          "after_noise_scale": 0.17363660415492826,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6694912234381111,
+          "after_energy_consistency": 0.6694912234381111,
+          "novelty_guardrail_before": 0.6666666666666664,
+          "novelty_guardrail_after": 0.6366666666666664
+        }
+      }
+    },
+    {
+      "variant_id": "r00_161",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.644049415429505,
+          "expected_directionality": 0.9520292444133102,
+          "temporal_coherence": 0.9736201980844736,
+          "energy_demand_supply_consistency": 0.7492450429133494,
+          "cross_module_sensitivity_sign": 0.9628247212488918
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.13358118223547188,
+          "after_noise_scale": 0.13358118223547188,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7492450429133494,
+          "after_energy_consistency": 0.7492450429133494,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_167",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5964677753236045,
+          "expected_directionality": 0.8996462200710912,
+          "temporal_coherence": 0.9088454480531685,
+          "energy_demand_supply_consistency": 0.6961333428746619,
+          "cross_module_sensitivity_sign": 0.9042458340621298
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1470589303412464,
+          "after_noise_scale": 0.1470589303412464,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6961333428746619,
+          "after_energy_consistency": 0.6961333428746619,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_173",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7442642254657031,
+          "expected_directionality": 0.9309048727726028,
+          "temporal_coherence": 0.9808142114813263,
+          "energy_demand_supply_consistency": 0.7834983426945706,
+          "cross_module_sensitivity_sign": 0.9558595421269646
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.17901669623694952,
+          "after_noise_scale": 0.17901669623694952,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7834983426945706,
+          "after_energy_consistency": 0.7834983426945706,
+          "novelty_guardrail_before": 0.6666666666666639,
+          "novelty_guardrail_after": 0.6366666666666638
+        }
+      }
+    },
+    {
+      "variant_id": "r00_179",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.33273821717820035,
+          "expected_directionality": 0.9966064955363766,
+          "temporal_coherence": 0.890504350439593,
+          "energy_demand_supply_consistency": 0.5927960216213214,
+          "cross_module_sensitivity_sign": 0.9435554229879848
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.15473168327223277,
+          "after_noise_scale": 0.12687998028323086,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5927960216213214,
+          "after_energy_consistency": 0.6037602586148845,
+          "novelty_guardrail_before": 0.6666666666666692,
+          "novelty_guardrail_after": 0.6366666666666692
+        }
+      }
+    },
+    {
+      "variant_id": "r00_185",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6333044063905963,
+          "expected_directionality": 0.9032900605347771,
+          "temporal_coherence": 0.9403905007104341,
+          "energy_demand_supply_consistency": 0.7011326523876835,
+          "cross_module_sensitivity_sign": 0.9218402806226056
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.21466119347117618,
+          "after_noise_scale": 0.21466119347117618,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7011326523876835,
+          "after_energy_consistency": 0.7011326523876835,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_191",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.37722817589749125,
+          "expected_directionality": 0.9905747117370429,
+          "temporal_coherence": 0.9236065911874218,
+          "energy_demand_supply_consistency": 0.6054955343428338,
+          "cross_module_sensitivity_sign": 0.9570906514622324
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.19095433072982299,
+          "after_noise_scale": 0.15658255119845485,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.6054955343428338,
+          "after_energy_consistency": 0.61985060229643,
+          "novelty_guardrail_before": 0.3450245331521156,
+          "novelty_guardrail_after": 0.31502453315211565
+        }
+      }
+    },
+    {
+      "variant_id": "r00_197",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8173035239045379,
+          "expected_directionality": 0.9221234704770114,
+          "temporal_coherence": 0.965769443455035,
+          "energy_demand_supply_consistency": 0.8316230131302714,
+          "cross_module_sensitivity_sign": 0.9439464569660232
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1313979469275185,
+          "after_noise_scale": 0.1313979469275185,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8316230131302714,
+          "after_energy_consistency": 0.8316230131302714,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_001",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8211369946215467,
+          "expected_directionality": 0.9805404308062804,
+          "temporal_coherence": 0.9880612499009358,
+          "energy_demand_supply_consistency": 0.8493400107007105,
+          "cross_module_sensitivity_sign": 0.9843008403536081
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.17411412081586508,
+          "after_noise_scale": 0.17411412081586508,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8493400107007105,
+          "after_energy_consistency": 0.8493400107007105,
+          "novelty_guardrail_before": 0.5599460955937888,
+          "novelty_guardrail_after": 0.5299460955937888
+        }
+      }
+    },
+    {
+      "variant_id": "r00_007",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8264941956659125,
+          "expected_directionality": 0.9724089698612941,
+          "temporal_coherence": 0.9891666613280459,
+          "energy_demand_supply_consistency": 0.8467661802824632,
+          "cross_module_sensitivity_sign": 0.98078781559467
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18155865508548422,
+          "after_noise_scale": 0.18155865508548422,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8467661802824632,
+          "after_energy_consistency": 0.8467661802824632,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_013",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7261115257099965,
+          "expected_directionality": 0.9706920514064485,
+          "temporal_coherence": 0.9395380578890165,
+          "energy_demand_supply_consistency": 0.7946511594615998,
+          "cross_module_sensitivity_sign": 0.9551150546477325
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16608641124720006,
+          "after_noise_scale": 0.16608641124720006,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7946511594615998,
+          "after_energy_consistency": 0.7946511594615998,
+          "novelty_guardrail_before": 0.2129133865809978,
+          "novelty_guardrail_after": 0.1829133865809978
+        }
+      }
+    },
+    {
+      "variant_id": "r00_019",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.34847801580643994,
+          "expected_directionality": 0.9839651400790841,
+          "temporal_coherence": 0.8756613394067029,
+          "energy_demand_supply_consistency": 0.5844868133056271,
+          "cross_module_sensitivity_sign": 0.9298132397428935
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1998416336940106,
+          "after_noise_scale": 0.16387013962908867,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5844868133056271,
+          "after_energy_consistency": 0.5990906854411459,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_025",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5598982307931213,
+          "expected_directionality": 0.9530143555642356,
+          "temporal_coherence": 0.9336349651971351,
+          "energy_demand_supply_consistency": 0.6887148326285836,
+          "cross_module_sensitivity_sign": 0.9433246603806853
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.19234261724615692,
+          "after_noise_scale": 0.19234261724615692,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6887148326285836,
+          "after_energy_consistency": 0.6887148326285836,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_031",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8417805794566303,
+          "expected_directionality": 0.9709862675199936,
+          "temporal_coherence": 0.9488905491538654,
+          "energy_demand_supply_consistency": 0.8632990941705159,
+          "cross_module_sensitivity_sign": 0.9599384083369296
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.14649617965851225,
+          "after_noise_scale": 0.14649617965851225,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8632990941705159,
+          "after_energy_consistency": 0.8632990941705159,
+          "novelty_guardrail_before": 0.43337481018304863,
+          "novelty_guardrail_after": 0.40337481018304866
+        }
+      }
+    },
+    {
+      "variant_id": "r00_037",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5019824995957437,
+          "expected_directionality": 0.9604821308585398,
+          "temporal_coherence": 0.9285465566384699,
+          "energy_demand_supply_consistency": 0.6610173693402196,
+          "cross_module_sensitivity_sign": 0.9445143437485048
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1891598572951298,
+          "after_noise_scale": 0.1891598572951298,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6610173693402196,
+          "after_energy_consistency": 0.6610173693402196,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_043",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7387114147882056,
+          "expected_directionality": 0.9563285135697993,
+          "temporal_coherence": 0.9788160352037801,
+          "energy_demand_supply_consistency": 0.7970007687808226,
+          "cross_module_sensitivity_sign": 0.9675722743867897
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.15855336183640084,
+          "after_noise_scale": 0.15855336183640084,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7970007687808226,
+          "after_energy_consistency": 0.7970007687808226,
+          "novelty_guardrail_before": 0.34604134182316204,
+          "novelty_guardrail_after": 0.316041341823162
+        }
+      }
+    },
+    {
+      "variant_id": "r00_049",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.671112428207764,
+          "expected_directionality": 0.9799755981638896,
+          "temporal_coherence": 0.997928168114564,
+          "energy_demand_supply_consistency": 0.7551008546880205,
+          "cross_module_sensitivity_sign": 0.9889518831392268
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.22,
+          "after_noise_scale": 0.22,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7551008546880205,
+          "after_energy_consistency": 0.7551008546880205,
+          "novelty_guardrail_before": 0.11774313343172044,
+          "novelty_guardrail_after": 0.08774313343172044
+        }
+      }
+    },
+    {
+      "variant_id": "r00_055",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6049897856816029,
+          "expected_directionality": 0.9855851863333293,
+          "temporal_coherence": 0.9806477673758259,
+          "energy_demand_supply_consistency": 0.7278237193735709,
+          "cross_module_sensitivity_sign": 0.9831164768545776
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1937359864052355,
+          "after_noise_scale": 0.1937359864052355,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7278237193735709,
+          "after_energy_consistency": 0.7278237193735709,
+          "novelty_guardrail_before": 0.29990208457009154,
+          "novelty_guardrail_after": 0.26990208457009157
+        }
+      }
+    },
+    {
+      "variant_id": "r00_061",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8149980920648975,
+          "expected_directionality": 0.9521727021920938,
+          "temporal_coherence": 0.9683846708187027,
+          "energy_demand_supply_consistency": 0.830073711177257,
+          "cross_module_sensitivity_sign": 0.9602786865053983
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18661182177951535,
+          "after_noise_scale": 0.18661182177951535,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.830073711177257,
+          "after_energy_consistency": 0.830073711177257,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_067",
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6630395618941428,
+          "expected_directionality": 0.9955566853067013,
+          "temporal_coherence": 0.9952554427754082,
+          "energy_demand_supply_consistency": 0.7631179331451953,
+          "cross_module_sensitivity_sign": 0.9954060640410547
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.19821733713839565,
+          "after_noise_scale": 0.19821733713839565,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7631179331451953,
+          "after_energy_consistency": 0.7631179331451953,
+          "novelty_guardrail_before": 0.6666666666666666,
+          "novelty_guardrail_after": 0.6366666666666666
+        }
+      }
+    }
+  ]
+}

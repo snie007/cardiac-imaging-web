@@ -1,0 +1,71 @@
+{
+  "title": "Coupled Simulation Results",
+  "report": "../latent_model/artifacts/coupled_simulation/coupling_pass_fail_report.json",
+  "summary": {
+    "assertions_passed": 5,
+    "assertions_total": 5,
+    "status": "PASS"
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "ap_plot": "assets/coupled_simulation/baseline_ap_trace.svg",
+      "energy_plot": "assets/coupled_simulation/baseline_energy.svg",
+      "coupling_plot": "assets/coupled_simulation/baseline_coupling.svg",
+      "metrics": {
+        "tail_atp": 4.592688506809024,
+        "tail_adp": 0.9073114931908955,
+        "tail_atp_adp_ratio": 5.739806089140235,
+        "tail_energy_feedback": 1.1155650274810265,
+        "tail_j_use": 0.16636469309572088,
+        "tail_j_prod": 0.1663621665342758,
+        "vm_peak": 2.303682407543329
+      }
+    },
+    {
+      "id": "fast_pacing",
+      "ap_plot": "assets/coupled_simulation/fast_pacing_ap_trace.svg",
+      "energy_plot": "assets/coupled_simulation/fast_pacing_energy.svg",
+      "coupling_plot": "assets/coupled_simulation/fast_pacing_coupling.svg",
+      "metrics": {
+        "tail_atp": 4.4310384559167995,
+        "tail_adp": 1.0689615440831954,
+        "tail_atp_adp_ratio": 5.096984905139023,
+        "tail_energy_feedback": 1.0811298579544664,
+        "tail_j_use": 0.17272938055496737,
+        "tail_j_prod": 0.17242111728246584,
+        "vm_peak": 2.303682407543329
+      }
+    },
+    {
+      "id": "metabolic_stress",
+      "ap_plot": "assets/coupled_simulation/metabolic_stress_ap_trace.svg",
+      "energy_plot": "assets/coupled_simulation/metabolic_stress_energy.svg",
+      "coupling_plot": "assets/coupled_simulation/metabolic_stress_coupling.svg",
+      "metrics": {
+        "tail_atp": 0.2,
+        "tail_adp": 7.0,
+        "tail_atp_adp_ratio": 0.028571428571428574,
+        "tail_energy_feedback": 0.4559299191374663,
+        "tail_j_use": 0.161,
+        "tail_j_prod": 0.07964000000000002,
+        "vm_peak": -1.037046414801061
+      }
+    },
+    {
+      "id": "high_ep_demand",
+      "ap_plot": "assets/coupled_simulation/high_ep_demand_ap_trace.svg",
+      "energy_plot": "assets/coupled_simulation/high_ep_demand_energy.svg",
+      "coupling_plot": "assets/coupled_simulation/high_ep_demand_coupling.svg",
+      "metrics": {
+        "tail_atp": 0.2,
+        "tail_adp": 7.0,
+        "tail_atp_adp_ratio": 0.028571428571428574,
+        "tail_energy_feedback": 0.4559299191374663,
+        "tail_j_use": 0.22580000000000003,
+        "tail_j_prod": 0.20311538461538464,
+        "vm_peak": -1.0356212752302636
+      }
+    }
+  ]
+}

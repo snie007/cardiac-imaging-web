@@ -1,0 +1,2586 @@
+{
+  "summary": {
+    "equation_novelty_mean": 0.33456435933650774,
+    "parameter_novelty_mean": 0.31686322747319,
+    "definitions": {
+      "token_ngram_jsd": "Jensen-Shannon divergence over Math/XML token 3-grams versus nearest corpus neighbor.",
+      "ast_structure_novelty": "1 - weighted Jaccard overlap of XML/Math AST path multisets (tree-edit proxy).",
+      "operator_motif_novelty": "JSD over operator bigram motifs (plus/minus/times/divide/power/etc.).",
+      "parameter_score": "Blend of nearest-vector distance, distributional z-score extremeness, and parameter diversity/entropy."
+    }
+  },
+  "variants": [
+    {
+      "variant_id": "r00_005",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.18065937625828207,
+        "ast_structure_novelty": 0.4563971992361553,
+        "operator_motif_novelty": 0.02043058370361333,
+        "score": 0.21916238639935023
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 581.1046369760652,
+        "corpus_nearest_distance": 81.53423090448284,
+        "distributional_zscore_mean_abs": 1.6065345436609655,
+        "entropy": 2.5197707149257624,
+        "diversity": 0.24964336661911554,
+        "score": 0.2982995958135082
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6524764450845293,
+          "expected_directionality": 0.9878631289777713,
+          "temporal_coherence": 0.9341053757520488,
+          "energy_demand_supply_consistency": 0.7569647108930425,
+          "cross_module_sensitivity_sign": 0.96098425236491
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18574296777378277,
+          "after_noise_scale": 0.18574296777378277,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7569647108930425,
+          "after_energy_consistency": 0.7569647108930425,
+          "novelty_guardrail_before": 0.21916238639935023,
+          "novelty_guardrail_after": 0.18916238639935024
+        }
+      }
+    },
+    {
+      "variant_id": "r00_017",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6913862351616311,
+          "expected_directionality": 0.9352927970506526,
+          "temporal_coherence": 0.9605516993137032,
+          "energy_demand_supply_consistency": 0.7602031451557663,
+          "cross_module_sensitivity_sign": 0.9479222481821779
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16376417142369837,
+          "after_noise_scale": 0.16376417142369837,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7602031451557663,
+          "after_energy_consistency": 0.7602031451557663,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_023",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.4999999999999953,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.49999999999999994,
+        "score": 0.6666666666666651
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 705.0224928411609,
+        "corpus_nearest_distance": 85.00335585933084,
+        "distributional_zscore_mean_abs": 1.460611087273128,
+        "entropy": 2.556188795107873,
+        "diversity": 0.29645390070921984,
+        "score": 0.2947414790138367
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6202040006573304,
+          "expected_directionality": 0.9234207129754175,
+          "temporal_coherence": 0.9991897540380195,
+          "energy_demand_supply_consistency": 0.71461653498601,
+          "cross_module_sensitivity_sign": 0.9613052335067185
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16813994485783862,
+          "after_noise_scale": 0.16813994485783862,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.71461653498601,
+          "after_energy_consistency": 0.71461653498601,
+          "novelty_guardrail_before": 0.6666666666666651,
+          "novelty_guardrail_after": 0.636666666666665
+        }
+      }
+    },
+    {
+      "variant_id": "r00_029",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.500000000000004,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.4999999999999998,
+        "score": 0.6666666666666679
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 442.2030270240306,
+        "corpus_nearest_distance": 32.02885517903495,
+        "distributional_zscore_mean_abs": 1.2331388438034026,
+        "entropy": 2.8175291416146884,
+        "diversity": 0.3416289592760181,
+        "score": 0.2602181642576603
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7293282104250324,
+          "expected_directionality": 0.9136489176932459,
+          "temporal_coherence": 0.9640398836254538,
+          "energy_demand_supply_consistency": 0.7847127693903293,
+          "cross_module_sensitivity_sign": 0.9388444006593498
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.11023903722159648,
+          "after_noise_scale": 0.11023903722159648,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7847127693903293,
+          "after_energy_consistency": 0.7847127693903293,
+          "novelty_guardrail_before": 0.6666666666666679,
+          "novelty_guardrail_after": 0.6366666666666678
+        }
+      }
+    },
+    {
+      "variant_id": "r00_035",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.828467896036566,
+          "expected_directionality": 0.9202715147750071,
+          "temporal_coherence": 0.9712605502598237,
+          "energy_demand_supply_consistency": 0.8327562003154086,
+          "cross_module_sensitivity_sign": 0.9457660325174154
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1480932966138234,
+          "after_noise_scale": 0.1480932966138234,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8327562003154086,
+          "after_energy_consistency": 0.8327562003154086,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_041",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.500000000000005,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5000000000000001,
+        "score": 0.6666666666666683
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 706.0091173036843,
+        "corpus_nearest_distance": 86.0235639673288,
+        "distributional_zscore_mean_abs": 1.4703514915083022,
+        "entropy": 2.293515880843872,
+        "diversity": 0.3342776203966006,
+        "score": 0.3058617117852347
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.738618863961515,
+          "expected_directionality": 0.9973358404844381,
+          "temporal_coherence": 0.9459425807420143,
+          "energy_demand_supply_consistency": 0.8033519255800052,
+          "cross_module_sensitivity_sign": 0.9716392106132262
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.20675831126730074,
+          "after_noise_scale": 0.20675831126730074,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8033519255800052,
+          "after_energy_consistency": 0.8033519255800052,
+          "novelty_guardrail_before": 0.6666666666666683,
+          "novelty_guardrail_after": 0.6366666666666683
+        }
+      }
+    },
+    {
+      "variant_id": "r00_059",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.23990535228757334,
+        "ast_structure_novelty": 0.44401041666666663,
+        "operator_motif_novelty": 0.20253174459968948,
+        "score": 0.2954825045179765
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 506.12299093493453,
+        "corpus_nearest_distance": 11.131984435033285,
+        "distributional_zscore_mean_abs": 1.5112206439562474,
+        "entropy": 2.5415452550516506,
+        "diversity": 0.2763578274760383,
+        "score": 0.252844606349234
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6388181902497858,
+          "expected_directionality": 0.9068617027954605,
+          "temporal_coherence": 0.8340880703293888,
+          "energy_demand_supply_consistency": 0.7176990280384379,
+          "cross_module_sensitivity_sign": 0.8704748865624247
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16695497142760646,
+          "after_noise_scale": 0.16695497142760646,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7176990280384379,
+          "after_energy_consistency": 0.7176990280384379,
+          "novelty_guardrail_before": 0.2954825045179765,
+          "novelty_guardrail_after": 0.2654825045179765
+        }
+      }
+    },
+    {
+      "variant_id": "r00_065",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.019485680369116076,
+        "ast_structure_novelty": 0.10666666666666669,
+        "operator_motif_novelty": 0.0,
+        "score": 0.04205078234526092
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 321.285880154193,
+        "corpus_nearest_distance": 11.175959611467539,
+        "distributional_zscore_mean_abs": 1.1049322279618718,
+        "entropy": 2.8514231192144175,
+        "diversity": 0.30124223602484473,
+        "score": 0.219423616311945
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": false
+        },
+        "oxygen_coupling": {
+          "pass": false
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.4328102767546331,
+          "expected_directionality": 0.9964068908494724,
+          "temporal_coherence": 0.9833048504620434,
+          "energy_demand_supply_consistency": 0.6314287530973107,
+          "cross_module_sensitivity_sign": 0.9898558706557579
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.22,
+          "after_noise_scale": 0.18039999999999998,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.6314287530973107,
+          "after_energy_consistency": 0.6491285468081869,
+          "novelty_guardrail_before": 0.04205078234526092,
+          "novelty_guardrail_after": 0.01205078234526092
+        }
+      }
+    },
+    {
+      "variant_id": "r00_071",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.06168832859006028,
+        "ast_structure_novelty": 0.06703910614525144,
+        "operator_motif_novelty": 0.012922079449140427,
+        "score": 0.04721650472815072
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 355.001571144348,
+        "corpus_nearest_distance": 98.01466686857324,
+        "distributional_zscore_mean_abs": 1.1224625164837612,
+        "entropy": 2.3268477706811965,
+        "diversity": 0.3773946360153257,
+        "score": 0.3046663735041426
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6907492605790455,
+          "expected_directionality": 0.9998361224963199,
+          "temporal_coherence": 0.9945252194495173,
+          "energy_demand_supply_consistency": 0.7889968896496539,
+          "cross_module_sensitivity_sign": 0.9971806709729186
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16336583516866082,
+          "after_noise_scale": 0.16336583516866082,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7889968896496539,
+          "after_energy_consistency": 0.7889968896496539,
+          "novelty_guardrail_before": 0.04721650472815072,
+          "novelty_guardrail_after": 0.01721650472815072
+        }
+      }
+    },
+    {
+      "variant_id": "r00_077",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.5000000000000018,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5,
+        "score": 0.6666666666666673
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 818.1097487071885,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6681157669937824,
+          "expected_directionality": 0.9222556812827255,
+          "temporal_coherence": 0.9243906486584109,
+          "energy_demand_supply_consistency": 0.7393388930289084,
+          "cross_module_sensitivity_sign": 0.9233231649705682
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1725593415795934,
+          "after_noise_scale": 0.1725593415795934,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7393388930289084,
+          "after_energy_consistency": 0.7393388930289084,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_083",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.3669054916336873,
+        "ast_structure_novelty": 0.7229970807654882,
+        "operator_motif_novelty": 0.035024930597231566,
+        "score": 0.3749758343321357
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 747.0035663516226,
+        "corpus_nearest_distance": 247.0093287121232,
+        "distributional_zscore_mean_abs": 1.8301951416122089,
+        "entropy": 2.1082857314383814,
+        "diversity": 0.2041522491349481,
+        "score": 0.3823243328844074
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6803639925868988,
+          "expected_directionality": 0.93268106118197,
+          "temporal_coherence": 0.9838851976227737,
+          "energy_demand_supply_consistency": 0.7572244506163427,
+          "cross_module_sensitivity_sign": 0.9582831294023719
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.14672889135335282,
+          "after_noise_scale": 0.14672889135335282,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7572244506163427,
+          "after_energy_consistency": 0.7572244506163427,
+          "novelty_guardrail_before": 0.3749758343321357,
+          "novelty_guardrail_after": 0.34497583433213574
+        }
+      }
+    },
+    {
+      "variant_id": "r00_089",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.2654431306593691,
+        "ast_structure_novelty": 0.5358649789029536,
+        "operator_motif_novelty": 0.11269442031363813,
+        "score": 0.3046675099586536
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 37.02141168921453,
+        "corpus_nearest_distance": 2.427815997573661,
+        "distributional_zscore_mean_abs": 0.3416138379596765,
+        "entropy": 1.379507689154518,
+        "diversity": 0.1836734693877551,
+        "score": 0.11217021396567872
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8107852576725565,
+          "expected_directionality": 0.9982285684882379,
+          "temporal_coherence": 0.996078676654462,
+          "energy_demand_supply_consistency": 0.859884062962696,
+          "cross_module_sensitivity_sign": 0.99715362257135
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1410027383076688,
+          "after_noise_scale": 0.1410027383076688,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.859884062962696,
+          "after_energy_consistency": 0.859884062962696,
+          "novelty_guardrail_before": 0.3046675099586536,
+          "novelty_guardrail_after": 0.27466750995865363
+        }
+      }
+    },
+    {
+      "variant_id": "r00_095",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.23990535228757334,
+        "ast_structure_novelty": 0.44401041666666663,
+        "operator_motif_novelty": 0.20253174459968948,
+        "score": 0.2954825045179765
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 506.12299093493453,
+        "corpus_nearest_distance": 11.131984435033285,
+        "distributional_zscore_mean_abs": 1.5112206439562474,
+        "entropy": 2.5415452550516506,
+        "diversity": 0.2763578274760383,
+        "score": 0.252844606349234
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": false
+        },
+        "oxygen_coupling": {
+          "pass": false
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.3587254036182172,
+          "expected_directionality": 0.9297879301037437,
+          "temporal_coherence": 0.9807675744887426,
+          "energy_demand_supply_consistency": 0.5711420744267592,
+          "cross_module_sensitivity_sign": 0.9552777522962432
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1782458644397798,
+          "after_noise_scale": 0.14616160884061943,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5711420744267592,
+          "after_energy_consistency": 0.584225972222276,
+          "novelty_guardrail_before": 0.2954825045179765,
+          "novelty_guardrail_after": 0.2654825045179765
+        }
+      }
+    },
+    {
+      "variant_id": "r00_101",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": false
+        },
+        "oxygen_coupling": {
+          "pass": false
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.4045893584777812,
+          "expected_directionality": 0.9341620817073226,
+          "temporal_coherence": 0.9724718378860207,
+          "energy_demand_supply_consistency": 0.5970107265395329,
+          "cross_module_sensitivity_sign": 0.9533169597966716
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18354542956616743,
+          "after_noise_scale": 0.1505072522442573,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5970107265395329,
+          "after_energy_consistency": 0.6111752015608111,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_107",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.5000000000000042,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5000000000000002,
+        "score": 0.6666666666666682
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 619.0329786843539,
+        "corpus_nearest_distance": 1.8325371099329677,
+        "distributional_zscore_mean_abs": 1.2741685180187345,
+        "entropy": 2.560323752220375,
+        "diversity": 0.2972536348949919,
+        "score": 0.22420669347620004
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6547625993824209,
+          "expected_directionality": 0.9401366325515176,
+          "temporal_coherence": 0.9658614689544677,
+          "energy_demand_supply_consistency": 0.7444759539016864,
+          "cross_module_sensitivity_sign": 0.9529990507529926
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.15481984162731227,
+          "after_noise_scale": 0.15481984162731227,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7444759539016864,
+          "after_energy_consistency": 0.7444759539016864,
+          "novelty_guardrail_before": 0.6666666666666682,
+          "novelty_guardrail_after": 0.6366666666666682
+        }
+      }
+    },
+    {
+      "variant_id": "r00_113",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.1995314491214026,
+        "ast_structure_novelty": 0.6644474034620507,
+        "operator_motif_novelty": 0.05482246431343203,
+        "score": 0.30626710563229514
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 152.3516233609124,
+        "corpus_nearest_distance": 2.190607464745147,
+        "distributional_zscore_mean_abs": 0.76121040417013,
+        "entropy": 2.4143639486610606,
+        "diversity": 0.3696682464454976,
+        "score": 0.18600969573559112
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8390507714585632,
+          "expected_directionality": 0.9977311915155342,
+          "temporal_coherence": 0.9995103893650381,
+          "energy_demand_supply_consistency": 0.8675721560643826,
+          "cross_module_sensitivity_sign": 0.9986207904402862
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1715392176792701,
+          "after_noise_scale": 0.1715392176792701,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8675721560643826,
+          "after_energy_consistency": 0.8675721560643826,
+          "novelty_guardrail_before": 0.30626710563229514,
+          "novelty_guardrail_after": 0.2762671056322952
+        }
+      }
+    },
+    {
+      "variant_id": "r00_119",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.004189391151147821,
+        "ast_structure_novelty": 0.6562403220811397,
+        "operator_motif_novelty": 9.434029453302606e-05,
+        "score": 0.22017468450894018
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 706.0000361128583,
+        "corpus_nearest_distance": 458.00497547691816,
+        "distributional_zscore_mean_abs": 2.231090087518938,
+        "entropy": 2.117797180432203,
+        "diversity": 0.12244897959183673,
+        "score": 0.46538402343282037
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8530334919741915,
+          "expected_directionality": 0.9983656671789931,
+          "temporal_coherence": 0.9976096145042931,
+          "energy_demand_supply_consistency": 0.8659449322357065,
+          "cross_module_sensitivity_sign": 0.997987640841643
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.2099521543225835,
+          "after_noise_scale": 0.2099521543225835,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8659449322357065,
+          "after_energy_consistency": 0.8659449322357065,
+          "novelty_guardrail_before": 0.22017468450894018,
+          "novelty_guardrail_after": 0.19017468450894018
+        }
+      }
+    },
+    {
+      "variant_id": "r00_125",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.5000000000000018,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5,
+        "score": 0.6666666666666673
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 818.1097487071885,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5748126278361465,
+          "expected_directionality": 0.9584222318575103,
+          "temporal_coherence": 0.8457840904431039,
+          "energy_demand_supply_consistency": 0.7065743669290862,
+          "cross_module_sensitivity_sign": 0.9021031611503071
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16345033086669655,
+          "after_noise_scale": 0.16345033086669655,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7065743669290862,
+          "after_energy_consistency": 0.7065743669290862,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_131",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.49999999999999334,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.49999999999999994,
+        "score": 0.6666666666666644
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 626.1383377389991,
+        "corpus_nearest_distance": 11.131984435033285,
+        "distributional_zscore_mean_abs": 1.5112206439562474,
+        "entropy": 2.5415452550516506,
+        "diversity": 0.2763578274760383,
+        "score": 0.252844606349234
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6824733135286665,
+          "expected_directionality": 0.9939205416539433,
+          "temporal_coherence": 0.8737163103485904,
+          "energy_demand_supply_consistency": 0.7761987325530633,
+          "cross_module_sensitivity_sign": 0.9338184260012669
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1857033345279112,
+          "after_noise_scale": 0.1857033345279112,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7761987325530633,
+          "after_energy_consistency": 0.7761987325530633,
+          "novelty_guardrail_before": 0.6666666666666644,
+          "novelty_guardrail_after": 0.6366666666666644
+        }
+      }
+    },
+    {
+      "variant_id": "r00_143",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.23990535228757334,
+        "ast_structure_novelty": 0.44401041666666663,
+        "operator_motif_novelty": 0.20253174459968948,
+        "score": 0.2954825045179765
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 506.12299093493453,
+        "corpus_nearest_distance": 11.131984435033285,
+        "distributional_zscore_mean_abs": 1.5112206439562474,
+        "entropy": 2.5415452550516506,
+        "diversity": 0.2763578274760383,
+        "score": 0.252844606349234
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8699044028658525,
+          "expected_directionality": 0.9506076967556327,
+          "temporal_coherence": 0.8665058144740897,
+          "energy_demand_supply_consistency": 0.8644785831720893,
+          "cross_module_sensitivity_sign": 0.9085567556148613
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16696920777665739,
+          "after_noise_scale": 0.16696920777665739,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8644785831720893,
+          "after_energy_consistency": 0.8644785831720893,
+          "novelty_guardrail_before": 0.2954825045179765,
+          "novelty_guardrail_after": 0.2654825045179765
+        }
+      }
+    },
+    {
+      "variant_id": "r00_149",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.4999999999999993,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5,
+        "score": 0.6666666666666664
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 334.27333658193083,
+        "corpus_nearest_distance": 11.076714347808203,
+        "distributional_zscore_mean_abs": 1.1275732054388086,
+        "entropy": 2.835218342494263,
+        "diversity": 0.2934131736526946,
+        "score": 0.21938205327706156
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.525769309209269,
+          "expected_directionality": 0.9416161209149894,
+          "temporal_coherence": 0.8573475995621707,
+          "energy_demand_supply_consistency": 0.6694912234381111,
+          "cross_module_sensitivity_sign": 0.89948186023858
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.17363660415492826,
+          "after_noise_scale": 0.17363660415492826,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6694912234381111,
+          "after_energy_consistency": 0.6694912234381111,
+          "novelty_guardrail_before": 0.6666666666666664,
+          "novelty_guardrail_after": 0.6366666666666664
+        }
+      }
+    },
+    {
+      "variant_id": "r00_161",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.644049415429505,
+          "expected_directionality": 0.9520292444133102,
+          "temporal_coherence": 0.9736201980844736,
+          "energy_demand_supply_consistency": 0.7492450429133494,
+          "cross_module_sensitivity_sign": 0.9628247212488918
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.13358118223547188,
+          "after_noise_scale": 0.13358118223547188,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7492450429133494,
+          "after_energy_consistency": 0.7492450429133494,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_167",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.5000000000000018,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5,
+        "score": 0.6666666666666673
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 818.1097487071885,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5964677753236045,
+          "expected_directionality": 0.8996462200710912,
+          "temporal_coherence": 0.9088454480531685,
+          "energy_demand_supply_consistency": 0.6961333428746619,
+          "cross_module_sensitivity_sign": 0.9042458340621298
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1470589303412464,
+          "after_noise_scale": 0.1470589303412464,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6961333428746619,
+          "after_energy_consistency": 0.6961333428746619,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_173",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.4999999999999913,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5000000000000002,
+        "score": 0.6666666666666639
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 782.009463442559,
+        "corpus_nearest_distance": 162.0097179433291,
+        "distributional_zscore_mean_abs": 1.6334266782616278,
+        "entropy": 2.303237654003515,
+        "diversity": 0.2442455242966752,
+        "score": 0.3375745016904908
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7442642254657031,
+          "expected_directionality": 0.9309048727726028,
+          "temporal_coherence": 0.9808142114813263,
+          "energy_demand_supply_consistency": 0.7834983426945706,
+          "cross_module_sensitivity_sign": 0.9558595421269646
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.17901669623694952,
+          "after_noise_scale": 0.17901669623694952,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7834983426945706,
+          "after_energy_consistency": 0.7834983426945706,
+          "novelty_guardrail_before": 0.6666666666666639,
+          "novelty_guardrail_after": 0.6366666666666638
+        }
+      }
+    },
+    {
+      "variant_id": "r00_179",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.5000000000000075,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5,
+        "score": 0.6666666666666692
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 472.1882697726386,
+        "corpus_nearest_distance": 61.03345968845727,
+        "distributional_zscore_mean_abs": 1.2672743069822545,
+        "entropy": 2.6540768935784245,
+        "diversity": 0.3305084745762712,
+        "score": 0.28545931787246526
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": false
+        },
+        "oxygen_coupling": {
+          "pass": false
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.33273821717820035,
+          "expected_directionality": 0.9966064955363766,
+          "temporal_coherence": 0.890504350439593,
+          "energy_demand_supply_consistency": 0.5927960216213214,
+          "cross_module_sensitivity_sign": 0.9435554229879848
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.15473168327223277,
+          "after_noise_scale": 0.12687998028323086,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5927960216213214,
+          "after_energy_consistency": 0.6037602586148845,
+          "novelty_guardrail_before": 0.6666666666666692,
+          "novelty_guardrail_after": 0.6366666666666692
+        }
+      }
+    },
+    {
+      "variant_id": "r00_185",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6333044063905963,
+          "expected_directionality": 0.9032900605347771,
+          "temporal_coherence": 0.9403905007104341,
+          "energy_demand_supply_consistency": 0.7011326523876835,
+          "cross_module_sensitivity_sign": 0.9218402806226056
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.21466119347117618,
+          "after_noise_scale": 0.21466119347117618,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7011326523876835,
+          "after_energy_consistency": 0.7011326523876835,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_191",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.3404177519991475,
+        "ast_structure_novelty": 0.6303523035230352,
+        "operator_motif_novelty": 0.06430354393416425,
+        "score": 0.3450245331521156
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 158.0044468880633,
+        "corpus_nearest_distance": 2.45043011990665,
+        "distributional_zscore_mean_abs": 0.7235637185835284,
+        "entropy": 2.3197159015630913,
+        "diversity": 0.4965034965034965,
+        "score": 0.2123406170982194
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": false
+        },
+        "oxygen_coupling": {
+          "pass": false
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.37722817589749125,
+          "expected_directionality": 0.9905747117370429,
+          "temporal_coherence": 0.9236065911874218,
+          "energy_demand_supply_consistency": 0.6054955343428338,
+          "cross_module_sensitivity_sign": 0.9570906514622324
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.19095433072982299,
+          "after_noise_scale": 0.15658255119845485,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.6054955343428338,
+          "after_energy_consistency": 0.61985060229643,
+          "novelty_guardrail_before": 0.3450245331521156,
+          "novelty_guardrail_after": 0.31502453315211565
+        }
+      }
+    },
+    {
+      "variant_id": "r00_197",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8173035239045379,
+          "expected_directionality": 0.9221234704770114,
+          "temporal_coherence": 0.965769443455035,
+          "energy_demand_supply_consistency": 0.8316230131302714,
+          "cross_module_sensitivity_sign": 0.9439464569660232
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1313979469275185,
+          "after_noise_scale": 0.1313979469275185,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8316230131302714,
+          "after_energy_consistency": 0.8316230131302714,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_001",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.38588022992439774,
+        "ast_structure_novelty": 0.8056569343065694,
+        "operator_motif_novelty": 0.48830112255039915,
+        "score": 0.5599460955937888
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 18.23036149782172,
+        "corpus_nearest_distance": 1.91735534605485,
+        "distributional_zscore_mean_abs": 0.5021851724064269,
+        "entropy": 0.3095434291503252,
+        "diversity": 0.2777777777777778,
+        "score": 0.1701022115606309
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8211369946215467,
+          "expected_directionality": 0.9805404308062804,
+          "temporal_coherence": 0.9880612499009358,
+          "energy_demand_supply_consistency": 0.8493400107007105,
+          "cross_module_sensitivity_sign": 0.9843008403536081
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.17411412081586508,
+          "after_noise_scale": 0.17411412081586508,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8493400107007105,
+          "after_energy_consistency": 0.8493400107007105,
+          "novelty_guardrail_before": 0.5599460955937888,
+          "novelty_guardrail_after": 0.5299460955937888
+        }
+      }
+    },
+    {
+      "variant_id": "r00_007",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 3259.0005434718532,
+        "corpus_nearest_distance": 2767.0005978145887,
+        "distributional_zscore_mean_abs": 6.169933879638606,
+        "entropy": 1.0716370523863608,
+        "diversity": 0.0448774726896959,
+        "score": 1.0
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8264941956659125,
+          "expected_directionality": 0.9724089698612941,
+          "temporal_coherence": 0.9891666613280459,
+          "energy_demand_supply_consistency": 0.8467661802824632,
+          "cross_module_sensitivity_sign": 0.98078781559467
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18155865508548422,
+          "after_noise_scale": 0.18155865508548422,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8467661802824632,
+          "after_energy_consistency": 0.8467661802824632,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_013",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.17116555372464415,
+        "ast_structure_novelty": 0.404463040446304,
+        "operator_motif_novelty": 0.06311156557204517,
+        "score": 0.2129133865809978
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 2.0698918172959355,
+        "corpus_nearest_distance": 2.069891817295936,
+        "distributional_zscore_mean_abs": 0.6947149754741393,
+        "entropy": 2.4368001075800847,
+        "diversity": 0.5409836065573771,
+        "score": 0.22483037268951
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7261115257099965,
+          "expected_directionality": 0.9706920514064485,
+          "temporal_coherence": 0.9395380578890165,
+          "energy_demand_supply_consistency": 0.7946511594615998,
+          "cross_module_sensitivity_sign": 0.9551150546477325
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.16608641124720006,
+          "after_noise_scale": 0.16608641124720006,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7946511594615998,
+          "after_energy_consistency": 0.7946511594615998,
+          "novelty_guardrail_before": 0.2129133865809978,
+          "novelty_guardrail_after": 0.1829133865809978
+        }
+      }
+    },
+    {
+      "variant_id": "r00_019",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": false
+        },
+        "oxygen_coupling": {
+          "pass": false
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.34847801580643994,
+          "expected_directionality": 0.9839651400790841,
+          "temporal_coherence": 0.8756613394067029,
+          "energy_demand_supply_consistency": 0.5844868133056271,
+          "cross_module_sensitivity_sign": 0.9298132397428935
+        },
+        "tests": {
+          "response_propagation": false,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": false,
+        "root_causes": [
+          "weak_coupling_coefficients_or_missing_link_flux"
+        ],
+        "adjustment": {
+          "applied": true,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1998416336940106,
+          "after_noise_scale": 0.16387013962908867,
+          "before_pass": false,
+          "after_pass": false,
+          "before_energy_consistency": 0.5844868133056271,
+          "after_energy_consistency": 0.5990906854411459,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_025",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5598982307931213,
+          "expected_directionality": 0.9530143555642356,
+          "temporal_coherence": 0.9336349651971351,
+          "energy_demand_supply_consistency": 0.6887148326285836,
+          "cross_module_sensitivity_sign": 0.9433246603806853
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.19234261724615692,
+          "after_noise_scale": 0.19234261724615692,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6887148326285836,
+          "after_energy_consistency": 0.6887148326285836,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_031",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.2674217516355656,
+        "ast_structure_novelty": 0.5776754890678941,
+        "operator_motif_novelty": 0.4550271898456863,
+        "score": 0.43337481018304863
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 27.061200810659898,
+        "corpus_nearest_distance": 2.1031453202130534,
+        "distributional_zscore_mean_abs": 0.5656379336795542,
+        "entropy": 0.24229218908241482,
+        "diversity": 0.16,
+        "score": 0.13947162229109533
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8417805794566303,
+          "expected_directionality": 0.9709862675199936,
+          "temporal_coherence": 0.9488905491538654,
+          "energy_demand_supply_consistency": 0.8632990941705159,
+          "cross_module_sensitivity_sign": 0.9599384083369296
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.14649617965851225,
+          "after_noise_scale": 0.14649617965851225,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.8632990941705159,
+          "after_energy_consistency": 0.8632990941705159,
+          "novelty_guardrail_before": 0.43337481018304863,
+          "novelty_guardrail_after": 0.40337481018304866
+        }
+      }
+    },
+    {
+      "variant_id": "r00_037",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.5000000000000018,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5,
+        "score": 0.6666666666666673
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 818.1097487071885,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.5019824995957437,
+          "expected_directionality": 0.9604821308585398,
+          "temporal_coherence": 0.9285465566384699,
+          "energy_demand_supply_consistency": 0.6610173693402196,
+          "cross_module_sensitivity_sign": 0.9445143437485048
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1891598572951298,
+          "after_noise_scale": 0.1891598572951298,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.6610173693402196,
+          "after_energy_consistency": 0.6610173693402196,
+          "novelty_guardrail_before": 0.6666666666666673,
+          "novelty_guardrail_after": 0.6366666666666673
+        }
+      }
+    },
+    {
+      "variant_id": "r00_043",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.32491028503159014,
+        "ast_structure_novelty": 0.6814621409921671,
+        "operator_motif_novelty": 0.03175159944572888,
+        "score": 0.34604134182316204
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 575.0045470857656,
+        "corpus_nearest_distance": 75.03118592085282,
+        "distributional_zscore_mean_abs": 1.497717723789699,
+        "entropy": 2.079543934932491,
+        "diversity": 0.2733812949640288,
+        "score": 0.2880751604745829
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.7387114147882056,
+          "expected_directionality": 0.9563285135697993,
+          "temporal_coherence": 0.9788160352037801,
+          "energy_demand_supply_consistency": 0.7970007687808226,
+          "cross_module_sensitivity_sign": 0.9675722743867897
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.15855336183640084,
+          "after_noise_scale": 0.15855336183640084,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7970007687808226,
+          "after_energy_consistency": 0.7970007687808226,
+          "novelty_guardrail_before": 0.34604134182316204,
+          "novelty_guardrail_after": 0.316041341823162
+        }
+      }
+    },
+    {
+      "variant_id": "r00_049",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.07378340998323374,
+        "ast_structure_novelty": 0.25158459288152124,
+        "operator_motif_novelty": 0.027861397430406352,
+        "score": 0.11774313343172044
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 402.00310028971546,
+        "corpus_nearest_distance": 55.006000541479196,
+        "distributional_zscore_mean_abs": 1.0873640746807625,
+        "entropy": 1.882130769111378,
+        "diversity": 0.2633832976445396,
+        "score": 0.24282406809091867
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.671112428207764,
+          "expected_directionality": 0.9799755981638896,
+          "temporal_coherence": 0.997928168114564,
+          "energy_demand_supply_consistency": 0.7551008546880205,
+          "cross_module_sensitivity_sign": 0.9889518831392268
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.22,
+          "after_noise_scale": 0.22,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7551008546880205,
+          "after_energy_consistency": 0.7551008546880205,
+          "novelty_guardrail_before": 0.11774313343172044,
+          "novelty_guardrail_after": 0.08774313343172044
+        }
+      }
+    },
+    {
+      "variant_id": "r00_055",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.2774102348830937,
+        "ast_structure_novelty": 0.5559895833333333,
+        "operator_motif_novelty": 0.06630643549384765,
+        "score": 0.29990208457009154
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 440.00867935782117,
+        "corpus_nearest_distance": 52.05251420831272,
+        "distributional_zscore_mean_abs": 1.2093127223741875,
+        "entropy": 2.730021314839849,
+        "diversity": 0.3714788732394366,
+        "score": 0.272513493540796
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6049897856816029,
+          "expected_directionality": 0.9855851863333293,
+          "temporal_coherence": 0.9806477673758259,
+          "energy_demand_supply_consistency": 0.7278237193735709,
+          "cross_module_sensitivity_sign": 0.9831164768545776
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.1937359864052355,
+          "after_noise_scale": 0.1937359864052355,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7278237193735709,
+          "after_energy_consistency": 0.7278237193735709,
+          "novelty_guardrail_before": 0.29990208457009154,
+          "novelty_guardrail_after": 0.26990208457009157
+        }
+      }
+    },
+    {
+      "variant_id": "r00_061",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.0,
+        "ast_structure_novelty": 0.0,
+        "operator_motif_novelty": 0.0,
+        "score": 0.0
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 698.0881814351327,
+        "corpus_nearest_distance": 198.22553856985365,
+        "distributional_zscore_mean_abs": 1.9598532041671801,
+        "entropy": 2.7448152983202507,
+        "diversity": 0.22127139364303178,
+        "score": 0.3843342140192838
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.8149980920648975,
+          "expected_directionality": 0.9521727021920938,
+          "temporal_coherence": 0.9683846708187027,
+          "energy_demand_supply_consistency": 0.830073711177257,
+          "cross_module_sensitivity_sign": 0.9602786865053983
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.18661182177951535,
+          "after_noise_scale": 0.18661182177951535,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.830073711177257,
+          "after_energy_consistency": 0.830073711177257,
+          "novelty_guardrail_before": 0.0,
+          "novelty_guardrail_after": 0.0
+        }
+      }
+    },
+    {
+      "variant_id": "r00_067",
+      "equation_novelty": {
+        "token_ngram_jsd": 0.4999999999999997,
+        "ast_structure_novelty": 1.0,
+        "operator_motif_novelty": 0.5000000000000001,
+        "score": 0.6666666666666666
+      },
+      "parameter_novelty": {
+        "nearest_vector_distance": 338.26976223609955,
+        "corpus_nearest_distance": 11.76942702892861,
+        "distributional_zscore_mean_abs": 1.1295133123770627,
+        "entropy": 2.8341095907538842,
+        "diversity": 0.2958579881656805,
+        "score": 0.22092657251317893
+      },
+      "mitochondria_checks_proxy": {
+        "delta_psi_m_range": {
+          "pass": true
+        },
+        "nadh_redox_trend": {
+          "pass": true
+        },
+        "atp_adp_ratio": {
+          "pass": true
+        },
+        "oxygen_coupling": {
+          "pass": true
+        },
+        "pmf_consistency": {
+          "pass": true
+        }
+      },
+      "coupling_validation": {
+        "scores": {
+          "response_propagation": 0.6630395618941428,
+          "expected_directionality": 0.9955566853067013,
+          "temporal_coherence": 0.9952554427754082,
+          "energy_demand_supply_consistency": 0.7631179331451953,
+          "cross_module_sensitivity_sign": 0.9954060640410547
+        },
+        "tests": {
+          "response_propagation": true,
+          "expected_directionality": true,
+          "temporal_coherence": true,
+          "energy_demand_supply_consistency": true,
+          "cross_module_sensitivity_sign": true
+        },
+        "pass": true,
+        "root_causes": [],
+        "adjustment": {
+          "applied": false,
+          "type": "noise_scale_damping_proxy",
+          "before_noise_scale": 0.19821733713839565,
+          "after_noise_scale": 0.19821733713839565,
+          "before_pass": true,
+          "after_pass": true,
+          "before_energy_consistency": 0.7631179331451953,
+          "after_energy_consistency": 0.7631179331451953,
+          "novelty_guardrail_before": 0.6666666666666666,
+          "novelty_guardrail_after": 0.6366666666666666
+        }
+      }
+    }
+  ]
+}

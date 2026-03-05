@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seasonality in Cardiac Imaging — Evidence Navigator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#f6f8fb; color:#1a1f2b; }
+    header { background:#0f172a; color:white; padding:18px 22px; }
+    h1 { margin:0; font-size:22px; }
+    .sub { opacity:.9; margin-top:6px; font-size:14px; }
+    .wrap { max-width:1100px; margin:20px auto; padding:0 14px; }
+    .controls { display:grid; grid-template-columns: 1fr 180px 180px; gap:10px; margin-bottom:14px; }
+    input, select { padding:10px; border:1px solid #cbd5e1; border-radius:8px; font-size:14px; }
+    .card { background:white; border:1px solid #e2e8f0; border-radius:10px; padding:14px; margin-bottom:10px; }
+    .meta { font-size:13px; color:#334155; margin-bottom:8px; }
+    .badge { display:inline-block; padding:3px 8px; border-radius:999px; font-size:12px; margin-right:6px; background:#e2e8f0; }
+    .CMR{ background:#dbeafe; } .Echo{ background:#dcfce7; } .CT{ background:#fef3c7; }
+    .footer { font-size:12px; color:#64748b; margin-top:20px; }
+    a { color:#1d4ed8; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Seasonality in Cardiac Imaging — Evidence Navigator</h1>
+    <div class="sub">CMR-focused rapid PRISMA-style evidence set with explicit PMIDs</div>
+  </header>
+
+  <div class="wrap">
+    <div class="controls">
+      <input id="q" placeholder="Search title/findings (e.g., infarct size, athlete, temperature)..." />
+      <select id="modality">
+        <option value="">All modalities</option>
+        <option>CMR</option>
+        <option>Echo</option>
+        <option>CT</option>
+      </select>
+      <select id="population">
+        <option value="">All populations</option>
+        <option>STEMI patients</option>
+        <option>Elite athletes</option>
+        <option>Healthy adults</option>
+        <option>Cardiac CT clinical cohort</option>
+      </select>
+    </div>
+    <div id="count" class="meta"></div>
+    <div id="list"></div>
+
+    <div class="footer">
+      Last updated: 2026-03-05 • Built from PubMed-indexed studies with explicit PMID links.
+    </div>
+  </div>
+
+<script>
+const studies = [
+  {
+    pmid:"30735561", modality:"CMR", year:2019, population:"STEMI patients",
+    title:"Season and myocardial injury in patients with ST-segment elevation myocardial infarction: A cardiac magnetic resonance imaging study.",
+    finding:"Season associated with differences in CMR myocardial injury metrics after primary PCI.",
+    relevance:"Supports controlling/matching season for repeat CMR injury and function endpoints."
+  },
+  {
+    pmid:"34569991", modality:"CMR", year:2022, population:"STEMI patients",
+    title:"Ambient temperature and infarct size, microvascular obstruction, left ventricular function and clinical outcomes after ST-segment elevation myocardial infarction.",
+    finding:"Ambient temperature/season associated with infarct size, MVO and LV function on CMR.",
+    relevance:"Strong evidence environmental timing can affect serial CMR endpoints."
+  },
+  {
+    pmid:"33588217", modality:"CT", year:2021, population:"Cardiac CT clinical cohort",
+    title:"Season and clinical factors influence epicardial adipose tissue attenuation measurement on computed tomography and may hamper its utilization as a risk marker.",
+    finding:"EAT attenuation on cardiac CT varied by season and clinical factors.",
+    relevance:"Season can bias CT-derived biologically active markers in repeat studies."
+  },
+  {
+    pmid:"37817231", modality:"Echo", year:2023, population:"Elite athletes",
+    title:"Seasonal variation of cardiac structure and function in the elite rugby football league athlete.",
+    finding:"Cardiac structure and function varied across the competitive season.",
+    relevance:"Echo metrics can drift by season/training phase; timing standardization advised."
+  },
+  {
+    pmid:"35249137", modality:"Echo", year:2022, population:"Elite athletes",
+    title:"Seasonal variation of right heart function in elite skiers-racers: an echocardiographic study.",
+    finding:"Right-heart functional measures showed winter-summer differences.",
+    relevance:"Repeat echo right-heart comparisons should account for season."
+  },
+  {
+    pmid:"1628522", modality:"Echo", year:1992, population:"Healthy adults",
+    title:"Circannual changes in ventricular function assessed by echocardiography.",
+    finding:"Circannual rhythm in multiple ventricular function variables.",
+    relevance:"Classical evidence that year-cycle can affect serial echo values."
+  },
+  {
+    pmid:"1439164", modality:"Echo", year:1992, population:"Elite athletes",
+    title:"Cardiac structure and function in women basketball athletes: seasonal variation and comparisons with nonathletic controls.",
+    finding:"Seasonal changes in cardiac structure/function over athletic season.",
+    relevance:"Within-subject season effects can confound longitudinal comparisons."
+  }
+];
+
+function render() {
+  const q = document.getElementById('q').value.toLowerCase().trim();
+  const m = document.getElementById('modality').value;
+  const p = document.getElementById('population').value;
+  const out = studies.filter(s => {
+    const txt = (s.title + ' ' + s.finding + ' ' + s.relevance).toLowerCase();
+    return (!q || txt.includes(q)) && (!m || s.modality===m) && (!p || s.population===p);
+  });
+
+  document.getElementById('count').textContent = `${out.length} / ${studies.length} studies shown`;
+  document.getElementById('list').innerHTML = out.map(s => `
+    <div class="card">
+      <div class="meta">
+        <span class="badge ${s.modality}">${s.modality}</span>
+        <span class="badge">${s.population}</span>
+        <span class="badge">${s.year}</span>
+      </div>
+      <div><b>${s.title}</b></div>
+      <div class="meta" style="margin-top:8px;"><b>Main finding:</b> ${s.finding}</div>
+      <div class="meta"><b>Repeat-scan relevance:</b> ${s.relevance}</div>
+      <div><a href="https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/" target="_blank" rel="noopener">PMID: ${s.pmid}</a></div>
+    </div>
+  `).join('');
+}
+
+['q','modality','population'].forEach(id => document.getElementById(id).addEventListener('input', render));
+render();
+</script>
+</body>
+</html>

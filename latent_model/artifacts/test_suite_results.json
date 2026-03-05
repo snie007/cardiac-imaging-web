@@ -1,0 +1,1865 @@
+{
+  "summary": {
+    "n_variants": 40,
+    "pass_rates": {
+      "mathematical_stability": 1.0,
+      "numerical_convergence": 1.0,
+      "physiological_validity": 0.825,
+      "physics_units_mass_balance": 0.975
+    },
+    "convergence_delta_mean": 0.0
+  },
+  "variants": [
+    {
+      "variant_id": "r00_005",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000428.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_017",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_023",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_DiFrancesco_Noble_1985.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": false,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.3333333333333333
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_029",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_035",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_041",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_aslanidi_2009.cellml",
+        "frozen_corpus/sources/cellml_oyehaug_2009_version1.cellml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "V"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_059",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_065",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_goldbeter_2007.cellml",
+        "frozen_corpus/sources/cellml_NBC_test.cellml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": false,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.3333333333333333
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F",
+            "S",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_071",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_maleckar_greenstein_trayanova_giles_2009.cellml",
+        "frozen_corpus/sources/cellml_clancy_rudy_2002.cellml",
+        "frozen_corpus/sources/sbml_BIOMD0000000402.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F",
+            "V",
+            "mM",
+            "mV"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_077",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_083",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000515.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F",
+            "V",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_089",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_pivonka_2008.cellml",
+        "frozen_corpus/sources/cellml_cui_kaandorp_2006.cellml",
+        "frozen_corpus/sources/cellml_HATPase_test.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_095",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_101",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_107",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_bental_2006.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": false,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.3333333333333333
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "ms"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_113",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000981.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000955.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000964.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": false,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.3333333333333333
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_119",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000515.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000511.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_125",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_131",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_143",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_149",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": false,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.3333333333333333
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_161",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_167",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_173",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_bondarenko_szigeti_bett_kim_rasmusson_2004_apical.cellml",
+        "frozen_corpus/sources/cellml_clancy_rudy_2002.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F",
+            "V",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_179",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000966.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_185",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_191",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000987.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "V",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_197",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_001",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_alexander_2010_system2.cellml",
+        "frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": false,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.3333333333333333
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "V",
+            "ms",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_007",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000574.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": true
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_013",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_alexander_2010_system2.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_019",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_025",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_031",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml",
+        "frozen_corpus/sources/cellml_gall_2000b.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": false,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.3333333333333333
+        },
+        "physics_units_mass_balance": {
+          "pass": false,
+          "unit_tokens": [
+            "A"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_037",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_043",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000428.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F",
+            "S",
+            "V",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_049",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_teusink_annotated_2000.cellml",
+        "frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml",
+        "frozen_corpus/sources/cellml_decker_2009.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": false,
+            "glycolysis": true
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "F",
+            "V",
+            "mM",
+            "mV",
+            "min",
+            "mmol",
+            "ms",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_055",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "coverage_fraction": 1.0
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_061",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "V",
+            "mM",
+            "s"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    },
+    {
+      "variant_id": "r00_067",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_HATPase_test.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml"
+      ],
+      "tests": {
+        "mathematical_stability": {
+          "pass": true,
+          "condition_number_proxy": 503.1988969736361
+        },
+        "numerical_convergence": {
+          "pass": true,
+          "final_delta": 0.0
+        },
+        "physiological_validity": {
+          "pass": true,
+          "requested": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": true
+          },
+          "covered": {
+            "electrophysiology": true,
+            "mitochondria": true,
+            "glycolysis": false
+          },
+          "coverage_fraction": 0.6666666666666666
+        },
+        "physics_units_mass_balance": {
+          "pass": true,
+          "unit_tokens": [
+            "A",
+            "S",
+            "mM"
+          ],
+          "mass_balance": {
+            "applicable": false,
+            "reaction_count": 0,
+            "parity_ratio": 0.0
+          }
+        }
+      }
+    }
+  ]
+}

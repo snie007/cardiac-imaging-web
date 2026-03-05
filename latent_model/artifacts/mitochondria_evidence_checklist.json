@@ -1,0 +1,56 @@
+{
+  "name": "mitochondria_evidence_checklist_v1",
+  "notes": "Rules are evidence-aligned proxy checks (not direct wet-lab measurement).",
+  "criteria": [
+    {
+      "id": "delta_psi_m_range",
+      "label": "Mitochondrial membrane potential (\u0394\u03c8m)",
+      "rule": "Baseline proxy \u0394\u03c8m should remain in [-200, -120] mV-equivalent and depolarize under uncoupling perturbation.",
+      "pmids": [
+        "17190833",
+        "16478747",
+        "11274354"
+      ]
+    },
+    {
+      "id": "nadh_redox_trend",
+      "label": "NADH redox behavior",
+      "rule": "NADH proxy should increase with reduced workload/oxygen sufficiency and decrease with high ATP demand or hypoxia perturbation.",
+      "pmids": [
+        "19564447",
+        "8887229",
+        "14634046"
+      ]
+    },
+    {
+      "id": "atp_adp_ratio",
+      "label": "ATP/ADP behavior",
+      "rule": "ATP/ADP proxy remains >2 at baseline and declines under increased demand perturbation while recovering after demand removal.",
+      "pmids": [
+        "15596487",
+        "17468226",
+        "21821019"
+      ]
+    },
+    {
+      "id": "oxygen_coupling",
+      "label": "Oxygen consumption coupling",
+      "rule": "Oxygen-consumption proxy increases with ATP demand and decreases with ATP synthase inhibition/uncoupling mismatch.",
+      "pmids": [
+        "10681433",
+        "12006572",
+        "23487514"
+      ]
+    },
+    {
+      "id": "pmf_consistency",
+      "label": "Proton motive force consistency",
+      "rule": "When representable, \u0394p proxy components retain consistent sign with proton-pumping direction and ATP synthesis directionality.",
+      "pmids": [
+        "15294341",
+        "26742047",
+        "31451640"
+      ]
+    }
+  ]
+}

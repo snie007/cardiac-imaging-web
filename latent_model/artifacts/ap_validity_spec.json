@@ -1,0 +1,86 @@
+{
+  "version": "2026-03-05",
+  "scope": "ventricular-like AP screening envelope for generated composite models",
+  "solver_note": "These checks are morphology/kinetics proxy checks when executable SBML/CellML solvers are unavailable.",
+  "criteria": [
+    {
+      "name": "resting_potential_mV",
+      "rule": "-95 <= RMP <= -65",
+      "pmids": [
+        21637795,
+        15347581
+      ]
+    },
+    {
+      "name": "peak_voltage_mV",
+      "rule": "10 <= peak <= 60",
+      "pmids": [
+        21637795,
+        15347581
+      ]
+    },
+    {
+      "name": "apd50_ms",
+      "rule": "50 <= APD50 <= 400",
+      "pmids": [
+        21637795,
+        21774765
+      ]
+    },
+    {
+      "name": "apd90_ms",
+      "rule": "120 <= APD90 <= 550",
+      "pmids": [
+        21637795,
+        21774765
+      ]
+    },
+    {
+      "name": "upstroke_dvdt_max_V_per_s",
+      "rule": "50 <= dV/dt_max <= 1000",
+      "pmids": [
+        21637795,
+        15347581
+      ]
+    },
+    {
+      "name": "triangulation_ms",
+      "rule": "10 <= (APD90-APD50) <= 260",
+      "pmids": [
+        21774765,
+        21821019
+      ]
+    },
+    {
+      "name": "beat_stability",
+      "rule": "CV(APD90,last 3 beats) <= 0.10",
+      "pmids": [
+        39943687
+      ]
+    },
+    {
+      "name": "alternans_flag",
+      "rule": "|odd-even APD90| <= 15 ms",
+      "pmids": [
+        10222343,
+        11087219
+      ]
+    },
+    {
+      "name": "rate_adaptation",
+      "rule": "APD90 should generally increase with longer CL",
+      "pmids": [
+        21774765,
+        21637795
+      ]
+    },
+    {
+      "name": "restitution_slope",
+      "rule": "max local slope(APD90 vs DI) < 1.2",
+      "pmids": [
+        10222343,
+        11087219
+      ]
+    }
+  ]
+}

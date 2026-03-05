@@ -1,0 +1,3186 @@
+{
+  "summary": {
+    "n_variants": 40,
+    "ap_pass_rate": 0.0,
+    "cl_values_ms": [
+      250,
+      500,
+      1000,
+      2000
+    ],
+    "backend": "cpu",
+    "backend_requested": "cpu",
+    "timing_ms_total": 4278.748549288139,
+    "timing_ms_mean_per_variant": 106.96871373220347
+  },
+  "backend_info": {
+    "requested": "cpu",
+    "selected": "cpu",
+    "fallback_reason": "torch import failed: No module named 'torch'",
+    "torch_available": false,
+    "cuda_available": false,
+    "torch_version": null,
+    "cuda_version": null,
+    "device_name": null,
+    "device_count": 0,
+    "python_version": "3.12.3",
+    "platform": "Linux-6.11.0-1014-nvidia-aarch64-with-glibc2.39"
+  },
+  "evidence_spec": {
+    "version": "2026-03-05",
+    "scope": "ventricular-like AP screening envelope for generated composite models",
+    "solver_note": "These checks are morphology/kinetics proxy checks when executable SBML/CellML solvers are unavailable.",
+    "criteria": [
+      {
+        "name": "resting_potential_mV",
+        "rule": "-95 <= RMP <= -65",
+        "pmids": [
+          21637795,
+          15347581
+        ]
+      },
+      {
+        "name": "peak_voltage_mV",
+        "rule": "10 <= peak <= 60",
+        "pmids": [
+          21637795,
+          15347581
+        ]
+      },
+      {
+        "name": "apd50_ms",
+        "rule": "50 <= APD50 <= 400",
+        "pmids": [
+          21637795,
+          21774765
+        ]
+      },
+      {
+        "name": "apd90_ms",
+        "rule": "120 <= APD90 <= 550",
+        "pmids": [
+          21637795,
+          21774765
+        ]
+      },
+      {
+        "name": "upstroke_dvdt_max_V_per_s",
+        "rule": "50 <= dV/dt_max <= 1000",
+        "pmids": [
+          21637795,
+          15347581
+        ]
+      },
+      {
+        "name": "triangulation_ms",
+        "rule": "10 <= (APD90-APD50) <= 260",
+        "pmids": [
+          21774765,
+          21821019
+        ]
+      },
+      {
+        "name": "beat_stability",
+        "rule": "CV(APD90,last 3 beats) <= 0.10",
+        "pmids": [
+          39943687
+        ]
+      },
+      {
+        "name": "alternans_flag",
+        "rule": "|odd-even APD90| <= 15 ms",
+        "pmids": [
+          10222343,
+          11087219
+        ]
+      },
+      {
+        "name": "rate_adaptation",
+        "rule": "APD90 should generally increase with longer CL",
+        "pmids": [
+          21774765,
+          21637795
+        ]
+      },
+      {
+        "name": "restitution_slope",
+        "rule": "max local slope(APD90 vs DI) < 1.2",
+        "pmids": [
+          10222343,
+          11087219
+        ]
+      }
+    ]
+  },
+  "variants": [
+    {
+      "variant_id": "r00_005",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000428.xml"
+      ],
+      "noise_scale": 0.18574296777378277,
+      "backend": "cpu",
+      "timing_ms": 110.38365704007447,
+      "timing_by_cl_ms": {
+        "250": 5.178587976843119,
+        "500": 10.412808042019606,
+        "1000": 20.748591050505638,
+        "2000": 41.28313297405839
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -23.372835067263903,
+            "peak": 49.099871079539895,
+            "amp": 72.47270614680379,
+            "apd50": 197.0,
+            "apd90": 234.0,
+            "dvdt": 79.48852394022255,
+            "triangulation": 37.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -82.65999976609598,
+            "peak": 49.099871079539895,
+            "amp": 131.75987084563587,
+            "apd50": 230.0,
+            "apd90": 375.0,
+            "dvdt": 120.43231097010512,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.19627197011,
+            "peak": 49.099871079539895,
+            "amp": 140.2961430496499,
+            "apd50": 244.0,
+            "apd90": 439.0,
+            "dvdt": 120.49924473351713,
+            "triangulation": 195.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.40033414625246,
+            "peak": 49.099871079539895,
+            "amp": 140.50020522579234,
+            "apd50": 254.0,
+            "apd90": 459.0,
+            "dvdt": 120.500365813606,
+            "triangulation": 205.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2935779816513762,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_017",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.16376417142369837,
+      "backend": "cpu",
+      "timing_ms": 107.00180905405432,
+      "timing_by_cl_ms": {
+        "250": 5.191308096982539,
+        "500": 10.427144006825984,
+        "1000": 20.859007025137544,
+        "2000": 41.41566203907132
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -19.172630394893577,
+            "peak": 49.5079492406662,
+            "amp": 68.68057963555977,
+            "apd50": 200.0,
+            "apd90": 235.0,
+            "dvdt": 75.90927303164703,
+            "triangulation": 35.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -81.22646334188947,
+            "peak": 49.5079492406662,
+            "amp": 130.73441258255568,
+            "apd50": 235.0,
+            "apd90": 380.0,
+            "dvdt": 120.23027992711866,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.55306575508051,
+            "peak": 49.5079492406662,
+            "amp": 140.06101499574672,
+            "apd50": 249.0,
+            "apd90": 449.0,
+            "dvdt": 120.3026387448874,
+            "triangulation": 200.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -90.79578282769047,
+            "peak": 49.5079492406662,
+            "amp": 140.30373206835668,
+            "apd50": 260.0,
+            "apd90": 469.0,
+            "dvdt": 120.30395648407831,
+            "triangulation": 209.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.380952380952381,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_023",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_DiFrancesco_Noble_1985.cellml"
+      ],
+      "noise_scale": 0.16813994485783862,
+      "backend": "cpu",
+      "timing_ms": 106.35395208373666,
+      "timing_by_cl_ms": {
+        "250": 5.1581719890236855,
+        "500": 10.338614927604795,
+        "1000": 20.698670065030456,
+        "2000": 41.1727000027895
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -26.10374158915903,
+            "peak": 48.47878713923362,
+            "amp": 74.58252872839265,
+            "apd50": 195.0,
+            "apd90": 234.0,
+            "dvdt": 81.431637000409,
+            "triangulation": 39.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -83.4020614626945,
+            "peak": 48.47878713923362,
+            "amp": 131.8808486019281,
+            "apd50": 228.0,
+            "apd90": 372.0,
+            "dvdt": 120.02020044595623,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.42415400645245,
+            "peak": 48.47878713923362,
+            "amp": 139.90294114568607,
+            "apd50": 241.0,
+            "apd90": 433.0,
+            "dvdt": 120.08353260254056,
+            "triangulation": 192.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.60562134303107,
+            "peak": 48.47878713923362,
+            "amp": 140.08440848226468,
+            "apd50": 250.0,
+            "apd90": 453.0,
+            "dvdt": 120.08453707680717,
+            "triangulation": 203.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2321428571428572,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_029",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml"
+      ],
+      "noise_scale": 0.11023903722159648,
+      "backend": "cpu",
+      "timing_ms": 106.32523195818067,
+      "timing_by_cl_ms": {
+        "250": 5.141180008649826,
+        "500": 10.291447048075497,
+        "1000": 20.64326300751418,
+        "2000": 41.35169298388064
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -14.55029532162328,
+            "peak": 49.632153790629026,
+            "amp": 64.18244911225231,
+            "apd50": 203.0,
+            "apd90": 236.0,
+            "dvdt": 71.6139930781336,
+            "triangulation": 33.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -79.45201474996733,
+            "peak": 49.632153790629026,
+            "amp": 129.08416854059635,
+            "apd50": 240.0,
+            "apd90": 384.0,
+            "dvdt": 119.50859586531244,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -89.6648562227516,
+            "peak": 49.632153790629026,
+            "amp": 139.29701001338063,
+            "apd50": 255.0,
+            "apd90": 460.0,
+            "dvdt": 119.58691813599644,
+            "triangulation": 205.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.95600441188539,
+            "peak": 49.632153790629026,
+            "amp": 139.58815820251442,
+            "apd50": 266.0,
+            "apd90": 481.0,
+            "dvdt": 119.58847823945958,
+            "triangulation": 215.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.4509803921568627,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_035",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "noise_scale": 0.1480932966138234,
+      "backend": "cpu",
+      "timing_ms": 106.69328004587442,
+      "timing_by_cl_ms": {
+        "250": 5.172010976821184,
+        "500": 10.349703021347523,
+        "1000": 20.795614924281836,
+        "2000": 41.41254199203104
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.453399937144367,
+            "peak": 51.40054999630039,
+            "amp": 59.85394993344477,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.61272179016588,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -76.70762643099772,
+            "peak": 51.40054999630039,
+            "amp": 128.10817642729813,
+            "apd50": 249.0,
+            "apd90": 392.0,
+            "dvdt": 120.50770779614237,
+            "triangulation": 143.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -88.7986135465705,
+            "peak": 51.40054999630039,
+            "amp": 140.1991635428709,
+            "apd50": 266.0,
+            "apd90": 479.0,
+            "dvdt": 120.59862629766104,
+            "triangulation": 213.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.1995895362029,
+            "peak": 51.40054999630039,
+            "amp": 140.6001395325033,
+            "apd50": 277.0,
+            "apd90": 502.0,
+            "dvdt": 120.60072682191428,
+            "triangulation": 225.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.631578947368421,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_041",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_aslanidi_2009.cellml",
+        "frozen_corpus/sources/cellml_oyehaug_2009_version1.cellml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml"
+      ],
+      "noise_scale": 0.20675831126730074,
+      "backend": "cpu",
+      "timing_ms": 107.17622598167509,
+      "timing_by_cl_ms": {
+        "250": 5.214572069235146,
+        "500": 10.432824026793242,
+        "1000": 20.876750932075083,
+        "2000": 41.72126203775406
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -15.07858180018028,
+            "peak": 50.599649616984685,
+            "amp": 65.67823141716497,
+            "apd50": 203.0,
+            "apd90": 236.0,
+            "dvdt": 73.15839066354091,
+            "triangulation": 33.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -80.17262802352684,
+            "peak": 50.599649616984685,
+            "amp": 130.7722776405115,
+            "apd50": 239.0,
+            "apd90": 383.0,
+            "dvdt": 121.12408023582073,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.31975264429074,
+            "peak": 50.599649616984685,
+            "amp": 140.91940226127542,
+            "apd50": 254.0,
+            "apd90": 458.0,
+            "dvdt": 121.20208518613045,
+            "triangulation": 204.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -90.6036598422848,
+            "peak": 50.599649616984685,
+            "amp": 141.20330945926946,
+            "apd50": 265.0,
+            "apd90": 479.0,
+            "dvdt": 121.20361063963004,
+            "triangulation": 214.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.4271844660194175,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_059",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "noise_scale": 0.16695497142760646,
+      "backend": "cpu",
+      "timing_ms": 106.5704959910363,
+      "timing_by_cl_ms": {
+        "250": 5.177019978873432,
+        "500": 10.286647011525929,
+        "1000": 20.7902230322361,
+        "2000": 41.13431600853801
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -24.30174142842417,
+            "peak": 48.748294812635294,
+            "amp": 73.05003624105946,
+            "apd50": 197.0,
+            "apd90": 234.0,
+            "dvdt": 79.99965408168717,
+            "triangulation": 37.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -82.84216953352589,
+            "peak": 48.748294812635294,
+            "amp": 131.59046434616118,
+            "apd50": 230.0,
+            "apd90": 374.0,
+            "dvdt": 120.07471795358066,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.19674091430636,
+            "peak": 48.748294812635294,
+            "amp": 139.94503572694165,
+            "apd50": 243.0,
+            "apd90": 437.0,
+            "dvdt": 120.1403686460174,
+            "triangulation": 194.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.39300523510207,
+            "peak": 48.748294812635294,
+            "amp": 140.14130004773736,
+            "apd50": 253.0,
+            "apd90": 457.0,
+            "dvdt": 120.14144946780839,
+            "triangulation": 204.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2727272727272727,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_065",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_goldbeter_2007.cellml",
+        "frozen_corpus/sources/cellml_NBC_test.cellml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "noise_scale": 0.22,
+      "backend": "cpu",
+      "timing_ms": 106.19422292802483,
+      "timing_by_cl_ms": {
+        "250": 5.153340054675937,
+        "500": 10.341014945879579,
+        "1000": 20.486879046075046,
+        "2000": 41.0463489824906
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -45.12932564751429,
+            "peak": 45.953068147944634,
+            "amp": 91.08239379545894,
+            "apd50": 180.0,
+            "apd90": 229.0,
+            "dvdt": 96.80782834339455,
+            "triangulation": 49.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -89.251966578589,
+            "peak": 45.953068147944634,
+            "amp": 135.20503472653363,
+            "apd50": 205.0,
+            "apd90": 347.0,
+            "dvdt": 120.08086626812252,
+            "triangulation": 142.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -94.1003439417802,
+            "peak": 45.953068147944634,
+            "amp": 140.05341208972484,
+            "apd50": 215.0,
+            "apd90": 387.0,
+            "dvdt": 120.12134474634972,
+            "triangulation": 172.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -94.16865793983031,
+            "peak": 45.953068147944634,
+            "amp": 140.12172608777496,
+            "apd50": 224.0,
+            "apd90": 404.0,
+            "dvdt": 120.12174578651371,
+            "triangulation": 180.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 0.8939393939393939,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_071",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_maleckar_greenstein_trayanova_giles_2009.cellml",
+        "frozen_corpus/sources/cellml_clancy_rudy_2002.cellml",
+        "frozen_corpus/sources/sbml_BIOMD0000000402.xml"
+      ],
+      "noise_scale": 0.16336583516866082,
+      "backend": "cpu",
+      "timing_ms": 106.49331309832633,
+      "timing_by_cl_ms": {
+        "250": 5.1678200252354145,
+        "500": 10.384424007497728,
+        "1000": 20.696399034932256,
+        "2000": 41.13092494662851
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -19.22722566762118,
+            "peak": 49.49521016435964,
+            "amp": 68.72243583198083,
+            "apd50": 200.0,
+            "apd90": 235.0,
+            "dvdt": 75.94787594588952,
+            "triangulation": 35.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -81.24140030811658,
+            "peak": 49.49521016435964,
+            "amp": 130.73661047247623,
+            "apd50": 235.0,
+            "apd90": 380.0,
+            "dvdt": 120.22130556527277,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.55727925136203,
+            "peak": 49.49521016435964,
+            "amp": 140.05248941572168,
+            "apd50": 249.0,
+            "apd90": 449.0,
+            "dvdt": 120.29359040611689,
+            "triangulation": 200.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -90.79947182109906,
+            "peak": 49.49521016435964,
+            "amp": 140.2946819854587,
+            "apd50": 260.0,
+            "apd90": 469.0,
+            "dvdt": 120.29490548618014,
+            "triangulation": 209.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.380952380952381,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_077",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.1725593415795934,
+      "backend": "cpu",
+      "timing_ms": 106.2090239720419,
+      "timing_by_cl_ms": {
+        "250": 5.107644014060497,
+        "500": 10.297015076503158,
+        "1000": 20.56394994724542,
+        "2000": 41.05831601191312
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -21.595271819393542,
+            "peak": 49.230758934402864,
+            "amp": 70.8260307537964,
+            "apd50": 198.0,
+            "apd90": 235.0,
+            "dvdt": 77.92983174523143,
+            "triangulation": 37.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -82.03466031113385,
+            "peak": 49.230758934402864,
+            "amp": 131.2654192455367,
+            "apd50": 232.0,
+            "apd90": 377.0,
+            "dvdt": 120.2810885978223,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.90064749580257,
+            "peak": 49.230758934402864,
+            "amp": 140.13140643020543,
+            "apd50": 246.0,
+            "apd90": 444.0,
+            "dvdt": 120.35028970165526,
+            "triangulation": 198.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.12054712417033,
+            "peak": 49.230758934402864,
+            "amp": 140.3513060585732,
+            "apd50": 256.0,
+            "apd90": 464.0,
+            "dvdt": 120.3514916464464,
+            "triangulation": 208.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.3148148148148149,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_083",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000515.xml"
+      ],
+      "noise_scale": 0.14672889135335282,
+      "backend": "cpu",
+      "timing_ms": 106.04339104611427,
+      "timing_by_cl_ms": {
+        "250": 5.141386995092034,
+        "500": 10.252439067699015,
+        "1000": 20.582478027790785,
+        "2000": 40.9120440017432
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -19.906312910870952,
+            "peak": 49.208812026874206,
+            "amp": 69.11512493774516,
+            "apd50": 200.0,
+            "apd90": 235.0,
+            "dvdt": 76.29093267630905,
+            "triangulation": 35.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -81.36115675998676,
+            "peak": 49.208812026874206,
+            "amp": 130.56996878686095,
+            "apd50": 234.0,
+            "apd90": 379.0,
+            "dvdt": 119.91127897684238,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.53900781504531,
+            "peak": 49.208812026874206,
+            "amp": 139.74781984191952,
+            "apd50": 249.0,
+            "apd90": 448.0,
+            "dvdt": 119.98259699955297,
+            "triangulation": 199.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -90.77485480364885,
+            "peak": 49.208812026874206,
+            "amp": 139.98366683052308,
+            "apd50": 259.0,
+            "apd90": 468.0,
+            "dvdt": 119.98387972706179,
+            "triangulation": 209.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.3584905660377358,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_089",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_pivonka_2008.cellml",
+        "frozen_corpus/sources/cellml_cui_kaandorp_2006.cellml",
+        "frozen_corpus/sources/cellml_HATPase_test.cellml"
+      ],
+      "noise_scale": 0.1410027383076688,
+      "backend": "cpu",
+      "timing_ms": 106.5819530049339,
+      "timing_by_cl_ms": {
+        "250": 5.161948036402464,
+        "500": 10.362664004787803,
+        "1000": 20.698334905318916,
+        "2000": 41.26546997576952
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.71735974958314,
+            "peak": 51.074390505150284,
+            "amp": 59.79175025473342,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.53841307038111,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -77.22465555827208,
+            "peak": 51.074390505150284,
+            "amp": 128.29904606342237,
+            "apd50": 248.0,
+            "apd90": 391.0,
+            "dvdt": 120.32196692950212,
+            "triangulation": 143.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -88.95873712170068,
+            "peak": 51.074390505150284,
+            "amp": 140.03312762685096,
+            "apd50": 264.0,
+            "apd90": 475.0,
+            "dvdt": 120.41051385985561,
+            "triangulation": 211.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.3375887390312,
+            "peak": 51.074390505150284,
+            "amp": 140.41197924418148,
+            "apd50": 275.0,
+            "apd90": 498.0,
+            "dvdt": 120.41250662302265,
+            "triangulation": 223.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.6041666666666667,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_095",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "noise_scale": 0.1782458644397798,
+      "backend": "cpu",
+      "timing_ms": 106.53625708073378,
+      "timing_by_cl_ms": {
+        "250": 5.152316065505147,
+        "500": 10.397656005807221,
+        "1000": 20.579693955369294,
+        "2000": 41.23497288674116
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -50.12422831773008,
+            "peak": 44.6102198471907,
+            "amp": 94.73444816492076,
+            "apd50": 176.0,
+            "apd90": 227.0,
+            "dvdt": 100.09341884669387,
+            "triangulation": 51.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -90.41483903802866,
+            "peak": 44.6102198471907,
+            "amp": 135.02505888521935,
+            "apd50": 199.0,
+            "apd90": 339.0,
+            "dvdt": 119.13587664566414,
+            "triangulation": 140.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -94.51107908078546,
+            "peak": 44.6102198471907,
+            "amp": 139.12129892797617,
+            "apd50": 208.0,
+            "apd90": 374.0,
+            "dvdt": 119.17066020958293,
+            "triangulation": 166.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -94.56072596703554,
+            "peak": 44.6102198471907,
+            "amp": 139.17094581422623,
+            "apd50": 216.0,
+            "apd90": 390.0,
+            "dvdt": 119.17095656651138,
+            "triangulation": 174.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 0.8115942028985508,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_101",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "noise_scale": 0.18354542956616743,
+      "backend": "cpu",
+      "timing_ms": 106.47915303707123,
+      "timing_by_cl_ms": {
+        "250": 5.164316040463746,
+        "500": 10.349352029152215,
+        "1000": 20.601261989213526,
+        "2000": 41.10788507387042
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -46.35180084452156,
+            "peak": 45.32790362401344,
+            "amp": 91.67970446853501,
+            "apd50": 179.0,
+            "apd90": 229.0,
+            "dvdt": 97.29787334186672,
+            "triangulation": 50.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -89.40214791376565,
+            "peak": 45.32790362401344,
+            "amp": 134.7300515377791,
+            "apd50": 204.0,
+            "apd90": 345.0,
+            "dvdt": 119.40155618378633,
+            "triangulation": 141.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -94.04968860420074,
+            "peak": 45.32790362401344,
+            "amp": 139.37759222821416,
+            "apd50": 213.0,
+            "apd90": 384.0,
+            "dvdt": 119.44050950031101,
+            "triangulation": 171.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -94.11296167811025,
+            "peak": 45.32790362401344,
+            "amp": 139.4408653021237,
+            "apd50": 222.0,
+            "apd90": 400.0,
+            "dvdt": 119.44088239430334,
+            "triangulation": 178.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 0.8656716417910447,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_107",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_bental_2006.cellml"
+      ],
+      "noise_scale": 0.15481984162731227,
+      "backend": "cpu",
+      "timing_ms": 106.55169701203704,
+      "timing_by_cl_ms": {
+        "250": 5.182060063816607,
+        "500": 10.36820001900196,
+        "1000": 20.664590992964804,
+        "2000": 41.20489291381091
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -22.51532175473909,
+            "peak": 48.89337506671166,
+            "amp": 71.40869682145075,
+            "apd50": 198.0,
+            "apd90": 235.0,
+            "dvdt": 78.4481968756047,
+            "triangulation": 37.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -82.22168083049557,
+            "peak": 48.89337506671166,
+            "amp": 131.11505589720724,
+            "apd50": 231.0,
+            "apd90": 376.0,
+            "dvdt": 119.94204058070449,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.90578745689008,
+            "peak": 48.89337506671166,
+            "amp": 139.79916252360175,
+            "apd50": 245.0,
+            "apd90": 442.0,
+            "dvdt": 120.0099645830562,
+            "triangulation": 197.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.11757672591001,
+            "peak": 48.89337506671166,
+            "amp": 140.01095179262168,
+            "apd50": 255.0,
+            "apd90": 461.0,
+            "dvdt": 120.01112490898186,
+            "triangulation": 206.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2935779816513762,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_113",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000981.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000955.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000964.xml"
+      ],
+      "noise_scale": 0.1715392176792701,
+      "backend": "cpu",
+      "timing_ms": 106.70470609329641,
+      "timing_by_cl_ms": {
+        "250": 5.19018794875592,
+        "500": 10.340470937080681,
+        "1000": 20.69545502308756,
+        "2000": 41.30393301602453
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.210369736330025,
+            "peak": 51.78686939339491,
+            "amp": 59.99723912972494,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.78390654473644,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -76.54018092431386,
+            "peak": 51.78686939339491,
+            "amp": 128.32705031770877,
+            "apd50": 250.0,
+            "apd90": 393.0,
+            "dvdt": 120.93987756380427,
+            "triangulation": 143.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -88.83408311400684,
+            "peak": 51.78686939339491,
+            "amp": 140.62095250740174,
+            "apd50": 267.0,
+            "apd90": 481.0,
+            "dvdt": 121.03217128856359,
+            "triangulation": 214.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.246841209056,
+            "peak": 51.78686939339491,
+            "amp": 141.03371060245092,
+            "apd50": 278.0,
+            "apd90": 504.0,
+            "dvdt": 121.03432944405851,
+            "triangulation": 226.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.6595744680851063,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_119",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000515.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000511.xml"
+      ],
+      "noise_scale": 0.2099521543225835,
+      "backend": "cpu",
+      "timing_ms": 106.42572806682438,
+      "timing_by_cl_ms": {
+        "250": 5.185690941289067,
+        "500": 10.418680030852556,
+        "1000": 20.64108697231859,
+        "2000": 41.160892928019166
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -5.918755666620989,
+            "peak": 54.50079484427147,
+            "amp": 60.419550510892456,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 68.28843355733943,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -71.3029519878407,
+            "peak": 54.50079484427147,
+            "amp": 125.80374683211217,
+            "apd50": 265.0,
+            "apd90": 405.0,
+            "dvdt": 122.19364891843543,
+            "triangulation": 140.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -87.14116306500004,
+            "peak": 54.50079484427147,
+            "amp": 141.6419579092715,
+            "apd50": 286.0,
+            "apd90": 512.0,
+            "dvdt": 122.30889800482764,
+            "triangulation": 226.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -87.80992493055383,
+            "peak": 54.50079484427147,
+            "amp": 142.31071977482532,
+            "apd50": 298.0,
+            "apd90": 540.0,
+            "dvdt": 122.31226890125828,
+            "triangulation": 242.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 2.048780487804878,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_125",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.16345033086669655,
+      "backend": "cpu",
+      "timing_ms": 107.19657898880541,
+      "timing_by_cl_ms": {
+        "250": 5.231003975495696,
+        "500": 10.398935992270708,
+        "1000": 20.76078299432993,
+        "2000": 41.55603004619479
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -30.25836592550034,
+            "peak": 47.767815254098075,
+            "amp": 78.02618117959841,
+            "apd50": 192.0,
+            "apd90": 233.0,
+            "dvdt": 84.63272475436634,
+            "triangulation": 41.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -84.63598279731579,
+            "peak": 47.767815254098075,
+            "amp": 132.40379805141387,
+            "apd50": 223.0,
+            "apd90": 367.0,
+            "dvdt": 119.76610188538056,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.9068295592005,
+            "peak": 47.767815254098075,
+            "amp": 139.67464481329858,
+            "apd50": 235.0,
+            "apd90": 424.0,
+            "dvdt": 119.8241394849875,
+            "triangulation": 189.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -92.05707627439965,
+            "peak": 47.767815254098075,
+            "amp": 139.82489152849772,
+            "apd50": 245.0,
+            "apd90": 442.0,
+            "dvdt": 119.82498119610021,
+            "triangulation": 197.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 1.1551724137931034,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_131",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "noise_scale": 0.1857033345279112,
+      "backend": "cpu",
+      "timing_ms": 106.55763396061957,
+      "timing_by_cl_ms": {
+        "250": 5.1680440083146095,
+        "500": 10.443384060636163,
+        "1000": 20.514862961135805,
+        "2000": 41.21598205529153
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -20.429534888788478,
+            "peak": 49.55467627745467,
+            "amp": 69.98421116624316,
+            "apd50": 199.0,
+            "apd90": 235.0,
+            "dvdt": 77.16188067563525,
+            "triangulation": 36.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -81.74442526882643,
+            "peak": 49.55467627745467,
+            "amp": 131.29910154628112,
+            "apd50": 234.0,
+            "apd90": 378.0,
+            "dvdt": 120.55180461343603,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.83844581389958,
+            "peak": 49.55467627745467,
+            "amp": 140.39312209135426,
+            "apd50": 248.0,
+            "apd90": 446.0,
+            "dvdt": 120.62259239658586,
+            "triangulation": 198.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.06896953513838,
+            "peak": 49.55467627745467,
+            "amp": 140.62364581259305,
+            "apd50": 258.0,
+            "apd90": 466.0,
+            "dvdt": 120.62384858082085,
+            "triangulation": 208.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.3364485981308412,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_143",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "noise_scale": 0.16696920777665739,
+      "backend": "cpu",
+      "timing_ms": 106.7659379914403,
+      "timing_by_cl_ms": {
+        "250": 5.115948035381734,
+        "500": 10.407351073808968,
+        "1000": 20.5919339787215,
+        "2000": 41.51567805092782
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -7.811106652643036,
+            "peak": 52.20244350122098,
+            "amp": 60.013550153864024,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.80339300105368,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -75.4536573310156,
+            "peak": 52.20244350122098,
+            "amp": 127.65610083223659,
+            "apd50": 253.0,
+            "apd90": 396.0,
+            "dvdt": 120.98459750519861,
+            "triangulation": 143.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -88.4227076218503,
+            "peak": 52.20244350122098,
+            "amp": 140.62515112307128,
+            "apd50": 271.0,
+            "apd90": 487.0,
+            "dvdt": 121.08131220454918,
+            "triangulation": 216.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -88.88048898576723,
+            "peak": 52.20244350122098,
+            "amp": 141.08293248698823,
+            "apd50": 282.0,
+            "apd90": 511.0,
+            "dvdt": 121.08368723399552,
+            "triangulation": 229.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.7472527472527473,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_149",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml"
+      ],
+      "noise_scale": 0.17363660415492826,
+      "backend": "cpu",
+      "timing_ms": 106.73953802324831,
+      "timing_by_cl_ms": {
+        "250": 5.15866803470999,
+        "500": 10.375720099546015,
+        "1000": 20.561871002428234,
+        "2000": 41.50916694197804
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -35.09515476790434,
+            "peak": 47.10041584691093,
+            "amp": 82.19557061481527,
+            "apd50": 188.0,
+            "apd90": 232.0,
+            "dvdt": 88.52176660552004,
+            "triangulation": 44.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -86.12879033666881,
+            "peak": 47.10041584691093,
+            "amp": 133.22920618357972,
+            "apd50": 217.0,
+            "apd90": 361.0,
+            "dvdt": 119.73280253491602,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -92.56641599077011,
+            "peak": 47.10041584691093,
+            "amp": 139.66683183768103,
+            "apd50": 229.0,
+            "apd90": 412.0,
+            "dvdt": 119.7848964453438,
+            "triangulation": 183.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -92.68509824146821,
+            "peak": 47.10041584691093,
+            "amp": 139.78551408837913,
+            "apd50": 238.0,
+            "apd90": 430.0,
+            "dvdt": 119.78557111874518,
+            "triangulation": 192.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 1.0661157024793388,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_161",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.13358118223547188,
+      "backend": "cpu",
+      "timing_ms": 107.1482109837234,
+      "timing_by_cl_ms": {
+        "250": 5.15465100761503,
+        "500": 10.453912080265582,
+        "1000": 20.605566911399364,
+        "2000": 41.80446302052587
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -23.039695373468266,
+            "peak": 48.57839637647957,
+            "amp": 71.61809174994784,
+            "apd50": 198.0,
+            "apd90": 235.0,
+            "dvdt": 78.61226119618043,
+            "triangulation": 37.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -82.26588626129202,
+            "peak": 48.57839637647957,
+            "amp": 130.84428263777158,
+            "apd50": 231.0,
+            "apd90": 376.0,
+            "dvdt": 119.55959070972999,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.84198884379005,
+            "peak": 48.57839637647957,
+            "amp": 139.42038522026962,
+            "apd50": 245.0,
+            "apd90": 441.0,
+            "dvdt": 119.626743156052,
+            "triangulation": 196.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.04931737282011,
+            "peak": 48.57839637647957,
+            "amp": 139.6277137492997,
+            "apd50": 255.0,
+            "apd90": 460.0,
+            "dvdt": 119.62788042109689,
+            "triangulation": 205.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2935779816513762,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_167",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.1470589303412464,
+      "backend": "cpu",
+      "timing_ms": 106.91760201007128,
+      "timing_by_cl_ms": {
+        "250": 5.164810921996832,
+        "500": 10.49443893134594,
+        "1000": 20.626046927645802,
+        "2000": 41.551533970050514
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -27.805091550675694,
+            "peak": 47.97687737302045,
+            "amp": 75.78196892369614,
+            "apd50": 194.0,
+            "apd90": 234.0,
+            "dvdt": 82.51809940811607,
+            "triangulation": 40.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -83.80454631590506,
+            "peak": 47.97687737302045,
+            "amp": 131.7814236889255,
+            "apd50": 226.0,
+            "apd90": 370.0,
+            "dvdt": 119.5905119935644,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.50725280429454,
+            "peak": 47.97687737302045,
+            "amp": 139.484130177315,
+            "apd50": 238.0,
+            "apd90": 430.0,
+            "dvdt": 119.65158263079105,
+            "triangulation": 192.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.67552946355552,
+            "peak": 47.97687737302045,
+            "amp": 139.65240683657598,
+            "apd50": 248.0,
+            "apd90": 448.0,
+            "dvdt": 119.6525184521549,
+            "triangulation": 200.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 1.1929824561403508,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_173",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_bondarenko_szigeti_bett_kim_rasmusson_2004_apical.cellml",
+        "frozen_corpus/sources/cellml_clancy_rudy_2002.cellml"
+      ],
+      "noise_scale": 0.17901669623694952,
+      "backend": "cpu",
+      "timing_ms": 106.85513901989907,
+      "timing_by_cl_ms": {
+        "250": 5.131372017785907,
+        "500": 10.427479981444776,
+        "1000": 20.637615001760423,
+        "2000": 41.4557900512591
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -14.195321538000902,
+            "peak": 50.43175836951715,
+            "amp": 64.62707990751805,
+            "apd50": 204.0,
+            "apd90": 236.0,
+            "dvdt": 72.13153482909071,
+            "triangulation": 32.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -79.73163451070457,
+            "peak": 50.43175836951715,
+            "amp": 130.16339288022172,
+            "apd50": 240.0,
+            "apd90": 384.0,
+            "dvdt": 120.68878147029211,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.04343943381987,
+            "peak": 50.43175836951715,
+            "amp": 140.47519780333704,
+            "apd50": 256.0,
+            "apd90": 460.0,
+            "dvdt": 120.76786444274508,
+            "triangulation": 204.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -90.33735808541275,
+            "peak": 50.43175836951715,
+            "amp": 140.7691164549299,
+            "apd50": 266.0,
+            "apd90": 481.0,
+            "dvdt": 120.76943943130931,
+            "triangulation": 215.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.4509803921568627,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_179",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000966.xml"
+      ],
+      "noise_scale": 0.15473168327223277,
+      "backend": "cpu",
+      "timing_ms": 107.21528297290206,
+      "timing_by_cl_ms": {
+        "250": 5.1619160221889615,
+        "500": 10.48191194422543,
+        "1000": 20.662943017669022,
+        "2000": 41.77055903710425
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -51.3330349558247,
+            "peak": 44.125652632927235,
+            "amp": 95.45868758875194,
+            "apd50": 175.0,
+            "apd90": 227.0,
+            "dvdt": 100.7172927249792,
+            "triangulation": 52.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -90.62287412278168,
+            "peak": 44.125652632927235,
+            "amp": 134.74852675570892,
+            "apd50": 197.0,
+            "apd90": 337.0,
+            "dvdt": 118.67593865049741,
+            "triangulation": 140.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -94.53828645181538,
+            "peak": 44.125652632927235,
+            "amp": 138.6639390847426,
+            "apd50": 206.0,
+            "apd90": 371.0,
+            "dvdt": 118.70932968355002,
+            "triangulation": 165.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -94.58394152128615,
+            "peak": 44.125652632927235,
+            "amp": 138.7095941542134,
+            "apd50": 214.0,
+            "apd90": 387.0,
+            "dvdt": 118.70960334108736,
+            "triangulation": 173.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 0.7857142857142857,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_185",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "noise_scale": 0.21466119347117618,
+      "backend": "cpu",
+      "timing_ms": 106.95813095662743,
+      "timing_by_cl_ms": {
+        "250": 5.148523952811956,
+        "500": 10.434247902594507,
+        "1000": 20.5918230349198,
+        "2000": 41.688894969411194
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -25.814723123060492,
+            "peak": 49.037886952472455,
+            "amp": 74.85261007553295,
+            "apd50": 195.0,
+            "apd90": 234.0,
+            "dvdt": 81.75354905116673,
+            "triangulation": 39.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -83.57098845127618,
+            "peak": 49.037886952472455,
+            "amp": 132.60887540374864,
+            "apd50": 228.0,
+            "apd90": 372.0,
+            "dvdt": 120.82340515167478,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.66673915434559,
+            "peak": 49.037886952472455,
+            "amp": 140.70462610681804,
+            "apd50": 241.0,
+            "apd90": 434.0,
+            "dvdt": 120.88730058052302,
+            "triangulation": 193.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.85029871266248,
+            "peak": 49.037886952472455,
+            "amp": 140.88818566513493,
+            "apd50": 251.0,
+            "apd90": 453.0,
+            "dvdt": 120.88831631730693,
+            "triangulation": 202.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2321428571428572,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_191",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000987.xml"
+      ],
+      "noise_scale": 0.19095433072982299,
+      "backend": "cpu",
+      "timing_ms": 107.1840189397335,
+      "timing_by_cl_ms": {
+        "250": 5.150587996467948,
+        "500": 10.464743943884969,
+        "1000": 20.688751013949513,
+        "2000": 41.6888149920851
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -49.03240573094331,
+            "peak": 44.94769499794742,
+            "amp": 93.98010072889072,
+            "apd50": 177.0,
+            "apd90": 228.0,
+            "dvdt": 99.42293789822583,
+            "triangulation": 51.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -90.18165598284207,
+            "peak": 44.94769499794742,
+            "amp": 135.1293509807895,
+            "apd50": 200.0,
+            "apd90": 341.0,
+            "dvdt": 119.4045755060143,
+            "triangulation": 141.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -94.43980106430816,
+            "peak": 44.94769499794742,
+            "amp": 139.3874960622556,
+            "apd50": 210.0,
+            "apd90": 377.0,
+            "dvdt": 119.44059615362754,
+            "triangulation": 167.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -94.49320642480278,
+            "peak": 44.94769499794742,
+            "amp": 139.4409014227502,
+            "apd50": 218.0,
+            "apd90": 393.0,
+            "dvdt": 119.44091376624215,
+            "triangulation": 175.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 0.8248175182481752,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_197",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "noise_scale": 0.1313979469275185,
+      "backend": "cpu",
+      "timing_ms": 108.0363099463284,
+      "timing_by_cl_ms": {
+        "250": 5.199979990720749,
+        "500": 10.57068002410233,
+        "1000": 20.929327001795173,
+        "2000": 42.179199983365834
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.666705454451051,
+            "peak": 51.081224466894334,
+            "amp": 59.74792992134539,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.48606178911939,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -76.92415661864284,
+            "peak": 51.081224466894334,
+            "amp": 128.00538108553718,
+            "apd50": 248.0,
+            "apd90": 392.0,
+            "dvdt": 120.1883298107764,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -88.80933050923828,
+            "peak": 51.081224466894334,
+            "amp": 139.89055497613262,
+            "apd50": 265.0,
+            "apd90": 477.0,
+            "dvdt": 120.27786228111178,
+            "triangulation": 212.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.1981239402412,
+            "peak": 51.081224466894334,
+            "amp": 140.27934840713556,
+            "apd50": 276.0,
+            "apd90": 500.0,
+            "dvdt": 120.27990325704438,
+            "triangulation": 224.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.631578947368421,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_001",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_alexander_2010_system2.cellml",
+        "frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml"
+      ],
+      "noise_scale": 0.17411412081586508,
+      "backend": "cpu",
+      "timing_ms": 107.47325303964317,
+      "timing_by_cl_ms": {
+        "250": 5.215371958911419,
+        "500": 10.45845600310713,
+        "1000": 20.99305496085435,
+        "2000": 41.68593499343842
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.443787678799477,
+            "peak": 51.54342334102026,
+            "amp": 59.98721101981974,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.77192616116605,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -77.16448001958625,
+            "peak": 51.54342334102026,
+            "amp": 128.7079033606065,
+            "apd50": 248.0,
+            "apd90": 391.0,
+            "dvdt": 120.91219907715832,
+            "triangulation": 143.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -89.07199896583303,
+            "peak": 51.54342334102026,
+            "amp": 140.6154223068533,
+            "apd50": 265.0,
+            "apd90": 477.0,
+            "dvdt": 121.00194586410815,
+            "triangulation": 212.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.46001094424658,
+            "peak": 51.54342334102026,
+            "amp": 141.00343428526685,
+            "apd50": 276.0,
+            "apd90": 500.0,
+            "dvdt": 121.00398394747333,
+            "triangulation": 224.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.6041666666666667,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_007",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000574.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.18155865508548422,
+      "backend": "cpu",
+      "timing_ms": 106.95301194209605,
+      "timing_by_cl_ms": {
+        "250": 5.16031589359045,
+        "500": 10.44936804100871,
+        "1000": 20.667822915129364,
+        "2000": 41.53740603942424
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.337472303365736,
+            "peak": 51.698123074316015,
+            "amp": 60.03559537768175,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.82972999174567,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -77.04034866013781,
+            "peak": 51.698123074316015,
+            "amp": 128.73847173445384,
+            "apd50": 249.0,
+            "apd90": 392.0,
+            "dvdt": 121.05784682273088,
+            "triangulation": 143.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -89.05719332714364,
+            "peak": 51.698123074316015,
+            "amp": 140.75531640145965,
+            "apd50": 266.0,
+            "apd90": 478.0,
+            "dvdt": 121.1483283295194,
+            "triangulation": 212.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.45170826541795,
+            "peak": 51.698123074316015,
+            "amp": 141.14983133973396,
+            "apd50": 277.0,
+            "apd90": 501.0,
+            "dvdt": 121.15039820444882,
+            "triangulation": 224.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.631578947368421,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_013",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_alexander_2010_system2.cellml"
+      ],
+      "noise_scale": 0.16608641124720006,
+      "backend": "cpu",
+      "timing_ms": 106.91056295763701,
+      "timing_by_cl_ms": {
+        "250": 5.165130947716534,
+        "500": 10.443383012898266,
+        "1000": 20.668526994995773,
+        "2000": 41.528030997142196
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -15.818447907456315,
+            "peak": 50.04558516151872,
+            "amp": 65.86403306897503,
+            "apd50": 203.0,
+            "apd90": 236.0,
+            "dvdt": 73.27324444865167,
+            "triangulation": 33.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -80.17686773549953,
+            "peak": 50.04558516151872,
+            "amp": 130.22245289701826,
+            "apd50": 239.0,
+            "apd90": 383.0,
+            "dvdt": 120.40476351080751,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -90.16057875814361,
+            "peak": 50.04558516151872,
+            "amp": 140.20616391966234,
+            "apd50": 254.0,
+            "apd90": 456.0,
+            "dvdt": 120.48160708665385,
+            "triangulation": 202.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -90.43722230376665,
+            "peak": 50.04558516151872,
+            "amp": 140.48280746528536,
+            "apd50": 264.0,
+            "apd90": 477.0,
+            "dvdt": 120.48309559711099,
+            "triangulation": 213.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.4271844660194175,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_019",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.1998416336940106,
+      "backend": "cpu",
+      "timing_ms": 107.10235603619367,
+      "timing_by_cl_ms": {
+        "250": 5.172683973796666,
+        "500": 10.428808047436178,
+        "1000": 20.78569494187832,
+        "2000": 41.5285270428285
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -51.88108930133487,
+            "peak": 44.54804295788343,
+            "amp": 96.42913225921829,
+            "apd50": 174.0,
+            "apd90": 227.0,
+            "dvdt": 101.68151733420545,
+            "triangulation": 53.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -91.00381041794931,
+            "peak": 44.54804295788343,
+            "amp": 135.55185337583276,
+            "apd50": 196.0,
+            "apd90": 336.0,
+            "dvdt": 119.42308385330811,
+            "triangulation": 140.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -94.86412967665952,
+            "peak": 44.54804295788343,
+            "amp": 139.41217263454297,
+            "apd50": 205.0,
+            "apd90": 370.0,
+            "dvdt": 119.45607478516591,
+            "triangulation": 165.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -94.90828848466396,
+            "peak": 44.54804295788343,
+            "amp": 139.45633144254737,
+            "apd50": 214.0,
+            "apd90": 385.0,
+            "dvdt": 119.45634001060627,
+            "triangulation": 171.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 0.7730496453900709,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_025",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "noise_scale": 0.19234261724615692,
+      "backend": "cpu",
+      "timing_ms": 106.98473895899951,
+      "timing_by_cl_ms": {
+        "250": 5.195627920329571,
+        "500": 10.433464078232646,
+        "1000": 20.684255054220557,
+        "2000": 41.52441397309303
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -32.43389906135297,
+            "peak": 47.740555621098075,
+            "amp": 80.17445468245104,
+            "apd50": 190.0,
+            "apd90": 232.0,
+            "dvdt": 86.67442776823134,
+            "triangulation": 42.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -85.44352674871226,
+            "peak": 47.740555621098075,
+            "amp": 133.1840823698103,
+            "apd50": 220.0,
+            "apd90": 364.0,
+            "dvdt": 120.16583189104627,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -92.34600295467699,
+            "peak": 47.740555621098075,
+            "amp": 140.08655857577506,
+            "apd50": 232.0,
+            "apd90": 418.0,
+            "dvdt": 120.22127511578991,
+            "triangulation": 186.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -92.48140998436831,
+            "peak": 47.740555621098075,
+            "amp": 140.22196560546638,
+            "apd50": 242.0,
+            "apd90": 437.0,
+            "dvdt": 120.222038818803,
+            "triangulation": 195.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 1.11864406779661,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_031",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml",
+        "frozen_corpus/sources/cellml_gall_2000b.cellml"
+      ],
+      "noise_scale": 0.14649617965851225,
+      "backend": "cpu",
+      "timing_ms": 107.12240403518081,
+      "timing_by_cl_ms": {
+        "250": 5.198012106120586,
+        "500": 10.41564007755369,
+        "1000": 20.723104011267424,
+        "2000": 41.66923102457076
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.281680102499557,
+            "peak": 51.58115832486552,
+            "amp": 59.86283842736507,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.62334069717177,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -76.25266464705892,
+            "peak": 51.58115832486552,
+            "amp": 127.83382297192445,
+            "apd50": 251.0,
+            "apd90": 393.0,
+            "dvdt": 120.53265510338194,
+            "triangulation": 142.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -88.626505502763,
+            "peak": 51.58115832486552,
+            "amp": 140.2076638276285,
+            "apd50": 268.0,
+            "apd90": 482.0,
+            "dvdt": 120.62543449535228,
+            "triangulation": 214.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.04582563390834,
+            "peak": 51.58115832486552,
+            "amp": 140.62698395877385,
+            "apd50": 279.0,
+            "apd90": 505.0,
+            "dvdt": 120.62762382123424,
+            "triangulation": 226.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.6595744680851063,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_037",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.1891598572951298,
+      "backend": "cpu",
+      "timing_ms": 107.41571697872132,
+      "timing_by_cl_ms": {
+        "250": 5.18241198733449,
+        "500": 10.49640798009932,
+        "1000": 20.80694306641817,
+        "2000": 41.64767905604094
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -37.76285591276065,
+            "peak": 46.83745952195275,
+            "amp": 84.60031543471341,
+            "apd50": 186.0,
+            "apd90": 231.0,
+            "dvdt": 90.77435608185006,
+            "triangulation": 45.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -86.99100761170735,
+            "peak": 46.83745952195275,
+            "amp": 133.8284671336601,
+            "apd50": 214.0,
+            "apd90": 358.0,
+            "dvdt": 119.8816541414691,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -92.99028568353783,
+            "peak": 46.83745952195275,
+            "amp": 139.8277452054906,
+            "apd50": 225.0,
+            "apd90": 406.0,
+            "dvdt": 119.93058865918688,
+            "triangulation": 181.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -93.0936781137744,
+            "peak": 46.83745952195275,
+            "amp": 139.93113763572717,
+            "apd50": 234.0,
+            "apd90": 423.0,
+            "dvdt": 119.93118134924093,
+            "triangulation": 189.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": true,
+        "restitution_max_slope": 1.032520325203252,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_043",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000428.xml"
+      ],
+      "noise_scale": 0.15855336183640084,
+      "backend": "cpu",
+      "timing_ms": 107.38872503861785,
+      "timing_by_cl_ms": {
+        "250": 5.225147935561836,
+        "500": 10.485064005479217,
+        "1000": 20.842656027525663,
+        "2000": 41.568622924387455
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -14.469510122390759,
+            "peak": 50.16833741481696,
+            "amp": 64.63784753720772,
+            "apd50": 203.0,
+            "apd90": 236.0,
+            "dvdt": 72.1118206451893,
+            "triangulation": 33.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -79.70251327727648,
+            "peak": 50.16833741481696,
+            "amp": 129.87085069209343,
+            "apd50": 240.0,
+            "apd90": 384.0,
+            "dvdt": 120.33092029828173,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -89.95120621532895,
+            "peak": 50.16833741481696,
+            "amp": 140.11954363014593,
+            "apd50": 255.0,
+            "apd90": 460.0,
+            "dvdt": 120.40954932586804,
+            "triangulation": 205.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -90.24245503858744,
+            "peak": 50.16833741481696,
+            "amp": 140.41079245340438,
+            "apd50": 266.0,
+            "apd90": 481.0,
+            "dvdt": 120.41111068771359,
+            "triangulation": 215.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.4509803921568627,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_049",
+      "neighbors": [
+        "frozen_corpus/sources/cellml_teusink_annotated_2000.cellml",
+        "frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml",
+        "frozen_corpus/sources/cellml_decker_2009.cellml"
+      ],
+      "noise_scale": 0.22,
+      "backend": "cpu",
+      "timing_ms": 106.84897901955992,
+      "timing_by_cl_ms": {
+        "250": 5.177083075977862,
+        "500": 10.406246990896761,
+        "1000": 20.61647898517549,
+        "2000": 41.53860697988421
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -22.114345539550584,
+            "peak": 49.67125774508568,
+            "amp": 71.78560328463627,
+            "apd50": 198.0,
+            "apd90": 235.0,
+            "dvdt": 78.89747374734634,
+            "triangulation": 37.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -82.46145087849979,
+            "peak": 49.67125774508568,
+            "amp": 132.13270862358547,
+            "apd50": 232.0,
+            "apd90": 376.0,
+            "dvdt": 121.0659038426292,
+            "triangulation": 144.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.24951829105343,
+            "peak": 49.67125774508568,
+            "amp": 140.9207760361391,
+            "apd50": 246.0,
+            "apd90": 442.0,
+            "dvdt": 121.13462026618897,
+            "triangulation": 196.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.46436276777825,
+            "peak": 49.67125774508568,
+            "amp": 141.13562051286394,
+            "apd50": 256.0,
+            "apd90": 462.0,
+            "dvdt": 121.13579693583368,
+            "triangulation": 206.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2935779816513762,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_055",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml"
+      ],
+      "noise_scale": 0.1937359864052355,
+      "backend": "cpu",
+      "timing_ms": 107.47250099666417,
+      "timing_by_cl_ms": {
+        "250": 5.2170989802107215,
+        "500": 10.50738396588713,
+        "1000": 20.645902957767248,
+        "2000": 41.832976043224335
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -28.152726294290332,
+            "peak": 48.43878472073755,
+            "amp": 76.59151101502788,
+            "apd50": 194.0,
+            "apd90": 233.0,
+            "dvdt": 83.3430380011573,
+            "triangulation": 39.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -84.16678566201988,
+            "peak": 48.43878472073755,
+            "amp": 132.60557038275743,
+            "apd50": 225.0,
+            "apd90": 370.0,
+            "dvdt": 120.37022854447393,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.82758937881711,
+            "peak": 48.43878472073755,
+            "amp": 140.26637409955467,
+            "apd50": 238.0,
+            "apd90": 428.0,
+            "dvdt": 120.43105027929147,
+            "triangulation": 190.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.99307981250841,
+            "peak": 48.43878472073755,
+            "amp": 140.43186453324597,
+            "apd50": 248.0,
+            "apd90": 447.0,
+            "dvdt": 120.43197198302123,
+            "triangulation": 199.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2123893805309736,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_061",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "noise_scale": 0.18661182177951535,
+      "backend": "cpu",
+      "timing_ms": 107.4409019201994,
+      "timing_by_cl_ms": {
+        "250": 5.181211978197098,
+        "500": 10.422183899208903,
+        "1000": 20.72142402175814,
+        "2000": 41.804958949796855
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -8.473400684547,
+            "peak": 51.57442455158817,
+            "amp": 60.04782523613517,
+            "apd50": 207.0,
+            "apd90": 237.0,
+            "dvdt": 67.84434076054146,
+            "triangulation": 30.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -77.46751439021176,
+            "peak": 51.57442455158817,
+            "amp": 129.0419389417999,
+            "apd50": 248.0,
+            "apd90": 391.0,
+            "dvdt": 121.09658343727853,
+            "triangulation": 143.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -89.23387682442693,
+            "peak": 51.57442455158817,
+            "amp": 140.8083013760151,
+            "apd50": 264.0,
+            "apd90": 475.0,
+            "dvdt": 121.1854143351229,
+            "triangulation": 211.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -89.61245861982083,
+            "peak": 51.57442455158817,
+            "amp": 141.186883171409,
+            "apd50": 275.0,
+            "apd90": 498.0,
+            "dvdt": 121.18740672630777,
+            "triangulation": 223.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.6041666666666667,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    },
+    {
+      "variant_id": "r00_067",
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_HATPase_test.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml"
+      ],
+      "noise_scale": 0.19821733713839565,
+      "backend": "cpu",
+      "timing_ms": 107.33691707719117,
+      "timing_by_cl_ms": {
+        "250": 5.210443050600588,
+        "500": 10.545096010901034,
+        "1000": 20.772063988260925,
+        "2000": 41.653022984974086
+      },
+      "ap_validation": {
+        "cl_metrics": {
+          "250": {
+            "valid": true,
+            "rmp": -22.566249838759926,
+            "peak": 49.36214098496847,
+            "amp": 71.92839082372838,
+            "apd50": 198.0,
+            "apd90": 235.0,
+            "dvdt": 78.99851825904854,
+            "triangulation": 37.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "500": {
+            "valid": true,
+            "rmp": -82.47990485196924,
+            "peak": 49.36214098496847,
+            "amp": 131.8420458369377,
+            "apd50": 231.0,
+            "apd90": 376.0,
+            "dvdt": 120.67734207568758,
+            "triangulation": 145.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "1000": {
+            "valid": true,
+            "rmp": -91.17321517791395,
+            "peak": 49.36214098496847,
+            "amp": 140.5353561628824,
+            "apd50": 245.0,
+            "apd90": 441.0,
+            "dvdt": 120.74537829799908,
+            "triangulation": 196.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          },
+          "2000": {
+            "valid": true,
+            "rmp": -91.38422319114106,
+            "peak": 49.36214098496847,
+            "amp": 140.74636417610952,
+            "apd50": 255.0,
+            "apd90": 461.0,
+            "dvdt": 120.74653510423218,
+            "triangulation": 206.0,
+            "apd90_cv": 0.0,
+            "alternans_abs": 0.0
+          }
+        },
+        "rate_adaptation_pass": true,
+        "restitution_pass": false,
+        "restitution_max_slope": 1.2935779816513762,
+        "pass": false,
+        "reasons": [
+          "CL250:rmp",
+          "restitution"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "count": 40,
+  "items": [
+    {
+      "variant_id": "r00_005",
+      "title": "r00_005 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_005.png",
+      "full": "assets/simulations/r00_005.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_017",
+      "title": "r00_017 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_017.png",
+      "full": "assets/simulations/r00_017.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_023",
+      "title": "r00_023 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_023.png",
+      "full": "assets/simulations/r00_023.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_029",
+      "title": "r00_029 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_029.png",
+      "full": "assets/simulations/r00_029.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_035",
+      "title": "r00_035 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_035.png",
+      "full": "assets/simulations/r00_035.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_041",
+      "title": "r00_041 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_041.png",
+      "full": "assets/simulations/r00_041.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_059",
+      "title": "r00_059 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_059.png",
+      "full": "assets/simulations/r00_059.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_065",
+      "title": "r00_065 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_065.png",
+      "full": "assets/simulations/r00_065.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_071",
+      "title": "r00_071 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_071.png",
+      "full": "assets/simulations/r00_071.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_077",
+      "title": "r00_077 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_077.png",
+      "full": "assets/simulations/r00_077.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_083",
+      "title": "r00_083 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_083.png",
+      "full": "assets/simulations/r00_083.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_089",
+      "title": "r00_089 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_089.png",
+      "full": "assets/simulations/r00_089.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_095",
+      "title": "r00_095 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_095.png",
+      "full": "assets/simulations/r00_095.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_101",
+      "title": "r00_101 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_101.png",
+      "full": "assets/simulations/r00_101.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_107",
+      "title": "r00_107 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_107.png",
+      "full": "assets/simulations/r00_107.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_113",
+      "title": "r00_113 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_113.png",
+      "full": "assets/simulations/r00_113.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_119",
+      "title": "r00_119 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_119.png",
+      "full": "assets/simulations/r00_119.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_125",
+      "title": "r00_125 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_125.png",
+      "full": "assets/simulations/r00_125.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_131",
+      "title": "r00_131 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_131.png",
+      "full": "assets/simulations/r00_131.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_143",
+      "title": "r00_143 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_143.png",
+      "full": "assets/simulations/r00_143.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_149",
+      "title": "r00_149 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_149.png",
+      "full": "assets/simulations/r00_149.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_161",
+      "title": "r00_161 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_161.png",
+      "full": "assets/simulations/r00_161.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_167",
+      "title": "r00_167 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_167.png",
+      "full": "assets/simulations/r00_167.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_173",
+      "title": "r00_173 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_173.png",
+      "full": "assets/simulations/r00_173.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_179",
+      "title": "r00_179 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_179.png",
+      "full": "assets/simulations/r00_179.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_185",
+      "title": "r00_185 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_185.png",
+      "full": "assets/simulations/r00_185.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_191",
+      "title": "r00_191 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_191.png",
+      "full": "assets/simulations/r00_191.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_197",
+      "title": "r00_197 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_197.png",
+      "full": "assets/simulations/r00_197.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_001",
+      "title": "r00_001 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_001.png",
+      "full": "assets/simulations/r00_001.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_007",
+      "title": "r00_007 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_007.png",
+      "full": "assets/simulations/r00_007.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_013",
+      "title": "r00_013 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_013.png",
+      "full": "assets/simulations/r00_013.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_019",
+      "title": "r00_019 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_019.png",
+      "full": "assets/simulations/r00_019.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_025",
+      "title": "r00_025 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_025.png",
+      "full": "assets/simulations/r00_025.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_031",
+      "title": "r00_031 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_031.png",
+      "full": "assets/simulations/r00_031.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_037",
+      "title": "r00_037 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_037.png",
+      "full": "assets/simulations/r00_037.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_043",
+      "title": "r00_043 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_043.png",
+      "full": "assets/simulations/r00_043.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_049",
+      "title": "r00_049 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_049.png",
+      "full": "assets/simulations/r00_049.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_055",
+      "title": "r00_055 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_055.png",
+      "full": "assets/simulations/r00_055.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_061",
+      "title": "r00_061 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_061.png",
+      "full": "assets/simulations/r00_061.svg",
+      "method": "proxy_from_neighbor_scores"
+    },
+    {
+      "variant_id": "r00_067",
+      "title": "r00_067 representative simulation proxy",
+      "thumbnail": "assets/simulations/r00_067.png",
+      "full": "assets/simulations/r00_067.svg",
+      "method": "proxy_from_neighbor_scores"
+    }
+  ],
+  "note": "Proxy figures are generated from latent-neighbor scores and test metrics; no ODE solver execution."
+}

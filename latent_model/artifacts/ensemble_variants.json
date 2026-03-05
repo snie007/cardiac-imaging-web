@@ -1,0 +1,653 @@
+{
+  "prompt": "rat ventricular myocyte electrophysiology + mitochondria + glycolysis",
+  "n_variants": 40,
+  "improvement_log": [
+    {
+      "round": 0,
+      "n_candidates": 40,
+      "pass_rate": 1.0
+    }
+  ],
+  "variants": [
+    {
+      "variant_id": "r00_005",
+      "noise_scale": 0.18574296777378277,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000428.xml"
+      ],
+      "neighbor_scores": [
+        0.46282571355288915,
+        0.4567572780417748,
+        0.4303994283425943
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_5\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000428.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_017",
+      "noise_scale": 0.16376417142369837,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.4953719883776311,
+        0.4630183869029574,
+        0.44723906662843865
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_17\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_023",
+      "noise_scale": 0.16813994485783862,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_DiFrancesco_Noble_1985.cellml"
+      ],
+      "neighbor_scores": [
+        0.44739751358647106,
+        0.4091078700741798,
+        0.4087837716893876
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_23\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_DiFrancesco_Noble_1985.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_029",
+      "noise_scale": 0.11023903722159648,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml"
+      ],
+      "neighbor_scores": [
+        0.5077671849504801,
+        0.46459164379710305,
+        0.45020759724728454
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_29\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_035",
+      "noise_scale": 0.1480932966138234,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "neighbor_scores": [
+        0.5849785427509787,
+        0.5451143001384823,
+        0.5336185202424117
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_35\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_041",
+      "noise_scale": 0.20675831126730074,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_aslanidi_2009.cellml",
+        "frozen_corpus/sources/cellml_oyehaug_2009_version1.cellml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml"
+      ],
+      "neighbor_scores": [
+        0.5262616007540404,
+        0.5249295209962594,
+        0.5033065532930652
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_41\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_aslanidi_2009.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_oyehaug_2009_version1.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_059",
+      "noise_scale": 0.16695497142760646,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "neighbor_scores": [
+        0.48718109026525946,
+        0.4406119416629897,
+        0.37424716979474526
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_59\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000620.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_065",
+      "noise_scale": 0.22,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_goldbeter_2007.cellml",
+        "frozen_corpus/sources/cellml_NBC_test.cellml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "neighbor_scores": [
+        0.3103813660769624,
+        0.3085848115016986,
+        0.30190675168651593
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_65\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_goldbeter_2007.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_NBC_test.cellml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_071",
+      "noise_scale": 0.16336583516866082,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_maleckar_greenstein_trayanova_giles_2009.cellml",
+        "frozen_corpus/sources/cellml_clancy_rudy_2002.cellml",
+        "frozen_corpus/sources/sbml_BIOMD0000000402.xml"
+      ],
+      "neighbor_scores": [
+        0.4687486949546085,
+        0.4686667562027685,
+        0.46647684398257544
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_71\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_maleckar_greenstein_trayanova_giles_2009.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_clancy_rudy_2002.cellml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000402.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_077",
+      "noise_scale": 0.1725593415795934,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.4919396076787058,
+        0.45306744832006857,
+        0.4228237077834329
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_77\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_083",
+      "noise_scale": 0.14672889135335282,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000515.xml"
+      ],
+      "neighbor_scores": [
+        0.4795342878111954,
+        0.4458748184021804,
+        0.4394288974512899
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_83\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000516.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000515.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_089",
+      "noise_scale": 0.1410027383076688,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_pivonka_2008.cellml",
+        "frozen_corpus/sources/cellml_cui_kaandorp_2006.cellml",
+        "frozen_corpus/sources/cellml_HATPase_test.cellml"
+      ],
+      "neighbor_scores": [
+        0.5408583432447024,
+        0.5399726274888214,
+        0.5384040981506062
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_89\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_pivonka_2008.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_cui_kaandorp_2006.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_HATPase_test.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_095",
+      "noise_scale": 0.1782458644397798,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "neighbor_scores": [
+        0.27188743066346666,
+        0.23678139571533854,
+        0.22908842551083558
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_95\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000620.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_101",
+      "noise_scale": 0.18354542956616743,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "neighbor_scores": [
+        0.3041574681982161,
+        0.2712385090518774,
+        0.2602272442062857
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_101\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_107",
+      "noise_scale": 0.15481984162731227,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_bental_2006.cellml"
+      ],
+      "neighbor_scores": [
+        0.4651142175333679,
+        0.4351825338091267,
+        0.42152712139091375
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_107\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_bental_2006.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_113",
+      "noise_scale": 0.1715392176792701,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000981.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000955.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000964.xml"
+      ],
+      "neighbor_scores": [
+        0.5729519778853128,
+        0.57181757364308,
+        0.5716217293890952
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_113\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000981.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000955.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000964.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_119",
+      "noise_scale": 0.2099521543225835,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000515.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000511.xml"
+      ],
+      "neighbor_scores": [
+        0.6963541704127086,
+        0.6955370040022052,
+        0.6945808498039224
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_119\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000516.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000515.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000511.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_125",
+      "noise_scale": 0.16345033086669655,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.42386752523529825,
+        0.4030786411640534,
+        0.34139227734129496
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_125\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_131",
+      "noise_scale": 0.1857033345279112,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "neighbor_scores": [
+        0.4895314149228738,
+        0.4864916857498454,
+        0.4359782098892816
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_131\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000620.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_143",
+      "noise_scale": 0.16696920777665739,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml"
+      ],
+      "neighbor_scores": [
+        0.6252834849646522,
+        0.6005873333424686,
+        0.5471896591321045
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_143\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000620.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_149",
+      "noise_scale": 0.17363660415492826,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml"
+      ],
+      "neighbor_scores": [
+        0.3975914243099381,
+        0.3683994847674328,
+        0.31133852459230105
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_149\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_gall_2000.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_161",
+      "noise_scale": 0.13358118223547188,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.44579830316973523,
+        0.4218129253763903,
+        0.4112610046101798
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_161\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_167",
+      "noise_scale": 0.1470589303412464,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.44455417173681017,
+        0.39437728177235576,
+        0.35791546099362315
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_167\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_173",
+      "noise_scale": 0.17901669623694952,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+        "frozen_corpus/sources/cellml_bondarenko_szigeti_bett_kim_rasmusson_2004_apical.cellml",
+        "frozen_corpus/sources/cellml_clancy_rudy_2002.cellml"
+      ],
+      "neighbor_scores": [
+        0.5361242855533107,
+        0.5015767219396121,
+        0.4939024065321426
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_173\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_bondarenko_szigeti_bett_kim_rasmusson_2004_apical.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_clancy_rudy_2002.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_179",
+      "noise_scale": 0.15473168327223277,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000966.xml"
+      ],
+      "neighbor_scores": [
+        0.2396238895926215,
+        0.23792713736080978,
+        0.19412887753664698
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_179\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000966.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_185",
+      "noise_scale": 0.21466119347117618,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "neighbor_scores": [
+        0.48736125938485486,
+        0.4390062896522434,
+        0.415162489936417
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_185\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_191",
+      "noise_scale": 0.19095433072982299,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000987.xml"
+      ],
+      "neighbor_scores": [
+        0.27458641413906093,
+        0.2698737700075824,
+        0.23931640648255115
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_191\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000620.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000987.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_197",
+      "noise_scale": 0.1313979469275185,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "neighbor_scores": [
+        0.5705785749664314,
+        0.5316403102049371,
+        0.5179480875869511
+      ],
+      "strategy": "optimization_refit",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_197\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_001",
+      "noise_scale": 0.17411412081586508,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_alexander_2010_system2.cellml",
+        "frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml"
+      ],
+      "neighbor_scores": [
+        0.5691430537302176,
+        0.5594132691333578,
+        0.5546377690937321
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_1\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_alexander_2010_system2.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_007",
+      "noise_scale": 0.18155865508548422,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000574.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.5787379585804966,
+        0.5649424435111436,
+        0.560609108042362
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_7\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000620.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000574.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_013",
+      "noise_scale": 0.16608641124720006,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_alexander_2010_system2.cellml"
+      ],
+      "neighbor_scores": [
+        0.5108120521847115,
+        0.49615807788793576,
+        0.47197330104354235
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_13\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_alexander_2010_system2.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_019",
+      "noise_scale": 0.1998416336940106,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.26501630310805224,
+        0.2569988731475943,
+        0.20726340891027545
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_19\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_025",
+      "noise_scale": 0.19234261724615692,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml"
+      ],
+      "neighbor_scores": [
+        0.41271762647191246,
+        0.3892248042540303,
+        0.3626787903328843
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_25\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_031",
+      "noise_scale": 0.14649617965851225,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml",
+        "frozen_corpus/sources/cellml_gall_2000b.cellml"
+      ],
+      "neighbor_scores": [
+        0.5792657614636766,
+        0.5647588952236734,
+        0.5443151148852196
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_31\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_gall_2000.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_gall_2000b.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_037",
+      "noise_scale": 0.1891598572951298,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.3698569998265433,
+        0.3500980652558132,
+        0.32151668791120114
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_37\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_043",
+      "noise_scale": 0.15855336183640084,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000428.xml"
+      ],
+      "neighbor_scores": [
+        0.5159424823654852,
+        0.4941067391503849,
+        0.48563315323189693
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_43\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000516.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000428.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_049",
+      "noise_scale": 0.22,
+      "neighbors": [
+        "frozen_corpus/sources/cellml_teusink_annotated_2000.cellml",
+        "frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml",
+        "frozen_corpus/sources/cellml_decker_2009.cellml"
+      ],
+      "neighbor_scores": [
+        0.48291730600368643,
+        0.4729051050856312,
+        0.47207637233145683
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_49\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/cellml_teusink_annotated_2000.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_decker_2009.cellml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_055",
+      "noise_scale": 0.1937359864052355,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml"
+      ],
+      "neighbor_scores": [
+        0.4273299956056386,
+        0.42012258877230324,
+        0.4123816957226336
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_55\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000620.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_061",
+      "noise_scale": 0.18661182177951535,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/sbml_BIOMD0000000049.xml"
+      ],
+      "neighbor_scores": [
+        0.582631653080816,
+        0.5587180041768629,
+        0.546071872504344
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_61\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000013.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000049.xml\" />\n</compositeModel>\n"
+    },
+    {
+      "variant_id": "r00_067",
+      "noise_scale": 0.19821733713839565,
+      "neighbors": [
+        "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+        "frozen_corpus/sources/cellml_HATPase_test.cellml",
+        "frozen_corpus/sources/cellml_gall_2000.cellml"
+      ],
+      "neighbor_scores": [
+        0.46402921184446033,
+        0.46180755449781097,
+        0.45990973160797427
+      ],
+      "strategy": "template_constraints",
+      "composite_xml": "<?xml version=\"1.0\"?>\n<compositeModel id=\"r0_67\" prompt=\"rat ventricular myocyte electrophysiology + mitochondria + glycolysis\">\n  <include href=\"frozen_corpus/sources/sbml_BIOMD0000000588.xml\" />\n  <include href=\"frozen_corpus/sources/cellml_HATPase_test.cellml\" />\n  <include href=\"frozen_corpus/sources/cellml_gall_2000.cellml\" />\n</compositeModel>\n"
+    }
+  ]
+}

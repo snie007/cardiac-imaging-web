@@ -1,0 +1,4358 @@
+{
+  "near_copy_threshold": 0.995,
+  "near_copy_rate": 0.0,
+  "variants": [
+    {
+      "variant_id": "r00_005",
+      "x": 7.087328910827637,
+      "y": 25.184776306152344,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6105264619606456,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_017",
+      "x": 7.201886177062988,
+      "y": 25.557559967041016,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6087965872637012,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_023",
+      "x": -0.9195084571838379,
+      "y": 4.022176265716553,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6451318608974813,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_029",
+      "x": 6.712996482849121,
+      "y": 25.41362190246582,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000279.xml",
+      "nearest_similarity": 0.5179809292267034,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_035",
+      "x": 7.27221155166626,
+      "y": 25.64589500427246,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6083686928116097,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_041",
+      "x": -0.4708917737007141,
+      "y": 4.587508678436279,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6883306951176738,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_059",
+      "x": 7.100121021270752,
+      "y": 25.39140510559082,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6109123567148956,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_065",
+      "x": -0.9410654902458191,
+      "y": 3.998990774154663,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.652930063783931,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_071",
+      "x": -0.9147627353668213,
+      "y": 4.02592134475708,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6490388914049623,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_077",
+      "x": 7.274880409240723,
+      "y": 25.632688522338867,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6087965872637012,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_083",
+      "x": 6.786426544189453,
+      "y": 25.46722984313965,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6061368844108944,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_089",
+      "x": -0.4920741021633148,
+      "y": 4.568404197692871,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6911961039411366,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_095",
+      "x": 7.097234725952148,
+      "y": 25.293489456176758,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6104308386379013,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_101",
+      "x": 7.202693939208984,
+      "y": 25.589872360229492,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6088713757322181,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_107",
+      "x": -0.8824583888053894,
+      "y": 4.059202194213867,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6475832774466892,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_113",
+      "x": 6.694391250610352,
+      "y": 25.340747833251953,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6125515855050488,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_119",
+      "x": 6.669439315795898,
+      "y": 25.387624740600586,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6029159383282632,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_125",
+      "x": 7.356269836425781,
+      "y": 25.69034767150879,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6083686928116097,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_131",
+      "x": 6.997523784637451,
+      "y": 25.239490509033203,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6110010036937367,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_143",
+      "x": 6.995635986328125,
+      "y": 25.26887321472168,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6108577129463367,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_149",
+      "x": -0.8965719938278198,
+      "y": 4.046177864074707,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6461847832854172,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_161",
+      "x": 7.126967906951904,
+      "y": 25.487905502319336,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6089342951721713,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_167",
+      "x": 7.29074239730835,
+      "y": 25.665380477905273,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6087965872637012,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_173",
+      "x": -0.49575814604759216,
+      "y": 4.567326545715332,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6909498495210962,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_179",
+      "x": 6.695536136627197,
+      "y": 25.390979766845703,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6093737398475506,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_185",
+      "x": 7.295901298522949,
+      "y": 25.639402389526367,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6083686928116097,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_191",
+      "x": 6.77816915512085,
+      "y": 25.335830688476562,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6116333295181111,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_197",
+      "x": 7.225144863128662,
+      "y": 25.598527908325195,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6087965872637012,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_001",
+      "x": -0.4641849100589752,
+      "y": 4.598347187042236,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6941211265263684,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_007",
+      "x": 6.747642993927002,
+      "y": 25.397119522094727,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6087359798695143,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_013",
+      "x": -0.8669084310531616,
+      "y": 4.077537536621094,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6432250126722882,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_019",
+      "x": 7.203622817993164,
+      "y": 25.570894241333008,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6088489689004078,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_025",
+      "x": 7.352401256561279,
+      "y": 25.700725555419922,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6083686928116097,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_031",
+      "x": -0.4479566514492035,
+      "y": 4.615018367767334,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6904034850632613,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_037",
+      "x": 7.200928688049316,
+      "y": 25.57355308532715,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6087965872637012,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_043",
+      "x": 6.770902633666992,
+      "y": 25.429649353027344,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6084899237845482,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_049",
+      "x": -0.4579296410083771,
+      "y": 4.606024265289307,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.6922146693075241,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_055",
+      "x": 6.754687309265137,
+      "y": 25.396602630615234,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6079152327648832,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_061",
+      "x": 7.165352821350098,
+      "y": 25.547401428222656,
+      "nearest_corpus": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "nearest_similarity": 0.6089342951721713,
+      "near_copy": false
+    },
+    {
+      "variant_id": "r00_067",
+      "x": -0.8901756405830383,
+      "y": 4.050442695617676,
+      "nearest_corpus": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "nearest_similarity": 0.64445661260188,
+      "near_copy": false
+    }
+  ],
+  "corpus_sample": [
+    {
+      "path": "frozen_corpus/sources/cellml_1998_nash.cellml",
+      "x": -3.7851085662841797,
+      "y": 2.4025423526763916
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG tutorial model solid mechanics 4 Lorenz s-domain.cellml",
+      "x": -5.8260040283203125,
+      "y": -1.939024806022644
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_CaB.cellml",
+      "x": -4.7823486328125,
+      "y": -2.575192451477051
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_KACh.cellml",
+      "x": -4.782677173614502,
+      "y": -2.5334267616271973
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_Ks.cellml",
+      "x": -4.885687828063965,
+      "y": -2.619561195373535
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_Na.cellml",
+      "x": -4.642390727996826,
+      "y": -2.051284074783325
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_NaK.cellml",
+      "x": -4.701321125030518,
+      "y": -2.2152280807495117
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_PMCA.cellml",
+      "x": -4.714760780334473,
+      "y": -2.5032765865325928
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_TO.cellml",
+      "x": -4.94523811340332,
+      "y": -2.520653486251831
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_Vclamp.cellml",
+      "x": -4.82394552230835,
+      "y": -2.449028491973877
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_cvs_MVP_model.cellml",
+      "x": -5.862740516662598,
+      "y": -2.3224990367889404
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_funny.cellml",
+      "x": -4.921305179595947,
+      "y": -2.6555278301239014
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BG_pCa.cellml",
+      "x": -4.744482040405273,
+      "y": -2.5066335201263428
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BPS2020.cellml",
+      "x": -5.423153400421143,
+      "y": -0.30269888043403625
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BiIrrev.cellml",
+      "x": -3.323458194732666,
+      "y": -1.1047062873840332
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_BloodVolumeControl.cellml",
+      "x": -5.851775646209717,
+      "y": -2.2934579849243164
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Carro_Rodriguez_Laguna_Pueyo_2011_ENDO.cellml",
+      "x": -5.999598503112793,
+      "y": -0.7262148261070251
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Carro_Rodriguez_Laguna_Pueyo_2011_EPI.cellml",
+      "x": -6.039154529571533,
+      "y": -0.7107769846916199
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_CerebralBloodFlow.cellml",
+      "x": -3.431281089782715,
+      "y": 1.4839874505996704
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_ConstantFlux.cellml",
+      "x": -3.405247211456299,
+      "y": -1.068624496459961
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Current_Ik1.cellml",
+      "x": -3.830498218536377,
+      "y": 0.958482027053833
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_DiFrancesco_Noble_1985.cellml",
+      "x": -6.244981288909912,
+      "y": -0.13704513013362885
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Epithelial cell v1.cellml",
+      "x": -5.849913597106934,
+      "y": -2.350154161453247
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Eskandari_et_al_2005.cellml",
+      "x": -4.9054460525512695,
+      "y": -1.1080883741378784
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_FAIRDO BG example 3.4.cellml",
+      "x": -5.615536212921143,
+      "y": -2.5319738388061523
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_FAIRDO BG example 3.5.cellml",
+      "x": -5.713071823120117,
+      "y": -2.5242888927459717
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_FAIRDO BG example 3.7.cellml",
+      "x": -5.850930213928223,
+      "y": -2.528510808944702
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_FAIRDO BG example 3.9.cellml",
+      "x": -5.722174644470215,
+      "y": -2.5605392456054688
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_FAIRDO BG example 4.2.cellml",
+      "x": -5.873281002044678,
+      "y": -2.545487880706787
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Feto_maternal_Oxygen_transfer.cellml",
+      "x": -5.920390605926514,
+      "y": -1.6648107767105103
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Firstorder.cellml",
+      "x": -5.981967449188232,
+      "y": -1.6444873809814453
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_GLUT2_kinetic.cellml",
+      "x": -5.832552433013916,
+      "y": -2.447479486465454
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_GLUT_BG.cellml",
+      "x": -4.857440948486328,
+      "y": -2.6070504188537598
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_GLUT_ss_io.cellml",
+      "x": -5.3704681396484375,
+      "y": -2.61368989944458
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_GLUT_ss_oi_flat.cellml",
+      "x": -5.011124134063721,
+      "y": -2.5495543479919434
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_GattoniCAMK_6Hz.cellml",
+      "x": -5.892061710357666,
+      "y": -1.1490222215652466
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Gattoni_1Hz.cellml",
+      "x": -5.788900852203369,
+      "y": -1.1670793294906616
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Gee_whiz_Exported.cellml",
+      "x": -5.768192291259766,
+      "y": -2.0499911308288574
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_HATPase_test.cellml",
+      "x": -4.078232765197754,
+      "y": 0.8815779685974121
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_HillCooperativity.cellml",
+      "x": -3.384718179702759,
+      "y": -1.0748767852783203
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_HyperbolicModifierRev.cellml",
+      "x": -3.2697761058807373,
+      "y": -1.1998591423034668
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_IsoUniUni.cellml",
+      "x": -3.352992534637451,
+      "y": -1.0587677955627441
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Land_et_al_2012.cellml",
+      "x": -4.843666076660156,
+      "y": 0.6908038854598999
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Li_Smith_2009_C57BL7_WT.cellml",
+      "x": -5.549540042877197,
+      "y": -0.3357662558555603
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Linear2ndOrderODE.cellml",
+      "x": -6.110719680786133,
+      "y": -1.4550211429595947
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Lorenz_1963.cellml",
+      "x": -3.646864175796509,
+      "y": 2.398705244064331
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_MassActionBiBiRev.cellml",
+      "x": -3.4227793216705322,
+      "y": -1.051619291305542
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_MassActionBiIrrev.cellml",
+      "x": -3.380797863006592,
+      "y": -1.07381272315979
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_MixedActivationRev.cellml",
+      "x": -3.254647970199585,
+      "y": -1.1582772731781006
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_ModTrovato2020.cellml",
+      "x": -5.468169212341309,
+      "y": -0.3472691774368286
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Morgan atrial fibroblast 2016.cellml",
+      "x": -3.2675907611846924,
+      "y": 2.656888246536255
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_NBC_test.cellml",
+      "x": -3.908980369567871,
+      "y": 0.9999842047691345
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_NaK_test.cellml",
+      "x": -4.278395652770996,
+      "y": 2.046926975250244
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Ohara_Rudy_2011.cellml",
+      "x": -5.480777740478516,
+      "y": -0.3911944329738617
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_OrderedBiBi.cellml",
+      "x": -3.2723371982574463,
+      "y": -1.1793901920318604
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_OrderedBiUni.cellml",
+      "x": -3.2413527965545654,
+      "y": -1.1851012706756592
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_PingPongBiBi.cellml",
+      "x": -3.270125150680542,
+      "y": -1.1572517156600952
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Rat_lindane_Croom_2015.cellml",
+      "x": -5.9566216468811035,
+      "y": -2.3614814281463623
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_ReversibleHill2Modifier.cellml",
+      "x": -3.316622734069824,
+      "y": -1.155711054801941
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Schoeberl_EichlerJonsson_Gilles_Muller_2002.cellml",
+      "x": -4.7457966804504395,
+      "y": -0.328511118888855
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_SpecificActivationRev.cellml",
+      "x": -3.2776758670806885,
+      "y": -1.1596601009368896
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Tomek_model_epi.cellml",
+      "x": -5.510077953338623,
+      "y": -0.34281662106513977
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Tong_Choi_Kharche_Holden_Zhang_Taggart_2011.cellml",
+      "x": -4.589986324310303,
+      "y": -0.9501047730445862
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Tong_Choi_Kharche_Holden_Zhang_Taggart_2011_reduce1_ss1_currentmod1.cellml",
+      "x": -4.635674476623535,
+      "y": -1.186476469039917
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Tong_Tribe_Smith_Taggart_2014.cellml",
+      "x": -4.645058631896973,
+      "y": -0.9722495079040527
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_UniUni.cellml",
+      "x": -3.37386155128479,
+      "y": -1.0753117799758911
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Varela_LA_2016.cellml",
+      "x": -6.082615375518799,
+      "y": -0.5310360789299011
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Weinstein_1995_NHE3_Fig2.cellml",
+      "x": -4.260197639465332,
+      "y": 2.045084238052368
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Weinstein_1995_NHE3_Fig3A.cellml",
+      "x": -4.230997085571289,
+      "y": 2.0480124950408936
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Weinstein_2000_AE1_Fig2A.cellml",
+      "x": -4.289912223815918,
+      "y": 2.0482819080352783
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Weinstein_2000_AE1_Fig3.cellml",
+      "x": -4.284573554992676,
+      "y": 2.0126967430114746
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_Weinstein_2000_AE1_Fig3A.cellml",
+      "x": -4.265824317932129,
+      "y": 2.0646703243255615
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_acikgoz_2009a.cellml",
+      "x": -3.936582088470459,
+      "y": 1.0406556129455566
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_aguda_b_1999.cellml",
+      "x": -4.519874095916748,
+      "y": -0.034340232610702515
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_alexander_2010.cellml",
+      "x": -3.334721326828003,
+      "y": 2.670088052749634
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_alexander_2010_system2.cellml",
+      "x": -4.401796817779541,
+      "y": 1.1537045240402222
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_aslanidi_2009.cellml",
+      "x": -5.826170921325684,
+      "y": -0.16144253313541412
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bagci_2008a.cellml",
+      "x": -4.2846150398254395,
+      "y": 0.6485061049461365
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bagci_2008b.cellml",
+      "x": -4.689967632293701,
+      "y": -0.20623968541622162
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_barberis_klipp_vanoni_alberghina_2007.cellml",
+      "x": -4.581950664520264,
+      "y": -0.0934908390045166
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_becker_2010.cellml",
+      "x": -3.318768262863159,
+      "y": 2.6566162109375
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_becker_2010_b.cellml",
+      "x": -3.963468074798584,
+      "y": 1.0089932680130005
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_becker_2010_c.cellml",
+      "x": -3.276916265487671,
+      "y": 2.6265878677368164
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_beeler_reuter_1977.cellml",
+      "x": -5.930880069732666,
+      "y": -1.1589254140853882
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_benson_mcell_2008.cellml",
+      "x": -6.426009654998779,
+      "y": -0.1675024926662445
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bental_2006.cellml",
+      "x": -6.3690314292907715,
+      "y": -0.20845815539360046
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_a.cellml",
+      "x": -5.92133903503418,
+      "y": -2.3124165534973145
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_b.cellml",
+      "x": -6.3980207443237305,
+      "y": 2.469949722290039
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_c.cellml",
+      "x": -6.3593339920043945,
+      "y": 2.474226951599121
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_d.cellml",
+      "x": -6.332141399383545,
+      "y": 2.437199831008911
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_e.cellml",
+      "x": -6.387814521789551,
+      "y": 2.474816083908081
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_f.cellml",
+      "x": -6.426652908325195,
+      "y": 2.440950870513916
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_g.cellml",
+      "x": -6.383872032165527,
+      "y": 2.4643144607543945
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_h.cellml",
+      "x": -6.350326061248779,
+      "y": 2.4412529468536377
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_iyengar_1999_i.cellml",
+      "x": -6.380738258361816,
+      "y": 2.4602746963500977
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bhalla_kinetic.cellml",
+      "x": -4.540635108947754,
+      "y": 0.06967972964048386
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bondarenko_szigeti_bett_kim_rasmusson_2004_apical.cellml",
+      "x": -5.404141426086426,
+      "y": -0.35520753264427185
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_bornheimer_2004.cellml",
+      "x": -4.9674072265625,
+      "y": -0.534456729888916
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_butera_rinzel_smith_1999.cellml",
+      "x": -4.291527271270752,
+      "y": 1.3022116422653198
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_butera_rinzel_smith_1999_model2.cellml",
+      "x": -4.239643573760986,
+      "y": 1.1160141229629517
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_butera_single_cell_1999.cellml",
+      "x": -5.913098335266113,
+      "y": -0.38448789715766907
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_ca_pump_component.cellml",
+      "x": -5.481651306152344,
+      "y": -0.3120289444923401
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_cardenas_1996.cellml",
+      "x": -3.323194742202759,
+      "y": 2.5920016765594482
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_chang_fujita_1999.cellml",
+      "x": -4.5680413246154785,
+      "y": -0.12095315009355545
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_chen_calzone_csikasznagy_cross_novak_tyson_2004.cellml",
+      "x": -4.535653114318848,
+      "y": -0.003469215938821435
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_clancy_rudy_2001.cellml",
+      "x": -5.709164142608643,
+      "y": -0.6132590174674988
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_clancy_rudy_2001_WT_Mcell_seconds_flooristim.cellml",
+      "x": -5.74293851852417,
+      "y": -0.6713805794715881
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_clancy_rudy_2002.cellml",
+      "x": -5.554544448852539,
+      "y": -0.6848491430282593
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_clancy_rudy_2002_INa1795insD_Epi_seconds_flooristim.cellml",
+      "x": -5.565791130065918,
+      "y": -0.6656025052070618
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_conradie_2010.cellml",
+      "x": -6.018867015838623,
+      "y": -1.9426672458648682
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_cui_kaandorp_2006.cellml",
+      "x": -4.490416049957275,
+      "y": 0.8008819818496704
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_cvs-model.cellml",
+      "x": -5.895350933074951,
+      "y": -2.3381705284118652
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_davies_isap_2012.cellml",
+      "x": -5.967951774597168,
+      "y": -1.1167362928390503
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_decker_2009.cellml",
+      "x": -6.167047500610352,
+      "y": -0.0017579466802999377
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_devries_sherman_2000.cellml",
+      "x": -3.4602644443511963,
+      "y": 3.1885344982147217
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_dupont_berridge_goldbeter_1990.cellml",
+      "x": -3.3433144092559814,
+      "y": 1.704935908317566
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_dupont_erneux_1997.cellml",
+      "x": -4.035039901733398,
+      "y": 0.978117823600769
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_elowitz_leibler_2000.cellml",
+      "x": -3.436431646347046,
+      "y": 3.1450679302215576
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_epithelial-cell-capilliary-bc.cellml",
+      "x": -5.923377990722656,
+      "y": -2.3075106143951416
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_faber_rudy_2000.cellml",
+      "x": -6.331709861755371,
+      "y": -0.1319883167743683
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_faber_rudy_modified_version_2000.cellml",
+      "x": -6.2962236404418945,
+      "y": -0.12172763794660568
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_farhy_bowers_veldhuis_2007_a.cellml",
+      "x": -4.513866901397705,
+      "y": 1.0552375316619873
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_fenton_karma_1998_BR.cellml",
+      "x": -4.210234642028809,
+      "y": 1.05448579788208
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_fig6.cellml",
+      "x": -3.9008100032806396,
+      "y": 1.0655853748321533
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_francis_garcia_middleton_2012_spherical.cellml",
+      "x": -5.459715843200684,
+      "y": -1.3473165035247803
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_francis_garcia_middleton_2013.cellml",
+      "x": -5.5073418617248535,
+      "y": -1.37228524684906
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_friel_1995.cellml",
+      "x": -3.336639404296875,
+      "y": 3.029331684112549
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_fujita_2010_EGFR_inhibited_Akt.cellml",
+      "x": -4.449738025665283,
+      "y": 0.2507065236568451
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_fujita_2010_EGF_dependent_Akt.cellml",
+      "x": -4.236552715301514,
+      "y": 0.799302875995636
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_gall_2000.cellml",
+      "x": -4.440009117126465,
+      "y": 1.180208444595337
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_gall_2000b.cellml",
+      "x": -4.2733540534973145,
+      "y": 1.2336585521697998
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_gerard_gonze_goldbeter_2009c.cellml",
+      "x": -3.884021282196045,
+      "y": 1.2690908908843994
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_goldbeter_1990_1.1.cellml",
+      "x": -3.4710776805877686,
+      "y": 1.4894349575042725
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_goldbeter_1991.cellml",
+      "x": -3.336087226867676,
+      "y": 2.658956527709961
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_goldbeter_1995.cellml",
+      "x": -4.384032726287842,
+      "y": 1.2047441005706787
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_goldbeter_2006.cellml",
+      "x": -3.267301559448242,
+      "y": 2.586395740509033
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_goldbeter_2007.cellml",
+      "x": -4.252687931060791,
+      "y": 1.010010838508606
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_goldbeter_2007_1.1.cellml",
+      "x": -3.6186437606811523,
+      "y": 1.3382394313812256
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_goldbeter_guilmot_1995.cellml",
+      "x": -4.179603099822998,
+      "y": 1.410654067993164
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grandi_2011_atrial_with_meta.cellml",
+      "x": -5.5132269859313965,
+      "y": -1.6571985483169556
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grandi_pasqualini_bers_2010_flat.cellml",
+      "x": -4.6576104164123535,
+      "y": -1.1991773843765259
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001_2a.cellml",
+      "x": -3.3153645992279053,
+      "y": 2.704115629196167
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001_2b.cellml",
+      "x": -3.366523504257202,
+      "y": 2.72477650642395
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001_3a.cellml",
+      "x": -3.2986767292022705,
+      "y": 2.712212324142456
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001_3b.cellml",
+      "x": -3.453291893005371,
+      "y": 2.482879400253296
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001_4a.cellml",
+      "x": -4.070924282073975,
+      "y": 1.3099738359451294
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001_4b.cellml",
+      "x": -3.386629343032837,
+      "y": 2.606198787689209
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001a.cellml",
+      "x": -3.25273060798645,
+      "y": 2.711801052093506
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_grubelnik_2001b.cellml",
+      "x": -3.3240017890930176,
+      "y": 2.7159175872802734
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_gupta_2009.cellml",
+      "x": -6.014155864715576,
+      "y": -2.313060760498047
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_guthke_amendment_2006.cellml",
+      "x": -4.909245014190674,
+      "y": -0.39220714569091797
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_guyton_volume_receptors_2008.cellml",
+      "x": -4.120481014251709,
+      "y": 1.143614411354065
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_heijman-2011.cellml",
+      "x": -5.83359956741333,
+      "y": -1.7479301691055298
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_inada_AN_2009.cellml",
+      "x": -6.341030597686768,
+      "y": -0.09880359470844269
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_iyer_mazhari_winslow_2004.cellml",
+      "x": -5.340219020843506,
+      "y": -1.389990210533142
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_jafri_rice_winslow_1998_a.cellml",
+      "x": -5.873479843139648,
+      "y": -1.0823252201080322
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_jafri_rice_winslow_1998_b.cellml",
+      "x": -5.856348037719727,
+      "y": -1.1007219552993774
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_jung-10-lesion.cellml",
+      "x": -3.2678382396698,
+      "y": 1.7057946920394897
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_kernik-2019.cellml",
+      "x": -5.747401714324951,
+      "y": -1.5091618299484253
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_kholodenko_demin_moehren_hoek_1999.cellml",
+      "x": -4.701082706451416,
+      "y": -0.2597821056842804
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_koivumaki-2011-pmr.cellml",
+      "x": -5.774211406707764,
+      "y": -1.5897953510284424
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_kummer_2000_1a.cellml",
+      "x": -4.174839496612549,
+      "y": 1.2079200744628906
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_kummer_2000_1b.cellml",
+      "x": -3.3471155166625977,
+      "y": 2.664313554763794
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_leakage_ion_channel.cellml",
+      "x": -6.021020889282227,
+      "y": -0.41108354926109314
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_leloup_goldbeter_2004.cellml",
+      "x": -4.632139205932617,
+      "y": -0.1684700846672058
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_lorenz.cellml",
+      "x": -5.947540760040283,
+      "y": -1.955832600593567
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_luo_rudy_1994.cellml",
+      "x": -6.344201564788818,
+      "y": -0.07181844860315323
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_mackenzie_1996.cellml",
+      "x": -4.905669212341309,
+      "y": -1.0335103273391724
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_maleckar_greenstein_trayanova_giles_2009.cellml",
+      "x": -5.811666011810303,
+      "y": -1.625097632408142
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_maurya_2005.cellml",
+      "x": -4.9155168533325195,
+      "y": -0.4520747661590576
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_mcintyre_richardson_grill_model_2001.cellml",
+      "x": -5.810384750366211,
+      "y": -1.1630862951278687
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_model.cellml",
+      "x": -5.857579708099365,
+      "y": -2.263035297393799
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_moore_li_2004.cellml",
+      "x": -3.4239909648895264,
+      "y": 3.143458127975464
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_morris_1981.cellml",
+      "x": -4.375565528869629,
+      "y": 1.2752277851104736
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_morris_1981_reduced.cellml",
+      "x": -3.308063507080078,
+      "y": 2.6699562072753906
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_moussa.cellml",
+      "x": -3.2691309452056885,
+      "y": 1.8111186027526855
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_nelson_1995a.cellml",
+      "x": -4.046306133270264,
+      "y": 1.0873030424118042
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_nelson_1995b.cellml",
+      "x": -4.103945732116699,
+      "y": 1.1345406770706177
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_ni_2017.cellml",
+      "x": -5.795158386230469,
+      "y": -1.512111783027649
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_noble_1962.cellml",
+      "x": -6.162603378295898,
+      "y": -0.0003903872275259346
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_noble_2000_a.cellml",
+      "x": -5.829758167266846,
+      "y": -0.5860048532485962
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_noble_2000_b.cellml",
+      "x": -5.812179088592529,
+      "y": -0.5634169578552246
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_novak_tyson_1993_a.cellml",
+      "x": -4.557951927185059,
+      "y": -0.058722227811813354
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_ohara_rudy_cipa_v1_2017.cellml",
+      "x": -5.480144023895264,
+      "y": -0.32504162192344666
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_oneill_cell_death_fast.cellml",
+      "x": -3.26745343208313,
+      "y": 1.8094223737716675
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_oyehaug_2009_version1.cellml",
+      "x": -6.054364204406738,
+      "y": -0.0965457558631897
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_pCa_3.cellml",
+      "x": -4.77521276473999,
+      "y": -2.5206024646759033
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_paci_hyttinen_aaltosetala_severi_atrialVersion.cellml",
+      "x": -6.175142288208008,
+      "y": -0.531606912612915
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_params_BG.cellml",
+      "x": -4.663591384887695,
+      "y": -2.0655083656311035
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_params_kinetic.cellml",
+      "x": -4.710052013397217,
+      "y": -1.903069257736206
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_params_ss.cellml",
+      "x": -4.781099319458008,
+      "y": -2.017944812774658
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_pivonka_2008.cellml",
+      "x": -4.401838779449463,
+      "y": 0.6770737171173096
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_poh_2012.cellml",
+      "x": -6.012304782867432,
+      "y": -0.7106244564056396
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_potassium_ion_channel.cellml",
+      "x": -6.031504154205322,
+      "y": -0.32449835538864136
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_rice_winslow_hunter_1999_a.cellml",
+      "x": -4.336384296417236,
+      "y": 0.9914672374725342
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_rice_winslow_hunter_1999_b.cellml",
+      "x": -4.364136219024658,
+      "y": 1.032213568687439
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_rice_winslow_hunter_1999_c.cellml",
+      "x": -4.335339069366455,
+      "y": 0.9352545738220215
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_rice_winslow_hunter_1999_e.cellml",
+      "x": -4.634898662567139,
+      "y": 0.13384534418582916
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_sampson-2010.cellml",
+      "x": -5.631235122680664,
+      "y": -1.5919100046157837
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_saucerman_PKA.cellml",
+      "x": -5.934446811676025,
+      "y": -2.0145483016967773
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_schmitmeier_2007.cellml",
+      "x": -4.199324131011963,
+      "y": 1.3220268487930298
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_smeans_fig2c_repro1.cellml",
+      "x": -4.648487567901611,
+      "y": -1.2702378034591675
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_smeans_fig2e_repro1.cellml",
+      "x": -4.638879299163818,
+      "y": -1.192922592163086
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_sodium_ion_channel.cellml",
+      "x": -6.1115288734436035,
+      "y": -0.4367053508758545
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_stewart_aslanidi_noble_noble_boyett_zhang_2009.cellml",
+      "x": -5.932213306427002,
+      "y": -0.5969218611717224
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_tabak_mascagni_bertram_2010.cellml",
+      "x": -3.2997050285339355,
+      "y": 2.6433162689208984
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_tcc_1.cellml",
+      "x": -5.159331798553467,
+      "y": -2.5661425590515137
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_ten_tusscher_model_2006_m.cellml",
+      "x": -5.912713527679443,
+      "y": -0.546394407749176
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_tentusscher_noble_noble_panfilov_2004_m.cellml",
+      "x": -5.975417613983154,
+      "y": -0.6268364191055298
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_test.cellml",
+      "x": -4.007727146148682,
+      "y": 1.1188706159591675
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_testrate.cellml",
+      "x": -3.953899621963501,
+      "y": 1.0340169668197632
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_teusink_annotated_2000.cellml",
+      "x": -5.136150360107422,
+      "y": -0.11203242838382721
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_tran_2009.cellml",
+      "x": -5.837655067443848,
+      "y": -1.2568366527557373
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_vasalou_2010.cellml",
+      "x": -5.898685932159424,
+      "y": -2.1668803691864014
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_voigt-heijman-2013-pmr.cellml",
+      "x": -5.73033332824707,
+      "y": -1.917670488357544
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_wang_2009.cellml",
+      "x": -4.989212989807129,
+      "y": 0.021140536293387413
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_wang_sobie_2008.cellml",
+      "x": -5.332919597625732,
+      "y": -0.32623645663261414
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_winslow_rice_jafri_marban_ororke_1999.cellml",
+      "x": -6.3553338050842285,
+      "y": -0.14059001207351685
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_wodarz_hamer_2007_a.cellml",
+      "x": -3.4057204723358154,
+      "y": 3.1737377643585205
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_wodarz_hamer_2007_b.cellml",
+      "x": -3.436603546142578,
+      "y": 3.1726973056793213
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_wodarz_hamer_2007_c.cellml",
+      "x": -3.479005813598633,
+      "y": 3.1690244674682617
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_wodarz_hamer_2007_d.cellml",
+      "x": -4.543316841125488,
+      "y": 0.15794475376605988
+    },
+    {
+      "path": "frozen_corpus/sources/cellml_yang_cGMP.cellml",
+      "x": -4.614302635192871,
+      "y": 0.22991839051246643
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000001.xml",
+      "x": 4.000582218170166,
+      "y": 16.662940979003906
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000002.xml",
+      "x": 2.8846282958984375,
+      "y": 15.325502395629883
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000010.xml",
+      "x": 4.624654293060303,
+      "y": 15.305992126464844
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000013.xml",
+      "x": 3.4229583740234375,
+      "y": 14.772076606750488
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000014.xml",
+      "x": 6.972395420074463,
+      "y": 25.29052734375
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000017.xml",
+      "x": 3.9732205867767334,
+      "y": 15.293912887573242
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000023.xml",
+      "x": 3.2204315662384033,
+      "y": 15.417993545532227
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000026.xml",
+      "x": 2.6618056297302246,
+      "y": 15.317085266113281
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000027.xml",
+      "x": 2.7629363536834717,
+      "y": 15.722564697265625
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000028.xml",
+      "x": 2.742863178253174,
+      "y": 15.114668846130371
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000029.xml",
+      "x": 2.7478044033050537,
+      "y": 15.749131202697754
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000030.xml",
+      "x": 2.7196502685546875,
+      "y": 14.9935941696167
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000032.xml",
+      "x": 3.580627918243408,
+      "y": 14.336324691772461
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000033.xml",
+      "x": 3.4167370796203613,
+      "y": 14.507248878479004
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000038.xml",
+      "x": 3.196190595626831,
+      "y": 14.81149673461914
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000040.xml",
+      "x": 3.1207494735717773,
+      "y": 15.659208297729492
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000042.xml",
+      "x": 2.7054595947265625,
+      "y": 15.209489822387695
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000046.xml",
+      "x": 2.9536850452423096,
+      "y": 15.424154281616211
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000047.xml",
+      "x": 2.629537582397461,
+      "y": 15.734418869018555
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000048.xml",
+      "x": 3.422609567642212,
+      "y": 14.52962875366211
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000049.xml",
+      "x": 3.456268310546875,
+      "y": 14.540654182434082
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000051.xml",
+      "x": 3.4751524925231934,
+      "y": 15.096054077148438
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000054.xml",
+      "x": 3.01700758934021,
+      "y": 15.621321678161621
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000055.xml",
+      "x": 3.917632579803467,
+      "y": 17.008785247802734
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000057.xml",
+      "x": 2.4936585426330566,
+      "y": 15.790063858032227
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000061.xml",
+      "x": 3.2263102531433105,
+      "y": 14.921684265136719
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000066.xml",
+      "x": 3.0494468212127686,
+      "y": 15.598668098449707
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000068.xml",
+      "x": 3.2718584537506104,
+      "y": 15.2629976272583
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000070.xml",
+      "x": 3.45542311668396,
+      "y": 14.775769233703613
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000072.xml",
+      "x": 4.535928726196289,
+      "y": 15.218125343322754
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000075.xml",
+      "x": 11.633298873901367,
+      "y": -3.1307129859924316
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000076.xml",
+      "x": 3.005929946899414,
+      "y": 15.739240646362305
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000081.xml",
+      "x": 9.73494815826416,
+      "y": -4.363104343414307
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000083.xml",
+      "x": 14.168901443481445,
+      "y": 0.2828734517097473
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000084.xml",
+      "x": 2.71874737739563,
+      "y": 15.250017166137695
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000085.xml",
+      "x": 2.941817283630371,
+      "y": 15.158195495605469
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000086.xml",
+      "x": 2.9007408618927,
+      "y": 15.127341270446777
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000087.xml",
+      "x": 3.8780596256256104,
+      "y": 13.85350227355957
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000088.xml",
+      "x": 3.820986032485962,
+      "y": 14.376999855041504
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000089.xml",
+      "x": 3.94075083732605,
+      "y": 16.999460220336914
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000091.xml",
+      "x": 2.5286881923675537,
+      "y": 15.125008583068848
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000092.xml",
+      "x": 4.459421157836914,
+      "y": 15.19102954864502
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000100.xml",
+      "x": 2.527503490447998,
+      "y": 15.709634780883789
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000104.xml",
+      "x": 3.089460611343384,
+      "y": 15.099102973937988
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000105.xml",
+      "x": 2.5184450149536133,
+      "y": 14.849624633789062
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000108.xml",
+      "x": 2.68693470954895,
+      "y": 15.295199394226074
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000110.xml",
+      "x": 2.5062291622161865,
+      "y": 15.295855522155762
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000111.xml",
+      "x": 2.619168519973755,
+      "y": 16.23708724975586
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000116.xml",
+      "x": 2.8544399738311768,
+      "y": 15.316986083984375
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000125.xml",
+      "x": 2.7224667072296143,
+      "y": 15.194531440734863
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000137.xml",
+      "x": 2.3421568870544434,
+      "y": 15.259236335754395
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000143.xml",
+      "x": 2.7650089263916016,
+      "y": 15.15554428100586
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000146.xml",
+      "x": 2.289026975631714,
+      "y": 15.185223579406738
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000148.xml",
+      "x": 2.4594786167144775,
+      "y": 15.926748275756836
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000151.xml",
+      "x": 3.603952169418335,
+      "y": 14.290390014648438
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000158.xml",
+      "x": 2.5571506023406982,
+      "y": 15.752867698669434
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000162.xml",
+      "x": 2.988377809524536,
+      "y": 15.111867904663086
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000169.xml",
+      "x": 2.5535123348236084,
+      "y": 15.424748420715332
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000175.xml",
+      "x": 2.9933700561523438,
+      "y": 14.373318672180176
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000181.xml",
+      "x": 2.567591905593872,
+      "y": 15.39229965209961
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000183.xml",
+      "x": 8.889880180358887,
+      "y": -4.925441265106201
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000184.xml",
+      "x": 2.6664507389068604,
+      "y": 15.81055736541748
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000185.xml",
+      "x": 2.422476291656494,
+      "y": 15.544114112854004
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000188.xml",
+      "x": 2.543226480484009,
+      "y": 14.81685733795166
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000189.xml",
+      "x": 2.542433977127075,
+      "y": 14.844621658325195
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000190.xml",
+      "x": 2.7251100540161133,
+      "y": 15.781109809875488
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000197.xml",
+      "x": 4.3465728759765625,
+      "y": 15.533134460449219
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000198.xml",
+      "x": 3.734346866607666,
+      "y": 15.63205623626709
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000203.xml",
+      "x": 2.4522690773010254,
+      "y": 15.396127700805664
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000206.xml",
+      "x": 2.844578266143799,
+      "y": 15.49549388885498
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000209.xml",
+      "x": 2.3093783855438232,
+      "y": 15.239242553710938
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000210.xml",
+      "x": 2.383800983428955,
+      "y": 15.316638946533203
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000213.xml",
+      "x": 4.43867826461792,
+      "y": 15.55931282043457
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000215.xml",
+      "x": 4.479200839996338,
+      "y": 15.588590621948242
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000216.xml",
+      "x": 2.505188465118408,
+      "y": 15.887341499328613
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000217.xml",
+      "x": 2.2165164947509766,
+      "y": 15.282115936279297
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000218.xml",
+      "x": 4.3162522315979,
+      "y": 15.738179206848145
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000219.xml",
+      "x": 4.24321174621582,
+      "y": 15.856900215148926
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000220.xml",
+      "x": 4.556205749511719,
+      "y": 24.0650577545166
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000221.xml",
+      "x": 4.362617015838623,
+      "y": 15.703763008117676
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000224.xml",
+      "x": 2.6833889484405518,
+      "y": 15.730493545532227
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000228.xml",
+      "x": 2.3564651012420654,
+      "y": 15.485506057739258
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000241.xml",
+      "x": 2.820533037185669,
+      "y": 16.074535369873047
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000244.xml",
+      "x": 3.253000259399414,
+      "y": 14.156999588012695
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000254.xml",
+      "x": 3.2368369102478027,
+      "y": 16.635164260864258
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000258.xml",
+      "x": 2.6117031574249268,
+      "y": 15.851364135742188
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000262.xml",
+      "x": 4.430403232574463,
+      "y": 15.31943416595459
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000264.xml",
+      "x": 4.294308662414551,
+      "y": 14.998478889465332
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000273.xml",
+      "x": 9.055787086486816,
+      "y": -5.142946720123291
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000274.xml",
+      "x": 4.032496452331543,
+      "y": 16.174541473388672
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000276.xml",
+      "x": 3.292221784591675,
+      "y": 17.2998104095459
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000278.xml",
+      "x": 3.5149497985839844,
+      "y": 17.335418701171875
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000279.xml",
+      "x": 3.3393423557281494,
+      "y": 17.13334083557129
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000286.xml",
+      "x": 3.7199745178222656,
+      "y": 13.803905487060547
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000291.xml",
+      "x": 3.3671762943267822,
+      "y": 16.963380813598633
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000293.xml",
+      "x": 3.46781849861145,
+      "y": 13.96455192565918
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000297.xml",
+      "x": 3.8921010494232178,
+      "y": 17.094377517700195
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000298.xml",
+      "x": 4.089384078979492,
+      "y": 16.240190505981445
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000299.xml",
+      "x": 4.178773403167725,
+      "y": 16.082656860351562
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000300.xml",
+      "x": 3.3656115531921387,
+      "y": 17.103858947753906
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000304.xml",
+      "x": 3.3610641956329346,
+      "y": 17.392152786254883
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000317.xml",
+      "x": 4.555619716644287,
+      "y": 15.417237281799316
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000323.xml",
+      "x": 14.593737602233887,
+      "y": -2.4534406661987305
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000326.xml",
+      "x": 3.9151902198791504,
+      "y": 14.243035316467285
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000330.xml",
+      "x": 3.449666976928711,
+      "y": 17.189897537231445
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000331.xml",
+      "x": 3.4727582931518555,
+      "y": 17.24857521057129
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000336.xml",
+      "x": 4.202174186706543,
+      "y": 16.006391525268555
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000338.xml",
+      "x": 3.8098411560058594,
+      "y": 14.230873107910156
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000340.xml",
+      "x": 3.89802622795105,
+      "y": 14.306437492370605
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000343.xml",
+      "x": 3.5069921016693115,
+      "y": 17.280155181884766
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000344.xml",
+      "x": 3.6570217609405518,
+      "y": 13.734198570251465
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000346.xml",
+      "x": 3.7318694591522217,
+      "y": 16.33941078186035
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000348.xml",
+      "x": 3.6726832389831543,
+      "y": 17.298290252685547
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000350.xml",
+      "x": 11.18241024017334,
+      "y": -4.461456775665283
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000353.xml",
+      "x": 9.31085205078125,
+      "y": -5.017148017883301
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000354.xml",
+      "x": 4.521437644958496,
+      "y": 15.457853317260742
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000355.xml",
+      "x": 4.499189376831055,
+      "y": 15.390284538269043
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000356.xml",
+      "x": 4.112934112548828,
+      "y": 16.527555465698242
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000371.xml",
+      "x": 3.4009151458740234,
+      "y": 17.279882431030273
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000372.xml",
+      "x": 3.5117685794830322,
+      "y": 17.340023040771484
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000373.xml",
+      "x": 3.6873433589935303,
+      "y": 17.31017303466797
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000374.xml",
+      "x": 3.486893653869629,
+      "y": 17.39206886291504
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000375.xml",
+      "x": 3.530663013458252,
+      "y": 17.420822143554688
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000376.xml",
+      "x": 3.8665874004364014,
+      "y": 17.11575698852539
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000377.xml",
+      "x": 3.378760814666748,
+      "y": 17.422998428344727
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000378.xml",
+      "x": 3.3743274211883545,
+      "y": 17.439577102661133
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000379.xml",
+      "x": 3.6563942432403564,
+      "y": 17.327184677124023
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000380.xml",
+      "x": 4.1484785079956055,
+      "y": 15.213825225830078
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000382.xml",
+      "x": 3.341047763824463,
+      "y": 17.304479598999023
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000392.xml",
+      "x": 9.322394371032715,
+      "y": -5.3943281173706055
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000394.xml",
+      "x": 4.449435234069824,
+      "y": 23.99744987487793
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000395.xml",
+      "x": 4.544944763183594,
+      "y": 24.093582153320312
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000396.xml",
+      "x": 4.505468368530273,
+      "y": 24.01587677001953
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000397.xml",
+      "x": 4.556128025054932,
+      "y": 24.08448600769043
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000398.xml",
+      "x": 4.524881362915039,
+      "y": 24.02135467529297
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000400.xml",
+      "x": 4.152705192565918,
+      "y": 16.182641983032227
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000402.xml",
+      "x": 3.3273019790649414,
+      "y": 17.2595272064209
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000403.xml",
+      "x": 3.377545118331909,
+      "y": 17.282445907592773
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000405.xml",
+      "x": 14.516626358032227,
+      "y": -2.262887716293335
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000407.xml",
+      "x": 3.7315640449523926,
+      "y": 13.781495094299316
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000408.xml",
+      "x": 2.5237324237823486,
+      "y": 15.6072359085083
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000411.xml",
+      "x": 12.785172462463379,
+      "y": -2.931985855102539
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000412.xml",
+      "x": 4.522469997406006,
+      "y": 24.015518188476562
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000427.xml",
+      "x": 4.579758644104004,
+      "y": 15.362957000732422
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000428.xml",
+      "x": 8.507209777832031,
+      "y": 10.701740264892578
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000429.xml",
+      "x": 12.0343599319458,
+      "y": -3.5080981254577637
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000434.xml",
+      "x": 11.873098373413086,
+      "y": -4.225838661193848
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000436.xml",
+      "x": 6.703583717346191,
+      "y": 25.2961368560791
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000437.xml",
+      "x": 4.521549701690674,
+      "y": 24.01340103149414
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000439.xml",
+      "x": 4.381667137145996,
+      "y": 14.955802917480469
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000443.xml",
+      "x": 9.206475257873535,
+      "y": -5.03287935256958
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000445.xml",
+      "x": 9.055789947509766,
+      "y": -5.208728313446045
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000446.xml",
+      "x": 2.4784111976623535,
+      "y": 14.963244438171387
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000447.xml",
+      "x": 13.956945419311523,
+      "y": -0.42164841294288635
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000448.xml",
+      "x": 4.21212911605835,
+      "y": 14.630635261535645
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000451.xml",
+      "x": 9.622679710388184,
+      "y": -5.020939350128174
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000452.xml",
+      "x": 3.745337724685669,
+      "y": 14.065328598022461
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000453.xml",
+      "x": 3.768061876296997,
+      "y": 14.143206596374512
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000454.xml",
+      "x": 3.8711910247802734,
+      "y": 15.665241241455078
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000455.xml",
+      "x": 3.8026978969573975,
+      "y": 15.69422721862793
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000456.xml",
+      "x": 3.821859836578369,
+      "y": 15.688284873962402
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000457.xml",
+      "x": 9.118509292602539,
+      "y": -5.282740116119385
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000458.xml",
+      "x": 4.210846424102783,
+      "y": 15.258892059326172
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000459.xml",
+      "x": 4.426822662353516,
+      "y": 15.098448753356934
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000460.xml",
+      "x": 4.389723777770996,
+      "y": 15.073948860168457
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000461.xml",
+      "x": 4.306879997253418,
+      "y": 15.184406280517578
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000462.xml",
+      "x": 4.001989841461182,
+      "y": 15.561081886291504
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000467.xml",
+      "x": 4.626488208770752,
+      "y": 24.071533203125
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000470.xml",
+      "x": 4.004581451416016,
+      "y": 14.702411651611328
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000476.xml",
+      "x": 3.8764796257019043,
+      "y": 17.081867218017578
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000478.xml",
+      "x": 3.846423625946045,
+      "y": 14.043852806091309
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000479.xml",
+      "x": 3.9816396236419678,
+      "y": 14.277606010437012
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000481.xml",
+      "x": 9.247300148010254,
+      "y": -5.349358081817627
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000482.xml",
+      "x": 4.377006530761719,
+      "y": 14.853355407714844
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000483.xml",
+      "x": 4.5973029136657715,
+      "y": 15.291728973388672
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000493.xml",
+      "x": 3.845914125442505,
+      "y": 15.980271339416504
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000498.xml",
+      "x": 11.581787109375,
+      "y": -4.321603775024414
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000499.xml",
+      "x": 13.822072982788086,
+      "y": -0.24971523880958557
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000500.xml",
+      "x": 9.049006462097168,
+      "y": -4.822518348693848
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000501.xml",
+      "x": 9.018577575683594,
+      "y": -5.044229507446289
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000502.xml",
+      "x": 4.08613920211792,
+      "y": 14.77066421508789
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000503.xml",
+      "x": 3.9337069988250732,
+      "y": 14.603025436401367
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000504.xml",
+      "x": 3.8823094367980957,
+      "y": 13.754371643066406
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000505.xml",
+      "x": 9.237526893615723,
+      "y": -5.3640899658203125
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000506.xml",
+      "x": 9.302785873413086,
+      "y": -5.402585506439209
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000507.xml",
+      "x": 14.659414291381836,
+      "y": -2.4628050327301025
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000508.xml",
+      "x": 4.051258087158203,
+      "y": 16.09067726135254
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000510.xml",
+      "x": 8.501852035522461,
+      "y": 10.707650184631348
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000511.xml",
+      "x": 8.532317161560059,
+      "y": 10.677050590515137
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000513.xml",
+      "x": 8.504620552062988,
+      "y": 10.704865455627441
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000514.xml",
+      "x": 8.54416561126709,
+      "y": 10.665582656860352
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000515.xml",
+      "x": 8.525582313537598,
+      "y": 10.683452606201172
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000516.xml",
+      "x": 8.521860122680664,
+      "y": 10.687657356262207
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000520.xml",
+      "x": 3.9639644622802734,
+      "y": 15.594356536865234
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000521.xml",
+      "x": 4.228682994842529,
+      "y": 15.757224082946777
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000522.xml",
+      "x": 4.196682453155518,
+      "y": 14.598640441894531
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000523.xml",
+      "x": 4.445349216461182,
+      "y": 15.148665428161621
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000525.xml",
+      "x": 4.510289669036865,
+      "y": 15.136653900146484
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000527.xml",
+      "x": 3.955674171447754,
+      "y": 16.008407592773438
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000530.xml",
+      "x": 14.225753784179688,
+      "y": -0.14907123148441315
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000542.xml",
+      "x": 13.387068748474121,
+      "y": -0.7387226819992065
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000545.xml",
+      "x": 4.4195451736450195,
+      "y": 15.322441101074219
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000546.xml",
+      "x": 4.793740749359131,
+      "y": 24.220844268798828
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000552.xml",
+      "x": 14.371983528137207,
+      "y": -2.364576816558838
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000557.xml",
+      "x": 4.258528232574463,
+      "y": 14.661283493041992
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000559.xml",
+      "x": 14.197265625,
+      "y": 0.3714376986026764
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000560.xml",
+      "x": 3.739839792251587,
+      "y": 13.789382934570312
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000569.xml",
+      "x": 14.113900184631348,
+      "y": -2.0985910892486572
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000572.xml",
+      "x": 9.330302238464355,
+      "y": -5.420348644256592
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000573.xml",
+      "x": 14.584696769714355,
+      "y": -2.3807826042175293
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000574.xml",
+      "x": 4.0090508460998535,
+      "y": 13.996305465698242
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000575.xml",
+      "x": 12.3735933303833,
+      "y": -2.9706878662109375
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000576.xml",
+      "x": 13.64961051940918,
+      "y": -0.5513115525245667
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000577.xml",
+      "x": 9.201254844665527,
+      "y": -5.182570457458496
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000578.xml",
+      "x": 2.9364914894104004,
+      "y": 14.66506290435791
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000580.xml",
+      "x": 11.508330345153809,
+      "y": -3.3256866931915283
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000581.xml",
+      "x": 14.261970520019531,
+      "y": 0.3764694035053253
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000582.xml",
+      "x": 9.086907386779785,
+      "y": -4.698132514953613
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000586.xml",
+      "x": 13.969351768493652,
+      "y": -1.9058175086975098
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000588.xml",
+      "x": 3.8456783294677734,
+      "y": 15.152403831481934
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000590.xml",
+      "x": 9.18895435333252,
+      "y": -4.70077657699585
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000591.xml",
+      "x": 4.14158821105957,
+      "y": 15.432186126708984
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000597.xml",
+      "x": 8.875234603881836,
+      "y": -5.020083427429199
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000600.xml",
+      "x": 4.569270610809326,
+      "y": 24.023033142089844
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000601.xml",
+      "x": 3.79060697555542,
+      "y": 15.9561767578125
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000602.xml",
+      "x": 13.476460456848145,
+      "y": 0.069557324051857
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000603.xml",
+      "x": 8.996915817260742,
+      "y": -4.901159286499023
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000604.xml",
+      "x": 8.936084747314453,
+      "y": -4.897522926330566
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000607.xml",
+      "x": 9.003440856933594,
+      "y": -4.8703694343566895
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000610.xml",
+      "x": 8.933320045471191,
+      "y": -4.837442874908447
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000611.xml",
+      "x": 3.5591535568237305,
+      "y": 14.076309204101562
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000612.xml",
+      "x": 3.751394748687744,
+      "y": 13.79599380493164
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000614.xml",
+      "x": 14.566411972045898,
+      "y": -2.7120723724365234
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000615.xml",
+      "x": 11.717757225036621,
+      "y": -3.5560028553009033
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000616.xml",
+      "x": 12.480881690979004,
+      "y": -3.045212984085083
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000617.xml",
+      "x": 13.92807674407959,
+      "y": -2.422844409942627
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000619.xml",
+      "x": 3.866513967514038,
+      "y": 16.44659996032715
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000620.xml",
+      "x": 4.006416320800781,
+      "y": 13.911203384399414
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000622.xml",
+      "x": 13.31009292602539,
+      "y": -0.8109061121940613
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000623.xml",
+      "x": 9.110400199890137,
+      "y": -5.075350761413574
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000624.xml",
+      "x": 4.21320915222168,
+      "y": 15.209888458251953
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000625.xml",
+      "x": 11.640400886535645,
+      "y": -3.4014878273010254
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000626.xml",
+      "x": 11.966157913208008,
+      "y": -3.0533394813537598
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000629.xml",
+      "x": 13.44301986694336,
+      "y": 0.08482539653778076
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000630.xml",
+      "x": 14.040962219238281,
+      "y": 0.06050362065434456
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000631.xml",
+      "x": 4.260429859161377,
+      "y": 14.530016899108887
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000634.xml",
+      "x": 3.747328758239746,
+      "y": 13.85369873046875
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000635.xml",
+      "x": 4.134434223175049,
+      "y": 14.201396942138672
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000636.xml",
+      "x": 4.172240257263184,
+      "y": 14.127755165100098
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000637.xml",
+      "x": 13.811234474182129,
+      "y": -0.3291545808315277
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000638.xml",
+      "x": 13.707383155822754,
+      "y": -0.368144690990448
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000639.xml",
+      "x": 14.234155654907227,
+      "y": -2.1139721870422363
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000640.xml",
+      "x": 9.077839851379395,
+      "y": -4.7189202308654785
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000646.xml",
+      "x": 12.913980484008789,
+      "y": -2.1584346294403076
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000647.xml",
+      "x": 13.90026569366455,
+      "y": -0.1743880808353424
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000648.xml",
+      "x": 11.282938957214355,
+      "y": -4.073810577392578
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000651.xml",
+      "x": 9.404351234436035,
+      "y": -4.603202819824219
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000652.xml",
+      "x": 11.31278133392334,
+      "y": -4.100161075592041
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000653.xml",
+      "x": 11.266892433166504,
+      "y": -4.0659403800964355
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000654.xml",
+      "x": 11.359416007995605,
+      "y": -4.016109466552734
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000656.xml",
+      "x": 11.329239845275879,
+      "y": -4.117303371429443
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000657.xml",
+      "x": 12.242218971252441,
+      "y": -3.311424493789673
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000660.xml",
+      "x": 11.414504051208496,
+      "y": -4.361059188842773
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000661.xml",
+      "x": 12.42313003540039,
+      "y": -3.4887187480926514
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000662.xml",
+      "x": 13.303853988647461,
+      "y": -1.7229440212249756
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000663.xml",
+      "x": 13.319783210754395,
+      "y": -1.2385023832321167
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000664.xml",
+      "x": 12.928837776184082,
+      "y": -1.2457044124603271
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000665.xml",
+      "x": 13.055935859680176,
+      "y": -1.1156750917434692
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000666.xml",
+      "x": 9.147477149963379,
+      "y": -5.052347660064697
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000667.xml",
+      "x": 14.178520202636719,
+      "y": 0.2456778734922409
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000668.xml",
+      "x": 14.0383882522583,
+      "y": -0.23473359644412994
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000676.xml",
+      "x": 13.950182914733887,
+      "y": -0.4299478828907013
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000678.xml",
+      "x": 13.261868476867676,
+      "y": -1.0825228691101074
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000683.xml",
+      "x": 13.609431266784668,
+      "y": -0.5589194297790527
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000688.xml",
+      "x": 13.3323392868042,
+      "y": -0.9238479137420654
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000691.xml",
+      "x": 13.233756065368652,
+      "y": -0.8845139145851135
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000692.xml",
+      "x": 13.156222343444824,
+      "y": -1.1241798400878906
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000695.xml",
+      "x": 9.286420822143555,
+      "y": -4.575873374938965
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000697.xml",
+      "x": 11.621703147888184,
+      "y": -3.196927070617676
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000698.xml",
+      "x": 12.140483856201172,
+      "y": -3.436126708984375
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000699.xml",
+      "x": 9.413590431213379,
+      "y": -4.52205753326416
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000700.xml",
+      "x": 9.063483238220215,
+      "y": -5.042396068572998
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000703.xml",
+      "x": 9.416864395141602,
+      "y": -5.131605625152588
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000704.xml",
+      "x": 13.621953010559082,
+      "y": -0.9644221067428589
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000705.xml",
+      "x": 8.986297607421875,
+      "y": -4.673962116241455
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000706.xml",
+      "x": 9.023809432983398,
+      "y": -4.732097148895264
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000707.xml",
+      "x": 13.810546875,
+      "y": -1.210311770439148
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000708.xml",
+      "x": 13.973127365112305,
+      "y": -1.0631661415100098
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000711.xml",
+      "x": 12.014816284179688,
+      "y": -4.338789463043213
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000712.xml",
+      "x": 14.431838989257812,
+      "y": -2.0102312564849854
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000713.xml",
+      "x": 14.24967098236084,
+      "y": -2.2068264484405518
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000714.xml",
+      "x": 13.909684181213379,
+      "y": -2.7431602478027344
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000715.xml",
+      "x": 14.811792373657227,
+      "y": -1.7196357250213623
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000716.xml",
+      "x": 13.922464370727539,
+      "y": -1.2235649824142456
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000718.xml",
+      "x": 11.266386985778809,
+      "y": -4.469482421875
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000719.xml",
+      "x": 12.893312454223633,
+      "y": -1.3285876512527466
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000720.xml",
+      "x": 13.992924690246582,
+      "y": -0.6335549354553223
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000721.xml",
+      "x": 14.098663330078125,
+      "y": -3.061274528503418
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000722.xml",
+      "x": 12.47166633605957,
+      "y": -3.423586130142212
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000723.xml",
+      "x": 11.648151397705078,
+      "y": -4.337000370025635
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000724.xml",
+      "x": 13.818380355834961,
+      "y": -0.4666348397731781
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000725.xml",
+      "x": 9.344077110290527,
+      "y": -5.183099269866943
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000726.xml",
+      "x": 13.989110946655273,
+      "y": -0.7699925303459167
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000727.xml",
+      "x": 11.225872993469238,
+      "y": -4.534512519836426
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000728.xml",
+      "x": 14.526739120483398,
+      "y": -0.9985386729240417
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000729.xml",
+      "x": 14.258410453796387,
+      "y": -0.885224461555481
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000730.xml",
+      "x": 9.120176315307617,
+      "y": -4.6499247550964355
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000732.xml",
+      "x": 13.746610641479492,
+      "y": -1.953011393547058
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000733.xml",
+      "x": 13.784133911132812,
+      "y": -2.3728911876678467
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000734.xml",
+      "x": 13.47789192199707,
+      "y": 0.013804076239466667
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000735.xml",
+      "x": 13.501450538635254,
+      "y": 0.06575354933738708
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000736.xml",
+      "x": 13.465494155883789,
+      "y": -0.06988392770290375
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000737.xml",
+      "x": 13.466577529907227,
+      "y": -0.03666101396083832
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000740.xml",
+      "x": 14.08227825164795,
+      "y": -0.4269113540649414
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000741.xml",
+      "x": 11.814898490905762,
+      "y": -0.8523573875427246
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000742.xml",
+      "x": 11.756921768188477,
+      "y": -0.6747793555259705
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000743.xml",
+      "x": 11.451085090637207,
+      "y": -4.407713413238525
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000744.xml",
+      "x": 11.98711109161377,
+      "y": -3.394080400466919
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000745.xml",
+      "x": 12.011588096618652,
+      "y": -2.933469295501709
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000746.xml",
+      "x": 11.765129089355469,
+      "y": -1.0656265020370483
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000747.xml",
+      "x": 14.059277534484863,
+      "y": -0.12920835614204407
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000748.xml",
+      "x": 11.758771896362305,
+      "y": -1.5495164394378662
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000749.xml",
+      "x": 11.810254096984863,
+      "y": -1.672468662261963
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000750.xml",
+      "x": 12.085749626159668,
+      "y": -2.6534602642059326
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000751.xml",
+      "x": 11.602977752685547,
+      "y": -0.71592116355896
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000752.xml",
+      "x": 11.449633598327637,
+      "y": -0.7956368327140808
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000753.xml",
+      "x": 11.523521423339844,
+      "y": -0.9277627468109131
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000754.xml",
+      "x": 11.6555814743042,
+      "y": -1.2836382389068604
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000755.xml",
+      "x": 14.122451782226562,
+      "y": -0.26751333475112915
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000756.xml",
+      "x": 12.010186195373535,
+      "y": -2.249981641769409
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000757.xml",
+      "x": 11.921160697937012,
+      "y": -1.8467029333114624
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000758.xml",
+      "x": 11.780314445495605,
+      "y": -0.5792946219444275
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000759.xml",
+      "x": 11.82645320892334,
+      "y": -3.7360427379608154
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000760.xml",
+      "x": 11.543266296386719,
+      "y": -0.6405471563339233
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000761.xml",
+      "x": 12.348864555358887,
+      "y": -2.6849803924560547
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000763.xml",
+      "x": 14.75202465057373,
+      "y": -1.8953958749771118
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000765.xml",
+      "x": 13.776701927185059,
+      "y": -2.044218063354492
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000766.xml",
+      "x": 11.849828720092773,
+      "y": -1.6224523782730103
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000767.xml",
+      "x": 11.532885551452637,
+      "y": -0.7700503468513489
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000768.xml",
+      "x": 12.02536678314209,
+      "y": -2.8082358837127686
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000769.xml",
+      "x": 11.846063613891602,
+      "y": -1.3531306982040405
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000771.xml",
+      "x": 14.914618492126465,
+      "y": -1.6714835166931152
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000772.xml",
+      "x": 14.885828018188477,
+      "y": -1.7054585218429565
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000773.xml",
+      "x": 11.616979598999023,
+      "y": -1.1016168594360352
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000774.xml",
+      "x": 11.489326477050781,
+      "y": -0.6256234049797058
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000775.xml",
+      "x": 11.625319480895996,
+      "y": -0.9864103198051453
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000776.xml",
+      "x": 11.581560134887695,
+      "y": -0.9425625205039978
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000777.xml",
+      "x": 14.976849555969238,
+      "y": -1.7706331014633179
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000778.xml",
+      "x": 11.591761589050293,
+      "y": -1.0886026620864868
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000779.xml",
+      "x": 11.848398208618164,
+      "y": -4.522055149078369
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000780.xml",
+      "x": 11.460086822509766,
+      "y": -0.7034975290298462
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000781.xml",
+      "x": 11.592211723327637,
+      "y": -0.6154000759124756
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000782.xml",
+      "x": 11.676878929138184,
+      "y": -0.5846922397613525
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000783.xml",
+      "x": 14.9694242477417,
+      "y": -1.785672903060913
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000784.xml",
+      "x": 14.814597129821777,
+      "y": -2.2140703201293945
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000785.xml",
+      "x": 14.95622444152832,
+      "y": -1.805297613143921
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000786.xml",
+      "x": 6.036318778991699,
+      "y": 24.92831039428711
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000787.xml",
+      "x": 14.950650215148926,
+      "y": -1.7736133337020874
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000788.xml",
+      "x": 12.996464729309082,
+      "y": -1.1893937587738037
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000789.xml",
+      "x": 11.454817771911621,
+      "y": -0.7109521627426147
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000790.xml",
+      "x": 13.042795181274414,
+      "y": -3.2158024311065674
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000791.xml",
+      "x": 11.732942581176758,
+      "y": -1.43089759349823
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000792.xml",
+      "x": 14.175856590270996,
+      "y": -2.741562843322754
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000793.xml",
+      "x": 11.824456214904785,
+      "y": -0.563520610332489
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000794.xml",
+      "x": 6.068187236785889,
+      "y": 24.956859588623047
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000795.xml",
+      "x": 11.698820114135742,
+      "y": -0.5591592192649841
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000796.xml",
+      "x": 11.467960357666016,
+      "y": -0.7146032452583313
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000797.xml",
+      "x": 13.859116554260254,
+      "y": -2.7381794452667236
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000798.xml",
+      "x": 11.418235778808594,
+      "y": -0.7012850642204285
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000799.xml",
+      "x": 15.074542045593262,
+      "y": -1.5864722728729248
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000800.xml",
+      "x": 15.055572509765625,
+      "y": -2.2626469135284424
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000801.xml",
+      "x": 11.65931224822998,
+      "y": -1.213527798652649
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000802.xml",
+      "x": 11.570547103881836,
+      "y": -1.1464399099349976
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000803.xml",
+      "x": 14.74251937866211,
+      "y": -1.0564712285995483
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000805.xml",
+      "x": 11.661979675292969,
+      "y": -1.325024127960205
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000806.xml",
+      "x": 9.317880630493164,
+      "y": -4.495943069458008
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000807.xml",
+      "x": 12.687634468078613,
+      "y": -1.9965378046035767
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000808.xml",
+      "x": 13.887808799743652,
+      "y": -2.684830904006958
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000809.xml",
+      "x": 13.461576461791992,
+      "y": -2.1576881408691406
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000810.xml",
+      "x": 11.93945598602295,
+      "y": -4.33928918838501
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000811.xml",
+      "x": 11.465706825256348,
+      "y": -4.585958480834961
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000812.xml",
+      "x": 14.019403457641602,
+      "y": -1.973529577255249
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000813.xml",
+      "x": 15.089322090148926,
+      "y": -1.8435524702072144
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000814.xml",
+      "x": 13.80445671081543,
+      "y": -2.2554492950439453
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000815.xml",
+      "x": 14.780929565429688,
+      "y": -1.903746247291565
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000816.xml",
+      "x": 12.689552307128906,
+      "y": -3.3763461112976074
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000817.xml",
+      "x": 12.694829940795898,
+      "y": -2.9414615631103516
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000818.xml",
+      "x": 14.037230491638184,
+      "y": -0.8208550214767456
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000819.xml",
+      "x": 12.126684188842773,
+      "y": -4.195033550262451
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000820.xml",
+      "x": 13.46711254119873,
+      "y": -1.9312114715576172
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000821.xml",
+      "x": 13.49532413482666,
+      "y": -2.1579978466033936
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000822.xml",
+      "x": 12.783523559570312,
+      "y": -3.256681203842163
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000823.xml",
+      "x": 14.044637680053711,
+      "y": -1.4771971702575684
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000825.xml",
+      "x": 15.164958000183105,
+      "y": -1.6772456169128418
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000826.xml",
+      "x": 9.072098731994629,
+      "y": -5.019528865814209
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000827.xml",
+      "x": 13.118617057800293,
+      "y": -2.0501253604888916
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000828.xml",
+      "x": 12.190995216369629,
+      "y": -2.2685067653656006
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000829.xml",
+      "x": 11.809610366821289,
+      "y": -4.302305698394775
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000830.xml",
+      "x": 4.899971008300781,
+      "y": 24.278833389282227
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000831.xml",
+      "x": 13.907523155212402,
+      "y": -2.2004213333129883
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000833.xml",
+      "x": 12.074686050415039,
+      "y": -4.4618024826049805
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000834.xml",
+      "x": 9.028809547424316,
+      "y": -4.8884477615356445
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000835.xml",
+      "x": 9.229562759399414,
+      "y": -5.321081161499023
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000837.xml",
+      "x": 12.57471752166748,
+      "y": -3.5370397567749023
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000839.xml",
+      "x": 13.930973052978516,
+      "y": -1.9641196727752686
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000840.xml",
+      "x": 14.733316421508789,
+      "y": -0.9659925103187561
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000842.xml",
+      "x": 12.006196022033691,
+      "y": -4.284721374511719
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000843.xml",
+      "x": 14.195635795593262,
+      "y": -0.8822352290153503
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000844.xml",
+      "x": 14.165783882141113,
+      "y": -0.9385121464729309
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000845.xml",
+      "x": 14.862715721130371,
+      "y": -1.3905917406082153
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000847.xml",
+      "x": 13.956513404846191,
+      "y": -2.7827506065368652
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000848.xml",
+      "x": 12.483458518981934,
+      "y": -3.7868635654449463
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000850.xml",
+      "x": 14.927587509155273,
+      "y": -1.1404566764831543
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000851.xml",
+      "x": 14.664098739624023,
+      "y": -1.362484097480774
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000852.xml",
+      "x": 13.734696388244629,
+      "y": -2.1157994270324707
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000853.xml",
+      "x": 12.877251625061035,
+      "y": -3.286526918411255
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000854.xml",
+      "x": 14.674670219421387,
+      "y": -1.298063039779663
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000855.xml",
+      "x": 13.357890129089355,
+      "y": -2.79630970954895
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000857.xml",
+      "x": 12.633559226989746,
+      "y": -3.5670042037963867
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000858.xml",
+      "x": 12.655961990356445,
+      "y": -3.628183603286743
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000859.xml",
+      "x": 11.970200538635254,
+      "y": -4.433786392211914
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000860.xml",
+      "x": 14.566167831420898,
+      "y": -2.871882200241089
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000861.xml",
+      "x": 9.08824634552002,
+      "y": -4.862277030944824
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000862.xml",
+      "x": 9.487257957458496,
+      "y": -4.4024224281311035
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000863.xml",
+      "x": 10.070219039916992,
+      "y": -4.931199073791504
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000864.xml",
+      "x": 9.542778968811035,
+      "y": -4.3872456550598145
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000865.xml",
+      "x": 12.324551582336426,
+      "y": -3.377448558807373
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000866.xml",
+      "x": 14.456920623779297,
+      "y": -0.2904399335384369
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000868.xml",
+      "x": 14.401896476745605,
+      "y": -0.2661316692829132
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000869.xml",
+      "x": 14.56443977355957,
+      "y": -0.47894763946533203
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000870.xml",
+      "x": 14.32247257232666,
+      "y": -0.04397306963801384
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000871.xml",
+      "x": 14.28207015991211,
+      "y": -0.16185826063156128
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000873.xml",
+      "x": 9.13369083404541,
+      "y": -4.699911117553711
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000874.xml",
+      "x": 12.979920387268066,
+      "y": -2.5078232288360596
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000875.xml",
+      "x": 14.586799621582031,
+      "y": -2.919578790664673
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000876.xml",
+      "x": 14.781503677368164,
+      "y": -1.4134485721588135
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000877.xml",
+      "x": 14.996702194213867,
+      "y": -2.3155174255371094
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000878.xml",
+      "x": 13.898541450500488,
+      "y": -2.3133819103240967
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000879.xml",
+      "x": 13.864119529724121,
+      "y": -2.6734023094177246
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000880.xml",
+      "x": 13.85191822052002,
+      "y": -2.5937139987945557
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000881.xml",
+      "x": 13.84832763671875,
+      "y": -2.895977020263672
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000882.xml",
+      "x": 14.352940559387207,
+      "y": -2.532689332962036
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000883.xml",
+      "x": 14.007575035095215,
+      "y": -0.20445027947425842
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000885.xml",
+      "x": 14.362251281738281,
+      "y": -2.9395861625671387
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000886.xml",
+      "x": 13.80887508392334,
+      "y": -3.1611435413360596
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000887.xml",
+      "x": 14.860172271728516,
+      "y": -1.1967873573303223
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000888.xml",
+      "x": 13.277932167053223,
+      "y": -3.299381732940674
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000889.xml",
+      "x": 11.94686508178711,
+      "y": -4.444714546203613
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000890.xml",
+      "x": 14.785969734191895,
+      "y": -1.4233348369598389
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000893.xml",
+      "x": 15.023368835449219,
+      "y": -1.6195613145828247
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000894.xml",
+      "x": 14.38021469116211,
+      "y": -3.0945284366607666
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000895.xml",
+      "x": 11.40103816986084,
+      "y": -4.544349670410156
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000896.xml",
+      "x": 14.040393829345703,
+      "y": -1.0238851308822632
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000897.xml",
+      "x": 14.595455169677734,
+      "y": -2.943894386291504
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000898.xml",
+      "x": 13.785406112670898,
+      "y": -2.2982354164123535
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000899.xml",
+      "x": 4.594321250915527,
+      "y": 23.989334106445312
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000900.xml",
+      "x": 14.323843002319336,
+      "y": -3.0962812900543213
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000903.xml",
+      "x": 11.987597465515137,
+      "y": -3.6775081157684326
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000904.xml",
+      "x": 13.78005599975586,
+      "y": -3.191409111022949
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000905.xml",
+      "x": 14.033262252807617,
+      "y": -3.107377529144287
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000906.xml",
+      "x": 14.470304489135742,
+      "y": -2.860363245010376
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000907.xml",
+      "x": 9.049897193908691,
+      "y": -5.149465560913086
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000909.xml",
+      "x": 14.160048484802246,
+      "y": -3.155094861984253
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000910.xml",
+      "x": 14.716947555541992,
+      "y": -2.761275291442871
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000912.xml",
+      "x": 14.508339881896973,
+      "y": -2.923341751098633
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000913.xml",
+      "x": 12.145589828491211,
+      "y": -3.6882920265197754
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000914.xml",
+      "x": 14.310785293579102,
+      "y": -2.6739389896392822
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000915.xml",
+      "x": 14.010988235473633,
+      "y": 0.5522007942199707
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000916.xml",
+      "x": 14.200191497802734,
+      "y": -0.8889320492744446
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000917.xml",
+      "x": 13.284045219421387,
+      "y": -0.3660503029823303
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000918.xml",
+      "x": 10.38104248046875,
+      "y": -4.762095928192139
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000919.xml",
+      "x": 14.270726203918457,
+      "y": -2.2876243591308594
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000920.xml",
+      "x": 13.041131019592285,
+      "y": -2.149461030960083
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000921.xml",
+      "x": 12.435820579528809,
+      "y": -3.6008222103118896
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000922.xml",
+      "x": 14.198169708251953,
+      "y": -1.8682020902633667
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000923.xml",
+      "x": 13.644647598266602,
+      "y": -3.1043639183044434
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000924.xml",
+      "x": 12.016523361206055,
+      "y": -3.6976776123046875
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000925.xml",
+      "x": 5.883115768432617,
+      "y": 24.80946922302246
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000926.xml",
+      "x": 12.317046165466309,
+      "y": -4.061493396759033
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000927.xml",
+      "x": 14.084450721740723,
+      "y": -1.7260569334030151
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000928.xml",
+      "x": 11.799614906311035,
+      "y": -4.191044807434082
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000929.xml",
+      "x": 12.10572338104248,
+      "y": -3.868643283843994
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000930.xml",
+      "x": 13.776058197021484,
+      "y": -2.5939712524414062
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000931.xml",
+      "x": 14.002542495727539,
+      "y": -1.9810633659362793
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000932.xml",
+      "x": 14.25500202178955,
+      "y": -1.2610427141189575
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000933.xml",
+      "x": 14.08915901184082,
+      "y": -1.7883148193359375
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000934.xml",
+      "x": 14.102341651916504,
+      "y": 0.2880902588367462
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000935.xml",
+      "x": 13.723345756530762,
+      "y": -1.5362281799316406
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000936.xml",
+      "x": 13.602178573608398,
+      "y": -1.376732587814331
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000938.xml",
+      "x": 13.399723052978516,
+      "y": -1.4467746019363403
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000939.xml",
+      "x": 12.830887794494629,
+      "y": -3.02608585357666
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000940.xml",
+      "x": 14.145910263061523,
+      "y": -0.5870532989501953
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000941.xml",
+      "x": 12.95534896850586,
+      "y": -1.8697264194488525
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000942.xml",
+      "x": 14.009153366088867,
+      "y": -0.5301781892776489
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000943.xml",
+      "x": 11.70317268371582,
+      "y": -4.207904815673828
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000944.xml",
+      "x": 14.056192398071289,
+      "y": -2.0552117824554443
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000948.xml",
+      "x": 14.576765060424805,
+      "y": -1.8712188005447388
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000949.xml",
+      "x": 14.104008674621582,
+      "y": -0.9983102083206177
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000951.xml",
+      "x": 14.231629371643066,
+      "y": 0.39805346727371216
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000952.xml",
+      "x": 11.254674911499023,
+      "y": -4.5056538581848145
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000953.xml",
+      "x": 11.325584411621094,
+      "y": -4.515116214752197
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000954.xml",
+      "x": 11.305998802185059,
+      "y": -4.51828145980835
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000955.xml",
+      "x": 12.953633308410645,
+      "y": -0.5447747707366943
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000956.xml",
+      "x": 13.892512321472168,
+      "y": -1.6516096591949463
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000957.xml",
+      "x": 12.745452880859375,
+      "y": -0.648959755897522
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000959.xml",
+      "x": 11.893447875976562,
+      "y": -4.1761627197265625
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000960.xml",
+      "x": 12.743929862976074,
+      "y": -0.6715815663337708
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000962.xml",
+      "x": 13.232240676879883,
+      "y": -0.8216779828071594
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000963.xml",
+      "x": 12.908068656921387,
+      "y": -0.7672609686851501
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000964.xml",
+      "x": 12.665868759155273,
+      "y": -0.8288742899894714
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000965.xml",
+      "x": 5.930251598358154,
+      "y": 24.85564613342285
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000966.xml",
+      "x": 6.002865791320801,
+      "y": 24.90056037902832
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000967.xml",
+      "x": 6.0037078857421875,
+      "y": 24.91118049621582
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000968.xml",
+      "x": 13.277174949645996,
+      "y": -0.21702873706817627
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000971.xml",
+      "x": 12.766319274902344,
+      "y": -0.7864680290222168
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000972.xml",
+      "x": 12.716890335083008,
+      "y": -0.7496938705444336
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000973.xml",
+      "x": 14.252230644226074,
+      "y": -1.730300784111023
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000975.xml",
+      "x": 12.061159133911133,
+      "y": -3.460075616836548
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000976.xml",
+      "x": 13.741188049316406,
+      "y": -1.1128661632537842
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000977.xml",
+      "x": 13.451556205749512,
+      "y": -0.9642871618270874
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000978.xml",
+      "x": 13.748152732849121,
+      "y": -1.2398391962051392
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000981.xml",
+      "x": 12.727225303649902,
+      "y": -0.9047941565513611
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000982.xml",
+      "x": 14.06810474395752,
+      "y": -1.3956958055496216
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000983.xml",
+      "x": 12.599692344665527,
+      "y": -1.0313808917999268
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000985.xml",
+      "x": 13.713610649108887,
+      "y": -1.0063271522521973
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000986.xml",
+      "x": 14.081114768981934,
+      "y": -0.7755823731422424
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000987.xml",
+      "x": 14.197615623474121,
+      "y": -0.5222762823104858
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000988.xml",
+      "x": 4.589134216308594,
+      "y": 24.068477630615234
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000000991.xml",
+      "x": 13.955733299255371,
+      "y": -0.8354992866516113
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001004.xml",
+      "x": 14.117774963378906,
+      "y": -0.22251324355602264
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001005.xml",
+      "x": 11.592857360839844,
+      "y": -4.365157127380371
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001006.xml",
+      "x": 12.986310958862305,
+      "y": -2.408287286758423
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001007.xml",
+      "x": 13.910844802856445,
+      "y": -1.7841475009918213
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001008.xml",
+      "x": 13.976175308227539,
+      "y": -1.5362557172775269
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001009.xml",
+      "x": 13.967130661010742,
+      "y": -1.3936550617218018
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001010.xml",
+      "x": 13.955588340759277,
+      "y": -1.8420823812484741
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001011.xml",
+      "x": 14.085565567016602,
+      "y": 2.6691293716430664
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001012.xml",
+      "x": 14.140253067016602,
+      "y": 2.651423692703247
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001013.xml",
+      "x": 13.97286319732666,
+      "y": 2.621978759765625
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001014.xml",
+      "x": 13.94011402130127,
+      "y": 2.6147844791412354
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001015.xml",
+      "x": 13.414194107055664,
+      "y": 0.027399227023124695
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001016.xml",
+      "x": 14.148039817810059,
+      "y": 2.4138875007629395
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001017.xml",
+      "x": 14.129281997680664,
+      "y": 2.046520709991455
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001018.xml",
+      "x": 14.120964050292969,
+      "y": 2.2416470050811768
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001019.xml",
+      "x": 14.37447738647461,
+      "y": 2.5323173999786377
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001020.xml",
+      "x": 14.39224624633789,
+      "y": 2.425537586212158
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001022.xml",
+      "x": 14.348999977111816,
+      "y": 2.5000267028808594
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001023.xml",
+      "x": 14.226743698120117,
+      "y": 2.5481374263763428
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001024.xml",
+      "x": 14.093400955200195,
+      "y": 2.4968326091766357
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001025.xml",
+      "x": 14.144970893859863,
+      "y": 2.662536382675171
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001027.xml",
+      "x": 13.314855575561523,
+      "y": -0.15411701798439026
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001030.xml",
+      "x": 14.299694061279297,
+      "y": 2.5494017601013184
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001031.xml",
+      "x": 14.150809288024902,
+      "y": 2.4584548473358154
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001032.xml",
+      "x": 14.259987831115723,
+      "y": 2.3682284355163574
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001033.xml",
+      "x": 11.30683422088623,
+      "y": -3.4758081436157227
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001034.xml",
+      "x": 14.236154556274414,
+      "y": 2.662264347076416
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001035.xml",
+      "x": 14.162202835083008,
+      "y": 2.6322412490844727
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001036.xml",
+      "x": 14.346686363220215,
+      "y": 2.4935965538024902
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001037.xml",
+      "x": 14.149142265319824,
+      "y": 2.5805234909057617
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001041.xml",
+      "x": 14.174482345581055,
+      "y": 2.652738332748413
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001042.xml",
+      "x": 11.330911636352539,
+      "y": -3.4737870693206787
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001043.xml",
+      "x": 14.268186569213867,
+      "y": 2.568002462387085
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001044.xml",
+      "x": 5.826097011566162,
+      "y": 24.76264190673828
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001045.xml",
+      "x": 13.417756080627441,
+      "y": 0.035650864243507385
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001046.xml",
+      "x": 3.951845645904541,
+      "y": 14.352972984313965
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001047.xml",
+      "x": 14.449432373046875,
+      "y": 2.318788766860962
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001048.xml",
+      "x": 14.489027976989746,
+      "y": 2.305739641189575
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001052.xml",
+      "x": 14.207427978515625,
+      "y": 2.638593912124634
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001053.xml",
+      "x": 14.509713172912598,
+      "y": 2.4937758445739746
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001054.xml",
+      "x": 14.439724922180176,
+      "y": 2.027677297592163
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001055.xml",
+      "x": 13.863056182861328,
+      "y": 2.6260390281677246
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001056.xml",
+      "x": 14.519593238830566,
+      "y": 2.2308926582336426
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001057.xml",
+      "x": 14.47038459777832,
+      "y": 2.260909080505371
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001058.xml",
+      "x": 11.497450828552246,
+      "y": -3.3825430870056152
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001059.xml",
+      "x": 14.518342971801758,
+      "y": 2.035217046737671
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001060.xml",
+      "x": 14.532347679138184,
+      "y": 2.1617379188537598
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001065.xml",
+      "x": 6.02260160446167,
+      "y": 24.929533004760742
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001072.xml",
+      "x": 9.886645317077637,
+      "y": -4.389153480529785
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001077.xml",
+      "x": 9.388154029846191,
+      "y": -4.483225345611572
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001078.xml",
+      "x": 14.323219299316406,
+      "y": 2.318486452102661
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001079.xml",
+      "x": 13.994614601135254,
+      "y": 2.5502679347991943
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001080.xml",
+      "x": 14.0693941116333,
+      "y": 2.4866302013397217
+    },
+    {
+      "path": "frozen_corpus/sources/sbml_BIOMD0000001103.xml",
+      "x": 14.494298934936523,
+      "y": 2.2678380012512207
+    }
+  ]
+}
