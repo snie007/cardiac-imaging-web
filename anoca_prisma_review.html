@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ANOCA Rapid PRISMA Review — Quantitative Evidence Explorer</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:0;background:#f7f9fc;color:#0f172a}
+    header{background:#0b1324;color:#fff;padding:18px 20px}
+    h1{margin:0;font-size:22px}
+    .sub{font-size:14px;opacity:.92;margin-top:6px}
+    main{max-width:1200px;margin:18px auto;padding:0 14px}
+    .card{background:#fff;border:1px solid #dbe3ef;border-radius:10px;padding:14px;margin-bottom:12px}
+    .controls{display:grid;grid-template-columns:1fr 220px 220px;gap:8px}
+    input,select{padding:10px;border:1px solid #cbd5e1;border-radius:8px}
+    table{width:100%;border-collapse:collapse;font-size:14px}
+    th,td{border:1px solid #e2e8f0;padding:8px;vertical-align:top}
+    th{background:#f1f5f9;text-align:left}
+    .pill{display:inline-block;background:#e2e8f0;border-radius:999px;padding:2px 8px;font-size:12px;margin-right:6px}
+    .small{font-size:12px;color:#475569}
+    .warn{background:#fff7ed;border-color:#fed7aa}
+  </style>
+</head>
+<body>
+<header>
+  <h1>ANOCA / INOCA Rapid PRISMA-Style Review</h1>
+  <div class="sub">Searchable quantitative evidence with PMID links (prevalence, misdiagnosis, healthcare burden, sex disparity)</div>
+</header>
+<main>
+  <div class="card">
+    <b>Question:</b> What hard quantitative evidence exists for ANOCA/INOCA regarding prevalence, misdiagnosis/diagnostic gap, healthcare burden, and sex disparity?
+    <p class="small"><b>Search date:</b> 2026-03-07 | <b>Source databases:</b> PubMed + Wellcome LEAP VISIBLE page (context only).</p>
+  </div>
+
+  <div class="card">
+    <b>PRISMA-style rapid method</b>
+    <ul>
+      <li>Search concepts: (ANOCA OR INOCA) + (prevalence/misdiagnosis/costs/hospitalization/sex differences)</li>
+      <li>Screening focus: studies/reviews with explicit quantitative outputs and citable PMID</li>
+      <li>Included in quantitative table: n=6 core PubMed records</li>
+      <li>Excluded: narrative statements without extractable quantitative effect estimates</li>
+    </ul>
+  </div>
+
+  <div class="card warn">
+    <b>Important evidence note</b>
+    <p class="small">Wellcome LEAP VISIBLE page provides useful headline numbers (e.g., "up to 4-fold risk", "<1% tested", "lifetime cost estimate"), but these are programme statements. For scientific citation, use the PMID-linked evidence in the table below.</p>
+  </div>
+
+  <div class="card">
+    <div class="controls">
+      <input id="q" placeholder="Search numbers/terms (e.g., 26%, 78%, OR 3.34, HR 2.45)"/>
+      <select id="metric">
+        <option value="">All metric domains</option>
+        <option>Prevalence</option>
+        <option>Misdiagnosis / diagnostic gap</option>
+        <option>Healthcare burden</option>
+        <option>Sex disparity</option>
+      </select>
+      <select id="design">
+        <option value="">All study designs</option>
+        <option>Population cohort</option>
+        <option>Systematic review / meta-analysis</option>
+        <option>Consensus / review</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="card">
+    <div id="count" class="small"></div>
+    <table>
+      <thead><tr>
+        <th>Study</th><th>Design</th><th>Metric domain</th><th>Hard quantitative evidence</th><th>PMID</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <b>Wellcome LEAP VISIBLE (contextual non-PMID claims to cross-check)</b>
+    <ul>
+      <li>~100 million women globally with stable chest pain (range 60–140 million cited on page)</li>
+      <li>~700,000 women/year in US+Europe undergo angiography and leave without diagnosis (programme estimate)</li>
+      <li>Stated "up to 4-fold" higher major event risk and "<1%" undergoing coronary function testing</li>
+      <li>Stated lifetime healthcare cost estimate of $750,000 per patient</li>
+    </ul>
+    <p class="small">Source: <a href="https://wellcomeleap.org/visible/" target="_blank">Wellcome LEAP VISIBLE</a>. Use PMID evidence below for formal scientific write-up.</p>
+  </div>
+</main>
+
+<script>
+const data=[
+  {
+    title:'Temporal Trends of the Prevalence of ANOCA', year:2022, design:'Population cohort', metric:'Prevalence',
+    quant:'121,066 first angiograms: 26% ANOCA overall; stable angina ANOCA rose 30.6%→37.5%; female sex independent predictor OR 3.34.',
+    pmid:'36273723'
+  },
+  {
+    title:'A Practical Approach to Invasive Testing in INOCA', year:2022, design:'Consensus / review', metric:'Sex disparity',
+    quant:'Up to 65% of women vs ~30% of men undergoing invasive angiography for stable angina have INOCA.',
+    pmid:'36035733'
+  },
+  {
+    title:'Evaluating Ischemic Heart Disease in Women: Focus on ANOCA', year:2024, design:'Consensus / review', metric:'Misdiagnosis / diagnostic gap',
+    quant:'In women with nonobstructive CAD: 64% had no specific diagnosis pre-specialist centre; 71% had new/changed diagnosis after further testing; in a 297-woman ANOCA cohort, ~78% were told symptoms were non-cardiac before correct diagnosis.',
+    pmid:'39166160'
+  },
+  {
+    title:'Evaluating Ischemic Heart Disease in Women: Focus on ANOCA', year:2024, design:'Consensus / review', metric:'Healthcare burden',
+    quant:'Meta-analysis cited in review (n=6,631 with/without CMD): ~4-fold increase in mortality and ~5-fold increase in major cardiovascular events in CMD group.',
+    pmid:'39166160'
+  },
+  {
+    title:'EAPCI Expert Consensus on INOCA', year:2020, design:'Consensus / review', metric:'Prevalence',
+    quant:'Up to 70% of patients undergoing invasive angiography have no obstructive CAD; large proportion have INOCA as symptom cause.',
+    pmid:'32626906'
+  },
+  {
+    title:'EAPCI Expert Consensus on INOCA', year:2020, design:'Consensus / review', metric:'Healthcare burden',
+    quant:'INOCA associated with repeated hospital admissions, impaired quality of life and increased healthcare costs; angina burden cited at ~112 million people globally.',
+    pmid:'32626906'
+  },
+  {
+    title:'CMD Diagnosis-Treatment Divide in Women with INOCA', year:2024, design:'Consensus / review', metric:'Healthcare burden',
+    quant:'CMD identified in 41% of non-obstructive coronary disease; meta-analytic hazard ratios for adverse risk ~2.08–2.45; CorCTA improved diagnostic accuracy ~4-fold.',
+    pmid:'40943815'
+  },
+  {
+    title:'Meta-analysis of Coronary Vasospasm in ANOCA', year:2023, design:'Systematic review / meta-analysis', metric:'Prevalence',
+    quant:'25 studies (N=14,554): epicardial spasm prevalence 43% (range 16–73%); microvascular spasm 25% (range 7–39%).',
+    pmid:'36993994'
+  }
+];
+
+function render(){
+  const q=(document.getElementById('q').value||'').toLowerCase().trim();
+  const metric=document.getElementById('metric').value;
+  const design=document.getElementById('design').value;
+  const out=data.filter(d=>{
+    const txt=(d.title+' '+d.quant+' '+d.metric+' '+d.design).toLowerCase();
+    return (!q||txt.includes(q)) && (!metric||d.metric===metric) && (!design||d.design===design);
+  });
+  document.getElementById('count').textContent=`Showing ${out.length} / ${data.length} evidence entries`;
+  document.getElementById('rows').innerHTML=out.map(d=>`<tr>
+    <td><b>${d.title}</b><br><span class='pill'>${d.year}</span></td>
+    <td>${d.design}</td>
+    <td>${d.metric}</td>
+    <td>${d.quant}</td>
+    <td><a target='_blank' href='https://pubmed.ncbi.nlm.nih.gov/${d.pmid}/'>${d.pmid}</a></td>
+  </tr>`).join('');
+}
+['q','metric','design'].forEach(id=>document.getElementById(id).addEventListener('input',render));
+render();
+</script>
+</body>
+</html>
