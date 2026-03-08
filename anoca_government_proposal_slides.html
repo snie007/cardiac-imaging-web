@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>ANOCA Government Proposal Deck</title>
+  <style>
+    :root{--bg:#0b1020;--fg:#e6ecff;--muted:#aab7d6;--card:#121a33;--accent:#66d9ff;--ok:#79e0a6}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    .deck{scroll-snap-type:y mandatory;height:100vh;overflow-y:auto}
+    .slide{min-height:100vh;padding:56px 64px;scroll-snap-align:start;display:flex;flex-direction:column;justify-content:center;gap:16px;border-bottom:1px solid #223}
+    h1{font-size:48px;margin:0} h2{font-size:34px;margin:0} h3{font-size:24px;margin:0;color:var(--accent)}
+    p,li{font-size:20px;line-height:1.45;color:var(--fg)} .small{font-size:15px;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid #273358;border-radius:14px;padding:16px}
+    .metric{font-size:42px;font-weight:800;color:var(--ok)} .label{font-size:16px;color:var(--muted)}
+    a{color:#8bd6ff}
+    @media (max-width:900px){.slide{padding:28px}.grid{grid-template-columns:1fr} h1{font-size:34px} h2{font-size:28px} p,li{font-size:18px}}
+  </style>
+</head>
+<body>
+<div class="deck">
+  <section class="slide">
+    <h1>ANOCA in Women</h1>
+    <h2>Government Proposal Evidence Deck</h2>
+    <p>Rapid PRISMA-style quantitative evidence synthesis for policy and programme design.</p>
+    <p class="small">Prepared from PMID-linked literature + contextual Wellcome LEAP VISIBLE framing.</p>
+  </section>
+
+  <section class="slide">
+    <h2>Why this matters now</h2>
+    <div class="grid">
+      <div class="card"><div class="metric">26%</div><div class="label">ANOCA prevalence among 121,066 first angiograms (population cohort)</div><div class="small">PMID: <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36273723/">36273723</a></div></div>
+      <div class="card"><div class="metric">OR 3.34</div><div class="label">Female sex independently predicts ANOCA</div><div class="small">PMID: <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36273723/">36273723</a></div></div>
+      <div class="card"><div class="metric">65% vs 30%</div><div class="label">Women vs men with INOCA at angiography for stable angina</div><div class="small">PMID: <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36035733/">36035733</a></div></div>
+      <div class="card"><div class="metric">~70%</div><div class="label">No obstructive CAD among angiography referrals (large proportion INOCA)</div><div class="small">PMID: <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/32626906/">32626906</a></div></div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <h2>Diagnostic gap / misdiagnosis</h2>
+    <div class="grid">
+      <div class="card"><div class="metric">64%</div><div class="label">Women had no specific diagnosis before specialist assessment</div></div>
+      <div class="card"><div class="metric">71%</div><div class="label">Received new/changed diagnosis after further testing</div></div>
+      <div class="card"><div class="metric">~78%</div><div class="label">Told symptoms were non-cardiac before correct diagnosis</div></div>
+      <div class="card"><div class="metric">Action</div><div class="label">Need standardized early endotyping pathway</div></div>
+    </div>
+    <p class="small">All three quantitative points from PMID: <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/39166160/">39166160</a></p>
+  </section>
+
+  <section class="slide">
+    <h2>Healthcare burden and outcomes</h2>
+    <div class="grid">
+      <div class="card"><div class="metric">4x</div><div class="label">Higher mortality in CMD meta-analysis context</div></div>
+      <div class="card"><div class="metric">5x</div><div class="label">Higher major cardiovascular events in CMD context</div></div>
+      <div class="card"><div class="metric">41%</div><div class="label">CMD identified in non-obstructive coronary disease cohorts (recent review)</div></div>
+      <div class="card"><div class="metric">HR 2.08–2.45</div><div class="label">Adverse risk range reported in recent CMD/INOCA evidence synthesis</div></div>
+    </div>
+    <p class="small">PMID: <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/39166160/">39166160</a>, <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/40943815/">40943815</a></p>
+  </section>
+
+  <section class="slide">
+    <h2>Mechanistic prevalence relevant to treatment design</h2>
+    <div class="grid">
+      <div class="card"><div class="metric">43%</div><div class="label">Epicardial spasm prevalence in ANOCA meta-analysis</div></div>
+      <div class="card"><div class="metric">25%</div><div class="label">Microvascular spasm prevalence in ANOCA meta-analysis</div></div>
+      <div class="card"><div class="metric">N=14,554</div><div class="label">Pooled population across 25 studies</div></div>
+      <div class="card"><div class="metric">Implication</div><div class="label">Support endotype-stratified diagnostic and treatment pathways</div></div>
+    </div>
+    <p class="small">PMID: <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36993994/">36993994</a></p>
+  </section>
+
+  <section class="slide">
+    <h2>Proposed Government Programme Targets (3 years)</h2>
+    <ul>
+      <li><b>Target 1:</b> Increase access to definitive ANOCA/INOCA diagnostic pathways in women presenting with stable angina.</li>
+      <li><b>Target 2:</b> Reduce misclassification as non-cardiac through structured referral + endotyping.</li>
+      <li><b>Target 3:</b> Deploy registry-linked outcomes monitoring (hospitalizations, repeat testing, quality of life).</li>
+      <li><b>Target 4:</b> Mandate sex-disaggregated reporting and performance dashboards across sites.</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h2>References (PMID-linked)</h2>
+    <ul>
+      <li>Temporal Trends of ANOCA prevalence — PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36273723/">36273723</a></li>
+      <li>Practical INOCA invasive testing review — PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36035733/">36035733</a></li>
+      <li>EAPCI INOCA consensus — PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/32626906/">32626906</a></li>
+      <li>Women-focused ANOCA diagnostic review — PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/39166160/">39166160</a></li>
+      <li>CMD diagnosis-treatment divide review — PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/40943815/">40943815</a></li>
+      <li>ANOCA vasospasm meta-analysis — PMID <a target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/36993994/">36993994</a></li>
+    </ul>
+    <p class="small">Context page: <a target="_blank" href="https://wellcomeleap.org/visible/">Wellcome LEAP VISIBLE</a></p>
+  </section>
+</div>
+</body>
+</html>
