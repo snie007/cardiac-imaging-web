@@ -24,6 +24,14 @@
     <h3>TorchCor Membrane Potential (Vm)</h3>
     <div class="small" id="meta">Loading…</div>
     <div class="row">
+      <label>Resolution preset</label>
+      <select id="preset">
+        <option value="100">100 points (sanity check)</option>
+        <option value="2000">2,000 points</option>
+        <option value="8000">8,000 points</option>
+      </select>
+    </div>
+    <div class="row">
       <button id="play">Play</button>
       <button id="pause">Pause</button>
       <button id="reset">Reset View</button>
@@ -64,8 +72,18 @@
 import * as THREE from 'https://unpkg.com/three@0.161.0/build/three.module.js';
 import { OrbitControls } from 'https://unpkg.com/three@0.161.0/examples/jsm/controls/OrbitControls.js';
 
-const data = await fetch('./data/atrium_demo.json').then(r => r.json());
+const params = new URLSearchParams(location.search);
+const ds = params.get('ds') || '100';
+const file = ds === '8000' ? './data/atrium_demo.json' : (ds === '2000' ? './data/atrium_demo_2000.json' : './data/atrium_demo_100.json');
+const data = await fetch(file).then(r => r.json());
 const meta = data.meta;
+const preset = document.getElementById('preset');
+preset.value = ds;
+preset.addEventListener('change', () => {
+  const p = new URLSearchParams(location.search);
+  p.set('ds', preset.value);
+  location.search = p.toString();
+});
 document.getElementById('meta').textContent = `Sampled ${meta.nodes_sampled}/${meta.nodes_total} nodes · ${meta.frames} frames`;
 
 const canvas = document.getElementById('plot');
