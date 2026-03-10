@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TorchCor Atrium Vm Viewer</title>
+  <style>
+    body { margin: 0; background:#0b1020; color:#e5e7eb; font-family: Inter, system-ui, sans-serif; }
+    #app { display:grid; grid-template-columns: 320px 1fr; height:100vh; }
+    #panel { padding:12px; background:#111827; overflow:auto; }
+    #view { position:relative; }
+    #plot { width:100%; height:100%; display:block; }
+    .row { margin:10px 0; }
+    label { display:block; font-size:12px; margin-bottom:4px; color:#cbd5e1; }
+    input[type="range"] { width:100%; }
+    button { padding:6px 10px; margin-right:6px; }
+    canvas#bar { width:100%; height:20px; border:1px solid #334155; }
+    .small { font-size:12px; color:#94a3b8; }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div id="panel">
+    <h3>TorchCor Membrane Potential (Vm)</h3>
+    <div class="small" id="meta">Loading…</div>
+    <div class="row">
+      <button id="play">Play</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset View</button>
+    </div>
+    <div class="row">
+      <label>Frame <span id="frameVal"></span></label>
+      <input id="frame" type="range" min="0" max="0" value="0" />
+    </div>
+    <div class="row">
+      <label>Speed (frames/sec): <span id="speedVal">2</span></label>
+      <input id="speed" type="range" min="1" max="20" value="2" />
+    </div>
+    <div class="row">
+      <label>Point size: <span id="sizeVal">1.8</span></label>
+      <input id="size" type="range" min="1" max="6" step="0.1" value="1.8" />
+    </div>
+    <div class="row">
+      <label>Color range min Vm (mV): <span id="vminVal"></span></label>
+      <input id="vmin" type="range" min="-100" max="40" step="0.1" value="-80" />
+    </div>
+    <div class="row">
+      <label>Color range max Vm (mV): <span id="vmaxVal"></span></label>
+      <input id="vmax" type="range" min="-100" max="40" step="0.1" value="20" />
+    </div>
+    <div class="row">
+      <label><input id="autorotate" type="checkbox" checked /> Auto-rotate</label>
+    </div>
+    <div class="row">
+      <canvas id="bar" width="280" height="20"></canvas>
+      <div class="small" id="barLabels"></div>
+    </div>
+    <div class="small">Drag to rotate, scroll to zoom.</div>
+  </div>
+  <div id="view"><canvas id="plot"></canvas></div>
+</div>
+
+<script type="module">
+import * as THREE from 'https://unpkg.com/three@0.161.0/build/three.module.js';
+import { OrbitControls } from 'https://unpkg.com/three@0.161.0/examples/jsm/controls/OrbitControls.js';
+
+const data = await fetch('./data/atrium_demo.json').then(r => r.json());
+const meta = data.meta;
+document.getElementById('meta').textContent = `Sampled ${meta.nodes_sampled}/${meta.nodes_total} nodes · ${meta.frames} frames`;
+
+const canvas = document.getElementById('plot');
+const renderer = new THREE.WebGLRenderer({canvas, antialias:true});
+renderer.setPixelRatio(devicePixelRatio);
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0b1020);
+
+const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1e7);
+camera.position.set(0, 0, 240000);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+const coords = new Float32Array(data.coords.flat());
+const frameData = data.frames.map(f => new Float32Array(f));
+
+const geo = new THREE.BufferGeometry();
+geo.setAttribute('position', new THREE.BufferAttribute(coords, 3));
+const colors = new Float32Array((coords.length/3)*3);
+geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+const mat = new THREE.PointsMaterial({size:1.8, vertexColors:true});
+const points = new THREE.Points(geo, mat);
+scene.add(points);
+
+function cmap(t){
+  t = Math.max(0, Math.min(1,t));
+  const r = Math.min(1, Math.max(0, 1.5*t));
+  const g = Math.sin(Math.PI*t);
+  const b = Math.min(1, Math.max(0, 1.5*(1-t)));
+  return [r,g,b];
+}
+
+const ui = {
+  frame: document.getElementById('frame'),
+  frameVal: document.getElementById('frameVal'),
+  speed: document.getElementById('speed'),
+  speedVal: document.getElementById('speedVal'),
+  size: document.getElementById('size'),
+  sizeVal: document.getElementById('sizeVal'),
+  vmin: document.getElementById('vmin'),
+  vmax: document.getElementById('vmax'),
+  vminVal: document.getElementById('vminVal'),
+  vmaxVal: document.getElementById('vmaxVal'),
+  autorotate: document.getElementById('autorotate'),
+};
+ui.frame.max = meta.frames - 1;
+ui.vmin.value = meta.vm_min.toFixed(1);
+ui.vmax.value = meta.vm_max.toFixed(1);
+
+function drawBar(){
+  const c = document.getElementById('bar'); const ctx = c.getContext('2d');
+  for(let x=0;x<c.width;x++){
+    const t=x/(c.width-1); const [r,g,b]=cmap(t);
+    ctx.fillStyle=`rgb(${r*255},${g*255},${b*255})`; ctx.fillRect(x,0,1,c.height);
+  }
+  document.getElementById('barLabels').textContent = `${Number(ui.vmin.value).toFixed(1)} mV  →  ${Number(ui.vmax.value).toFixed(1)} mV`;
+}
+
+function colorize(fi){
+  const vmin = Number(ui.vmin.value), vmax = Number(ui.vmax.value);
+  const arr = frameData[fi];
+  for(let i=0;i<arr.length;i++){
+    const t = (arr[i]-vmin)/(vmax-vmin || 1);
+    const [r,g,b] = cmap(t);
+    const k = i*3; colors[k]=r; colors[k+1]=g; colors[k+2]=b;
+  }
+  geo.attributes.color.needsUpdate = true;
+  ui.frameVal.textContent = `${fi}/${meta.frames-1}`;
+  ui.vminVal.textContent = Number(ui.vmin.value).toFixed(1);
+  ui.vmaxVal.textContent = Number(ui.vmax.value).toFixed(1);
+  drawBar();
+}
+
+ui.frame.addEventListener('input', ()=> colorize(Number(ui.frame.value)));
+ui.speed.addEventListener('input', ()=> ui.speedVal.textContent = ui.speed.value);
+ui.size.addEventListener('input', ()=> { mat.size = Number(ui.size.value); ui.sizeVal.textContent = ui.size.value; });
+ui.vmin.addEventListener('input', ()=> colorize(Number(ui.frame.value)));
+ui.vmax.addEventListener('input', ()=> colorize(Number(ui.frame.value)));
+
+document.getElementById('play').onclick = ()=> playing = true;
+document.getElementById('pause').onclick = ()=> playing = false;
+document.getElementById('reset').onclick = ()=> { camera.position.set(0,0,240000); controls.target.set(0,0,0); controls.update(); };
+
+function resize(){
+  const w = canvas.clientWidth, h = canvas.clientHeight;
+  renderer.setSize(w,h,false); camera.aspect = w/h; camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', resize); resize();
+
+let playing = true;
+let last = performance.now();
+let acc = 0;
+let frame = 0;
+colorize(0);
+
+(function animate(now){
+  requestAnimationFrame(animate);
+  const dt = (now-last)/1000; last = now;
+  controls.autoRotate = ui.autorotate.checked;
+  controls.autoRotateSpeed = 1.0;
+  controls.update();
+  if (playing){
+    acc += dt;
+    const step = 1/Number(ui.speed.value);
+    while(acc >= step){
+      acc -= step;
+      frame = (frame + 1) % meta.frames;
+      ui.frame.value = frame;
+      colorize(frame);
+    }
+  }
+  renderer.render(scene, camera);
+})(performance.now());
+</script>
+</body>
+</html>
