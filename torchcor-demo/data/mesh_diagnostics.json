@@ -26,6 +26,9 @@
         "duplicate_faces": 0,
         "non_manifold_edges": 2,
         "boundary_edges": 3422,
+        "boundary_loops": 996,
+        "small_hole_loops": 995,
+        "watertight": false,
         "winding_inconsistent_pairs": 0,
         "winding_pairs_checked": 73277,
         "components": 1,
@@ -45,11 +48,20 @@
       "repair": {
         "removed_degenerate": 0,
         "removed_duplicates": 0,
+        "welded_vertices_removed": 0,
         "removed_non_manifold_faces": 2,
         "orientation_flips": 0,
         "orientation_components": 1,
         "global_outward_flip": false,
         "removed_small_component_faces": 0,
+        "trimesh_repair": {
+          "enabled": true,
+          "watertight_before": false,
+          "euler_before": -1071,
+          "filled_holes": 0,
+          "watertight_after": false,
+          "euler_after": -1071
+        },
         "post_compact_orientation_flips": 0,
         "post_compact_outward_flip": false
       },
@@ -60,6 +72,9 @@
         "duplicate_faces": 0,
         "non_manifold_edges": 0,
         "boundary_edges": 3418,
+        "boundary_loops": 984,
+        "small_hole_loops": 982,
+        "watertight": false,
         "winding_inconsistent_pairs": 0,
         "winding_pairs_checked": 73279,
         "components": 1,
@@ -96,6 +111,9 @@
         "duplicate_faces": 0,
         "non_manifold_edges": 5,
         "boundary_edges": 28749,
+        "boundary_loops": 7290,
+        "small_hole_loops": 7289,
+        "watertight": false,
         "winding_inconsistent_pairs": 0,
         "winding_pairs_checked": 135614,
         "components": 5,
@@ -115,11 +133,20 @@
       "repair": {
         "removed_degenerate": 0,
         "removed_duplicates": 0,
+        "welded_vertices_removed": 0,
         "removed_non_manifold_faces": 10,
         "orientation_flips": 2,
         "orientation_components": 11,
         "global_outward_flip": false,
         "removed_small_component_faces": 19,
+        "trimesh_repair": {
+          "enabled": true,
+          "watertight_before": false,
+          "euler_before": -8977,
+          "filled_holes": 0,
+          "watertight_after": false,
+          "euler_after": -8977
+        },
         "post_compact_orientation_flips": 0,
         "post_compact_outward_flip": false
       },
@@ -130,6 +157,9 @@
         "duplicate_faces": 0,
         "non_manifold_edges": 0,
         "boundary_edges": 28722,
+        "boundary_loops": 7114,
+        "small_hole_loops": 7112,
+        "watertight": false,
         "winding_inconsistent_pairs": 0,
         "winding_pairs_checked": 135594,
         "components": 1,
@@ -146,7 +176,7 @@
         },
         "pass": true
       },
-      "json_mb": 13.25
+      "json_mb": 13.253
     },
     "high": {
       "method": "pyvista_decimate_pro",
@@ -166,6 +196,9 @@
         "duplicate_faces": 0,
         "non_manifold_edges": 0,
         "boundary_edges": 11883,
+        "boundary_loops": 3336,
+        "small_hole_loops": 3335,
+        "watertight": false,
         "winding_inconsistent_pairs": 1,
         "winding_pairs_checked": 294054,
         "components": 2,
@@ -185,10 +218,19 @@
       "repair": {
         "removed_degenerate": 0,
         "removed_duplicates": 0,
+        "welded_vertices_removed": 0,
         "orientation_flips": 1,
         "orientation_components": 2,
         "global_outward_flip": false,
         "removed_small_component_faces": 6,
+        "trimesh_repair": {
+          "enabled": true,
+          "watertight_before": false,
+          "euler_before": -3744,
+          "filled_holes": 0,
+          "watertight_after": false,
+          "euler_after": -3744
+        },
         "post_compact_orientation_flips": 0,
         "post_compact_outward_flip": false
       },
@@ -199,6 +241,9 @@
         "duplicate_faces": 0,
         "non_manifold_edges": 0,
         "boundary_edges": 11877,
+        "boundary_loops": 3327,
+        "small_hole_loops": 3326,
+        "watertight": false,
         "winding_inconsistent_pairs": 0,
         "winding_pairs_checked": 294048,
         "components": 1,
@@ -215,7 +260,27 @@
         },
         "pass": true
       },
-      "json_mb": 24.489
+      "json_mb": 24.49
+    }
+  },
+  "lod_transition": {
+    "high_med": {
+      "mean_abs_mm": 257.0710771819316,
+      "p95_abs_mm": 704.8934334195524,
+      "max_abs_mm": 2011.6872827266268,
+      "relative_to_radius_p95": 0.012408993077158734
+    },
+    "med_low": {
+      "mean_abs_mm": 398.2238603120261,
+      "p95_abs_mm": 1004.0306698007496,
+      "max_abs_mm": 3032.905654332839,
+      "relative_to_radius_p95": 0.017675025812585416
+    },
+    "high_low": {
+      "mean_abs_mm": 362.6091201194634,
+      "p95_abs_mm": 997.3500798900093,
+      "max_abs_mm": 2707.8852902844997,
+      "relative_to_radius_p95": 0.017557420242688766
     }
   }
 }

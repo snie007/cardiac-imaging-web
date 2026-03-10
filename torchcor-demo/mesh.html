@@ -13,6 +13,7 @@
 <div class='row'><label>Vm max <span id='vmaxv'></span></label><input id='vmax' type='range' min='-100' max='40' step='0.1' value='20'></div>
 <div class='row'><label><input id='wire' type='checkbox'> Wireframe</label></div>
 <div class='row'><label><input id='doubleSide' type='checkbox'> Double-sided render (debug)</label></div>
+<div class='row'><label><input id='diagMode' type='checkbox'> Diagnostics: highlight suspect edges/faces</label></div>
 <div class='small'>Default is High mesh + front-face culling to reduce visual artifacts.</div>
 </div><div><canvas id='plot'></canvas></div></div>
 <script type='module'>
@@ -25,7 +26,7 @@ const ui={
   lodMode:document.getElementById('lodMode'),surface:document.getElementById('surface'),meta:document.getElementById('meta'),
   frame:document.getElementById('frame'),fval:document.getElementById('fval'),speed:document.getElementById('speed'),sval:document.getElementById('sval'),
   vmin:document.getElementById('vmin'),vmax:document.getElementById('vmax'),vminv:document.getElementById('vminv'),vmaxv:document.getElementById('vmaxv'),
-  wire:document.getElementById('wire'),doubleSide:document.getElementById('doubleSide')
+  wire:document.getElementById('wire'),doubleSide:document.getElementById('doubleSide'),diagMode:document.getElementById('diagMode')
 };
 ui.lodMode.value=initialMode;
 
@@ -50,6 +51,48 @@ function toGeom(data){
 }
 const meshes=Object.fromEntries(presets.map(p=>[p,toGeom(loaded[p])]));
 
+function buildDiagnostics(pack){
+  const pos=pack.geom.attributes.position.array;
+  const idx=pack.geom.index.array;
+  const edgeMap=new Map();
+  const key=(a,b)=>a<b?`${a}_${b}`:`${b}_${a}`;
+  const add=(a,b,fi)=>{const k=key(a,b);if(!edgeMap.has(k)) edgeMap.set(k,{a:Math.min(a,b),b:Math.max(a,b),f:[fi]}); else edgeMap.get(k).f.push(fi)};
+  for(let fi=0;fi<idx.length;fi+=3){const a=idx[fi],b=idx[fi+1],c=idx[fi+2];add(a,b,fi/3);add(b,c,fi/3);add(c,a,fi/3)}
+
+  const boundary=[],nonman=[];
+  edgeMap.forEach(e=>{if(e.f.length===1) boundary.push(e); else if(e.f.length>2) nonman.push(e)});
+
+  const edgePts=[];
+  for(const e of boundary.slice(0,5000)){for(const v of [e.a,e.b]){edgePts.push(pos[v*3],pos[v*3+1],pos[v*3+2]);}}
+  const nmPts=[];
+  for(const e of nonman.slice(0,5000)){for(const v of [e.a,e.b]){nmPts.push(pos[v*3],pos[v*3+1],pos[v*3+2]);}}
+
+  const triPts=[];
+  const nTri=idx.length/3;
+  const areaRef=pack.rad*pack.rad*1e-8;
+  for(let t=0;t<nTri && triPts.length<2000*9;t++){
+    const ia=idx[t*3],ib=idx[t*3+1],ic=idx[t*3+2];
+    const ax=pos[ia*3],ay=pos[ia*3+1],az=pos[ia*3+2];
+    const bx=pos[ib*3],by=pos[ib*3+1],bz=pos[ib*3+2];
+    const cx=pos[ic*3],cy=pos[ic*3+1],cz=pos[ic*3+2];
+    const abx=bx-ax,aby=by-ay,abz=bz-az,acx=cx-ax,acy=cy-ay,acz=cz-az;
+    const nx=aby*acz-abz*acy,ny=abz*acx-abx*acz,nz=abx*acy-aby*acx;
+    const area2=Math.hypot(nx,ny,nz)*0.5;
+    if(area2<=areaRef){triPts.push(ax,ay,az,bx,by,bz,cx,cy,cz)}
+  }
+
+  const makeLines=(arr,color)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(arr),3));return new THREE.LineSegments(g,new THREE.LineBasicMaterial({color,transparent:true,opacity:0.95,depthTest:true,depthWrite:false}))};
+  const makeMesh=(arr,color)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(arr),3));g.computeVertexNormals();return new THREE.Mesh(g,new THREE.MeshBasicMaterial({color,transparent:true,opacity:0.45,side:THREE.DoubleSide,depthWrite:false}))};
+
+  return {
+    boundaryLines: makeLines(edgePts,0xf59e0b),
+    nonmanifoldLines: makeLines(nmPts,0xef4444),
+    sliverFaces: makeMesh(triPts,0xff00ff),
+    counts:{boundaryEdges:boundary.length,nonManifoldEdges:nonman.length,sliverFaces:Math.floor(triPts.length/9)}
+  };
+}
+for(const p of presets){meshes[p].diag=buildDiagnostics(meshes[p]);}
+
 const c=document.getElementById('plot');
 const r=new THREE.WebGLRenderer({canvas:c,antialias:true,logarithmicDepthBuffer:true});r.setPixelRatio(devicePixelRatio);
 const s=new THREE.Scene();s.background=new THREE.Color(0x0b1020);
@@ -59,6 +102,9 @@ const ctl=new OrbitControls(cam,r.domElement);ctl.enableDamping=true;
 const matSmooth=new THREE.MeshStandardMaterial({vertexColors:true,side:THREE.FrontSide,roughness:0.88,metalness:0.0});
 const matFaceted=new THREE.MeshStandardMaterial({vertexColors:true,side:THREE.FrontSide,roughness:0.92,metalness:0.0,flatShading:true});
 const mesh=new THREE.Mesh(meshes.med.geom,matSmooth);s.add(mesh);
+const diagBoundary=meshes.med.diag.boundaryLines; s.add(diagBoundary);
+const diagNonman=meshes.med.diag.nonmanifoldLines; s.add(diagNonman);
+const diagSliver=meshes.med.diag.sliverFaces; s.add(diagSliver);
 
 const amb=new THREE.HemisphereLight(0xcfe2ff,0x141a2a,0.75);s.add(amb);
 const key=new THREE.DirectionalLight(0xffffff,0.65);s.add(key);
@@ -78,8 +124,10 @@ function updateClipPlanes(){
 function setMeta(){
   const d=meshes[active].data.meta;
   const q=d.mesh_quality||{};
+  const qa=q.after||{};
   const reg=q.regularity_after_smoothing;
-  ui.meta.textContent=`LOD=${active} | ${d.nodes_used}/${d.nodes_total} nodes, ${d.faces_used}/${d.faces_total} faces${reg?` | regularity mean=${reg.mean.toFixed(4)} q10=${reg.q10.toFixed(4)}`:''}`;
+  const dc=meshes[active].diag.counts;
+  ui.meta.textContent=`LOD=${active} | ${d.nodes_used}/${d.nodes_total} nodes, ${d.faces_used}/${d.faces_total} faces${reg?` | regularity mean=${reg.mean.toFixed(4)} q10=${reg.q10.toFixed(4)}`:''}${qa.watertight!==undefined?` | watertight=${qa.watertight}`:''} | suspect edges b=${dc.boundaryEdges} nm=${dc.nonManifoldEdges} slivers=${dc.sliverFaces}`;
 }
 
 function cmap(t){t=Math.max(0,Math.min(1,t));const r=Math.min(1,1.5*t),gg=Math.sin(Math.PI*t),b=Math.min(1,1.5*(1-t));return[r,gg,b]}
@@ -91,10 +139,17 @@ function colorize(fi){
   pack.geom.attributes.color.needsUpdate=true;
   ui.fval.textContent=`${fi}/${pack.data.meta.frames-1}`;ui.vminv.textContent=vmin.toFixed(1);ui.vmaxv.textContent=vmax.toFixed(1)
 }
+function updateDiagnosticsVisibility(){
+  const show=ui.diagMode.checked;
+  diagBoundary.visible=show;
+  diagNonman.visible=show;
+  diagSliver.visible=show;
+}
 function applyMaterial(){
   const m=ui.surface.value==='faceted'?matFaceted:matSmooth;
   m.wireframe=ui.wire.checked;
   m.side = ui.doubleSide.checked ? THREE.DoubleSide : THREE.FrontSide;
+  m.polygonOffset=true; m.polygonOffsetFactor=1; m.polygonOffsetUnits=1;
   mesh.material=m;
 }
 function switchLOD(next){
@@ -102,6 +157,9 @@ function switchLOD(next){
   active=next;
   const p=meshes[active];
   mesh.geometry=p.geom;
+  diagBoundary.geometry=p.diag.boundaryLines.geometry;
+  diagNonman.geometry=p.diag.nonmanifoldLines.geometry;
+  diagSliver.geometry=p.diag.sliverFaces.geometry;
   worldCenter=p.center;worldRadius=p.rad;
   updateClipPlanes();
   ui.frame.max=p.data.meta.frames-1;
@@ -110,9 +168,9 @@ function switchLOD(next){
 }
 function autoLodChoice(){
   const dist=cam.position.distanceTo(worldCenter);
-  // avoid dropping to low preset, which can appear gappy at whole-atria distance
-  if(dist>worldRadius*4.8) return 'med';
-  return 'high';
+  if(active==='high' && dist>worldRadius*5.2) return 'med';
+  if(active==='med' && dist<worldRadius*4.2) return 'high';
+  return active;
 }
 
 const mid=meshes.med;ctl.target.copy(mid.center);cam.position.set(mid.center.x,mid.center.y,mid.center.z+mid.rad*2.6);worldCenter=mid.center.clone();worldRadius=mid.rad;updateClipPlanes();ctl.update();
@@ -121,8 +179,10 @@ ui.speed.oninput=()=>ui.sval.textContent=ui.speed.value;
 ui.frame.oninput=()=>{fr=+ui.frame.value;colorize(fr)};
 ui.vmin.oninput=()=>colorize(fr);ui.vmax.oninput=()=>colorize(fr);
 ui.wire.onchange=applyMaterial;ui.surface.onchange=applyMaterial;ui.doubleSide.onchange=applyMaterial;
+ui.diagMode.onchange=()=>updateDiagnosticsVisibility();
 ui.lodMode.onchange=()=>{const u=new URLSearchParams(location.search);u.set('lod',ui.lodMode.value);history.replaceState(null,'',`?${u.toString()}`);if(ui.lodMode.value!=='auto') switchLOD(ui.lodMode.value)};
 applyMaterial();
+updateDiagnosticsVisibility();
 if(ui.lodMode.value!=='auto') switchLOD(ui.lodMode.value);
 setMeta();
 

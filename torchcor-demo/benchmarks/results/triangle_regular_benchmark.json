@@ -1,0 +1,74 @@
+[
+  {
+    "method": "pyvista_decimatepro",
+    "target_faces": 100000,
+    "runtime_sec": 0.9068213179707527,
+    "out_faces": 99997,
+    "mean_q": 0.5530986752427088,
+    "median_q": 0.5653409905559558,
+    "q10": 0.13572703063082633
+  },
+  {
+    "method": "pyvista_decimatepro",
+    "target_faces": 50000,
+    "runtime_sec": 0.7363673609215766,
+    "out_faces": 49994,
+    "mean_q": 0.49484095122422544,
+    "median_q": 0.47938297558282594,
+    "q10": 0.1062798004713643
+  },
+  {
+    "method": "pymeshlab_qem",
+    "target_faces": 100000,
+    "runtime_sec": 7.528705713106319,
+    "out_faces": 99999,
+    "mean_q": 0.6580455161019201,
+    "median_q": 0.7010480796814514,
+    "q10": 0.23082544899162757
+  },
+  {
+    "method": "pymeshlab_qem",
+    "target_faces": 50000,
+    "runtime_sec": 8.046043884940445,
+    "out_faces": 49575,
+    "mean_q": 0.3312736497411302,
+    "median_q": 0.24560616368634042,
+    "q10": 0.06263462911311035
+  },
+  {
+    "method": "fast_simplification",
+    "target_faces": 100000,
+    "runtime_sec": 1.179473569151014,
+    "out_faces": 312608,
+    "mean_q": 0.9510979503406513,
+    "median_q": 0.983287888848946,
+    "q10": 0.9187023816865332
+  },
+  {
+    "method": "fast_simplification",
+    "target_faces": 50000,
+    "runtime_sec": 1.0949989429209381,
+    "out_faces": 312608,
+    "mean_q": 0.9510979503406513,
+    "median_q": 0.983287888848946,
+    "q10": 0.9187023816865332
+  },
+  {
+    "method": "vertex_cluster_fallback",
+    "target_faces": 100000,
+    "runtime_sec": 3.905204667011276,
+    "out_faces": 1275,
+    "mean_q": 0.7679124268332277,
+    "median_q": 0.8043692796754627,
+    "q10": 0.5580732192036759
+  },
+  {
+    "method": "vertex_cluster_fallback",
+    "target_faces": 50000,
+    "runtime_sec": 3.9116325830109417,
+    "out_faces": 893,
+    "mean_q": 0.7749346798734963,
+    "median_q": 0.8210644907561606,
+    "q10": 0.560170360278999
+  }
+]
