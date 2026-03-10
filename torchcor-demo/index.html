@@ -45,8 +45,8 @@
       <input id="speed" type="range" min="1" max="20" value="2" />
     </div>
     <div class="row">
-      <label>Point size: <span id="sizeVal">1.8</span></label>
-      <input id="size" type="range" min="1" max="6" step="0.1" value="1.8" />
+      <label>Point size: <span id="sizeVal">2.8</span></label>
+      <input id="size" type="range" min="1" max="8" step="0.1" value="2.8" />
     </div>
     <div class="row">
       <label>Color range min Vm (mV): <span id="vminVal"></span></label>
@@ -69,8 +69,8 @@
 </div>
 
 <script type="module">
-import * as THREE from 'https://unpkg.com/three@0.161.0/build/three.module.js';
-import { OrbitControls } from 'https://unpkg.com/three@0.161.0/examples/jsm/controls/OrbitControls.js';
+import * as THREE from './lib/three.module.js';
+import { OrbitControls } from './lib/OrbitControls.js';
 
 const params = new URLSearchParams(location.search);
 const ds = params.get('ds') || '100';
@@ -92,7 +92,7 @@ renderer.setPixelRatio(devicePixelRatio);
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x0b1020);
 
-const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1e7);
+const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1e9);
 camera.position.set(0, 0, 240000);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
@@ -105,9 +105,21 @@ geo.setAttribute('position', new THREE.BufferAttribute(coords, 3));
 const colors = new Float32Array((coords.length/3)*3);
 geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
-const mat = new THREE.PointsMaterial({size:1.8, vertexColors:true});
+const mat = new THREE.PointsMaterial({size:2.8, vertexColors:true});
 const points = new THREE.Points(geo, mat);
 scene.add(points);
+
+// Auto-fit camera to mesh bounds so data is visible immediately
+geo.computeBoundingBox();
+const bb = geo.boundingBox;
+const center = new THREE.Vector3();
+bb.getCenter(center);
+const size = new THREE.Vector3();
+bb.getSize(size);
+const radius = Math.max(size.x, size.y, size.z) * 0.65 || 1;
+controls.target.copy(center);
+camera.position.set(center.x, center.y, center.z + radius * 2.8);
+controls.update();
 
 function cmap(t){
   t = Math.max(0, Math.min(1,t));
@@ -166,7 +178,7 @@ ui.vmax.addEventListener('input', ()=> colorize(Number(ui.frame.value)));
 
 document.getElementById('play').onclick = ()=> playing = true;
 document.getElementById('pause').onclick = ()=> playing = false;
-document.getElementById('reset').onclick = ()=> { camera.position.set(0,0,240000); controls.target.set(0,0,0); controls.update(); };
+document.getElementById('reset').onclick = ()=> { camera.position.set(center.x, center.y, center.z + radius * 2.8); controls.target.copy(center); controls.update(); };
 
 function resize(){
   const w = canvas.clientWidth, h = canvas.clientHeight;
