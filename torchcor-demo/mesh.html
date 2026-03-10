@@ -50,9 +50,9 @@ function toGeom(data){
 const meshes=Object.fromEntries(presets.map(p=>[p,toGeom(loaded[p])]));
 
 const c=document.getElementById('plot');
-const r=new THREE.WebGLRenderer({canvas:c,antialias:true});r.setPixelRatio(devicePixelRatio);
+const r=new THREE.WebGLRenderer({canvas:c,antialias:true,logarithmicDepthBuffer:true});r.setPixelRatio(devicePixelRatio);
 const s=new THREE.Scene();s.background=new THREE.Color(0x0b1020);
-const cam=new THREE.PerspectiveCamera(55,1,0.1,1e9);
+const cam=new THREE.PerspectiveCamera(55,1,1,1000000);
 const ctl=new OrbitControls(cam,r.domElement);ctl.enableDamping=true;
 
 const matSmooth=new THREE.MeshStandardMaterial({vertexColors:true,side:THREE.DoubleSide,roughness:0.88,metalness:0.0});
@@ -67,6 +67,12 @@ let active='med';
 let worldCenter=meshes.med.center.clone();
 let worldRadius=meshes.med.rad;
 let fr=0;
+
+function updateClipPlanes(){
+  cam.near = Math.max(1.0, worldRadius * 0.0025);
+  cam.far = Math.max(cam.near * 10.0, worldRadius * 25.0);
+  cam.updateProjectionMatrix();
+}
 
 function setMeta(){
   const d=meshes[active].data.meta;
@@ -91,6 +97,7 @@ function switchLOD(next){
   const p=meshes[active];
   mesh.geometry=p.geom;
   worldCenter=p.center;worldRadius=p.rad;
+  updateClipPlanes();
   ui.frame.max=p.data.meta.frames-1;
   colorize(Math.min(fr,p.data.meta.frames-1));
   setMeta();
@@ -102,7 +109,7 @@ function autoLodChoice(){
   return 'high';
 }
 
-const mid=meshes.med;ctl.target.copy(mid.center);cam.position.set(mid.center.x,mid.center.y,mid.center.z+mid.rad*2.6);ctl.update();
+const mid=meshes.med;ctl.target.copy(mid.center);cam.position.set(mid.center.x,mid.center.y,mid.center.z+mid.rad*2.6);worldCenter=mid.center.clone();worldRadius=mid.rad;updateClipPlanes();ctl.update();
 ui.frame.max=mid.data.meta.frames-1;ui.vmin.value=mid.data.meta.vm_min.toFixed(1);ui.vmax.value=mid.data.meta.vm_max.toFixed(1);
 ui.speed.oninput=()=>ui.sval.textContent=ui.speed.value;
 ui.frame.oninput=()=>{fr=+ui.frame.value;colorize(fr)};
