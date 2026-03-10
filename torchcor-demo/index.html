@@ -6,7 +6,7 @@
   <title>TorchCor Atrium Vm Viewer</title>
   <style>
     body { margin: 0; background:#0b1020; color:#e5e7eb; font-family: Inter, system-ui, sans-serif; }
-    #app { display:grid; grid-template-columns: 320px 1fr; height:100vh; }
+    #app { display:grid; grid-template-columns: 340px 1fr; height:100vh; }
     #panel { padding:12px; background:#111827; overflow:auto; }
     #view { position:relative; }
     #plot { width:100%; height:100%; display:block; }
@@ -15,7 +15,7 @@
     input[type="range"] { width:100%; }
     button { padding:6px 10px; margin-right:6px; }
     canvas#bar { width:100%; height:20px; border:1px solid #334155; }
-    .small { font-size:12px; color:#94a3b8; }
+    .small { font-size:12px; color:#94a3b8; line-height:1.45; }
   </style>
 </head>
 <body>
@@ -24,11 +24,12 @@
     <h3>TorchCor Membrane Potential (Vm)</h3>
     <div class="small" id="meta">Loading…</div>
     <div class="row">
-      <label>Resolution preset</label>
+      <label>Decimation preset</label>
       <select id="preset">
-        <option value="100">100 points (sanity check)</option>
-        <option value="2000">2,000 points</option>
-        <option value="8000">8,000 points</option>
+        <option value="100">100 points — random (sanity)</option>
+        <option value="2000">2,000 points — voxel/grid</option>
+        <option value="8000">8,000 points — FPS approx</option>
+        <option value="16000">16,000 points — voxel/grid</option>
       </select>
     </div>
     <div class="row">
@@ -41,12 +42,12 @@
       <input id="frame" type="range" min="0" max="0" value="0" />
     </div>
     <div class="row">
-      <label>Speed (frames/sec): <span id="speedVal">2</span></label>
-      <input id="speed" type="range" min="1" max="20" value="2" />
+      <label>Speed (frames/sec): <span id="speedVal">6</span></label>
+      <input id="speed" type="range" min="1" max="30" value="6" />
     </div>
     <div class="row">
-      <label>Point size: <span id="sizeVal">2.8</span></label>
-      <input id="size" type="range" min="1" max="8" step="0.1" value="2.8" />
+      <label>Point size: <span id="sizeVal">2.4</span></label>
+      <input id="size" type="range" min="1" max="8" step="0.1" value="2.4" />
     </div>
     <div class="row">
       <label>Color range min Vm (mV): <span id="vminVal"></span></label>
@@ -74,7 +75,7 @@ import { OrbitControls } from './lib/OrbitControls.js';
 
 const params = new URLSearchParams(location.search);
 const ds = params.get('ds') || '100';
-const file = ds === '8000' ? './data/atrium_demo.json' : (ds === '2000' ? './data/atrium_demo_2000.json' : './data/atrium_demo_100.json');
+const file = `./data/atrium_demo_${ds}.json`;
 const data = await fetch(file).then(r => r.json());
 const meta = data.meta;
 const preset = document.getElementById('preset');
@@ -84,7 +85,10 @@ preset.addEventListener('change', () => {
   p.set('ds', preset.value);
   location.search = p.toString();
 });
-document.getElementById('meta').textContent = `Sampled ${meta.nodes_sampled}/${meta.nodes_total} nodes · ${meta.frames} frames`;
+
+const decMethod = meta.decimation?.method || 'unknown';
+document.getElementById('meta').textContent =
+  `Sampled ${meta.nodes_sampled}/${meta.nodes_total} nodes · ${meta.frames} frames · method: ${decMethod}`;
 
 const canvas = document.getElementById('plot');
 const renderer = new THREE.WebGLRenderer({canvas, antialias:true});
@@ -105,18 +109,17 @@ geo.setAttribute('position', new THREE.BufferAttribute(coords, 3));
 const colors = new Float32Array((coords.length/3)*3);
 geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
-const mat = new THREE.PointsMaterial({size:2.8, vertexColors:true});
+const mat = new THREE.PointsMaterial({size:2.4, vertexColors:true});
 const points = new THREE.Points(geo, mat);
 scene.add(points);
 
-// Auto-fit camera to mesh bounds so data is visible immediately
 geo.computeBoundingBox();
 const bb = geo.boundingBox;
 const center = new THREE.Vector3();
 bb.getCenter(center);
-const size = new THREE.Vector3();
-bb.getSize(size);
-const radius = Math.max(size.x, size.y, size.z) * 0.65 || 1;
+const sz = new THREE.Vector3();
+bb.getSize(sz);
+const radius = Math.max(sz.x, sz.y, sz.z) * 0.65 || 1;
 controls.target.copy(center);
 camera.position.set(center.x, center.y, center.z + radius * 2.8);
 controls.update();
