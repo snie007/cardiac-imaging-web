@@ -1,6 +1,6 @@
 # Mesh QA Diagnostics
 
-Run: `atrium_demo_t60`
+Run: `atrium_spiral_t1200`
 
 Smoothing: Taubin (iters=8, lambda=0.5, mu=-0.53, boundary_protect=True)
 

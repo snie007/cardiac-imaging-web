@@ -1,0 +1,51 @@
+{
+  "scenario": "spiral_induction",
+  "description": "S1-S2 cross-field + staged perturbation pacing on atrial surface mesh",
+  "T_ms": 1200.0,
+  "dt_ms": 0.1,
+  "snapshot_interval": 80,
+  "runtime_sec": 284.37401151657104,
+  "device": "cuda:0",
+  "stim_regions": {
+    "region_sizes": {
+      "S1_left_band": 42427,
+      "S2_top_band": 42427,
+      "S3_right_band": 42427,
+      "S4_center_spot": 2305
+    },
+    "quantiles": {
+      "x_lo": -54335.5,
+      "x_hi": 24343.27734375,
+      "y_lo": -21521.623046875,
+      "y_hi": 17937.146484375
+    }
+  },
+  "stim_protocol": [
+    {
+      "region": "S1_left_band",
+      "start": 0.0,
+      "duration": 2.0,
+      "intensity": 55,
+      "period": 220.0,
+      "count": 4
+    },
+    {
+      "region": "S2_top_band",
+      "start": 915.0,
+      "duration": 3.0,
+      "intensity": 48
+    },
+    {
+      "region": "S3_right_band",
+      "start": 960.0,
+      "duration": 2.5,
+      "intensity": 45
+    },
+    {
+      "region": "S4_center_spot",
+      "start": 1010.0,
+      "duration": 2.0,
+      "intensity": 42
+    }
+  ]
+}
