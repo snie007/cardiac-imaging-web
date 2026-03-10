@@ -1,10 +1,24 @@
 {
   "run": "atrium_demo_t60",
   "small_component_threshold": 64,
+  "smoothing": {
+    "iterations": 8,
+    "lambda": 0.5,
+    "mu": -0.53,
+    "boundary_protect": true
+  },
   "presets": {
     "low": {
       "method": "pyvista_decimate_pro",
       "target_faces": 50000,
+      "regularity_before_smoothing": {
+        "mean": 0.49484095122422544,
+        "q10": 0.1062798004713643
+      },
+      "regularity_after_smoothing": {
+        "mean": 0.6156063136216661,
+        "q10": 0.23176891978141329
+      },
       "before": {
         "faces": 49994,
         "vertices": 25636,
@@ -20,7 +34,11 @@
         "largest_component_faces": 49994,
         "self_intersection_heuristic": {
           "checked_pairs": 29973,
-          "hit_pairs": 1
+          "hit_pairs": 0
+        },
+        "triangle_regularity": {
+          "mean": 0.6156063136216661,
+          "q10": 0.23176891978141329
         },
         "pass": false
       },
@@ -50,15 +68,27 @@
         "largest_component_faces": 49992,
         "self_intersection_heuristic": {
           "checked_pairs": 29973,
-          "hit_pairs": 1
+          "hit_pairs": 0
         },
-        "pass": false
+        "triangle_regularity": {
+          "mean": 0.6156292273538678,
+          "q10": 0.2317926293447824
+        },
+        "pass": true
       },
-      "json_mb": 6.051
+      "json_mb": 6.065
     },
     "med": {
       "method": "pymeshlab_qem",
       "target_faces": 100000,
+      "regularity_before_smoothing": {
+        "mean": 0.6580455161019201,
+        "q10": 0.23082544899162757
+      },
+      "regularity_after_smoothing": {
+        "mean": 0.6647015615441701,
+        "q10": 0.24205219444716547
+      },
       "before": {
         "faces": 99999,
         "vertices": 55385,
@@ -76,13 +106,17 @@
           "checked_pairs": 29975,
           "hit_pairs": 0
         },
+        "triangle_regularity": {
+          "mean": 0.6647015615441701,
+          "q10": 0.24205219444716547
+        },
         "pass": false
       },
       "repair": {
         "removed_degenerate": 0,
         "removed_duplicates": 0,
         "removed_non_manifold_faces": 10,
-        "orientation_flips": 0,
+        "orientation_flips": 2,
         "orientation_components": 11,
         "global_outward_flip": false,
         "removed_small_component_faces": 19,
@@ -106,13 +140,25 @@
           "checked_pairs": 29975,
           "hit_pairs": 0
         },
+        "triangle_regularity": {
+          "mean": 0.664753023262553,
+          "q10": 0.24216503988513574
+        },
         "pass": true
       },
-      "json_mb": 13.244
+      "json_mb": 13.25
     },
     "high": {
       "method": "pyvista_decimate_pro",
       "target_faces": 200000,
+      "regularity_before_smoothing": {
+        "mean": 0.6291907519017872,
+        "q10": 0.18714669328823919
+      },
+      "regularity_after_smoothing": {
+        "mean": 0.7198152669767002,
+        "q10": 0.375916508015194
+      },
       "before": {
         "faces": 199997,
         "vertices": 102194,
@@ -129,6 +175,10 @@
         "self_intersection_heuristic": {
           "checked_pairs": 29973,
           "hit_pairs": 0
+        },
+        "triangle_regularity": {
+          "mean": 0.7198152669767002,
+          "q10": 0.375916508015194
         },
         "pass": false
       },
@@ -159,9 +209,13 @@
           "checked_pairs": 29972,
           "hit_pairs": 0
         },
+        "triangle_regularity": {
+          "mean": 0.7198124963006409,
+          "q10": 0.3759140615175104
+        },
         "pass": true
       },
-      "json_mb": 24.435
+      "json_mb": 24.489
     }
   }
 }
