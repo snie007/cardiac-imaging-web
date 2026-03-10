@@ -1,0 +1,167 @@
+{
+  "run": "atrium_demo_t60",
+  "small_component_threshold": 64,
+  "presets": {
+    "low": {
+      "method": "pyvista_decimate_pro",
+      "target_faces": 50000,
+      "before": {
+        "faces": 49994,
+        "vertices": 25636,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "non_manifold_edges": 2,
+        "boundary_edges": 3422,
+        "winding_inconsistent_pairs": 0,
+        "winding_pairs_checked": 73277,
+        "components": 1,
+        "small_components": 0,
+        "small_component_face_threshold": 64,
+        "largest_component_faces": 49994,
+        "self_intersection_heuristic": {
+          "checked_pairs": 29973,
+          "hit_pairs": 1
+        },
+        "pass": false
+      },
+      "repair": {
+        "removed_degenerate": 0,
+        "removed_duplicates": 0,
+        "removed_non_manifold_faces": 2,
+        "orientation_flips": 0,
+        "orientation_components": 1,
+        "global_outward_flip": false,
+        "removed_small_component_faces": 0,
+        "post_compact_orientation_flips": 0,
+        "post_compact_outward_flip": false
+      },
+      "after": {
+        "faces": 49992,
+        "vertices": 25634,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "non_manifold_edges": 0,
+        "boundary_edges": 3418,
+        "winding_inconsistent_pairs": 0,
+        "winding_pairs_checked": 73279,
+        "components": 1,
+        "small_components": 0,
+        "small_component_face_threshold": 64,
+        "largest_component_faces": 49992,
+        "self_intersection_heuristic": {
+          "checked_pairs": 29973,
+          "hit_pairs": 1
+        },
+        "pass": false
+      },
+      "json_mb": 6.051
+    },
+    "med": {
+      "method": "pymeshlab_qem",
+      "target_faces": 100000,
+      "before": {
+        "faces": 99999,
+        "vertices": 55385,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "non_manifold_edges": 5,
+        "boundary_edges": 28749,
+        "winding_inconsistent_pairs": 0,
+        "winding_pairs_checked": 135614,
+        "components": 5,
+        "small_components": 4,
+        "small_component_face_threshold": 64,
+        "largest_component_faces": 99988,
+        "self_intersection_heuristic": {
+          "checked_pairs": 29975,
+          "hit_pairs": 0
+        },
+        "pass": false
+      },
+      "repair": {
+        "removed_degenerate": 0,
+        "removed_duplicates": 0,
+        "removed_non_manifold_faces": 10,
+        "orientation_flips": 0,
+        "orientation_components": 11,
+        "global_outward_flip": false,
+        "removed_small_component_faces": 19,
+        "post_compact_orientation_flips": 0,
+        "post_compact_outward_flip": false
+      },
+      "after": {
+        "faces": 99970,
+        "vertices": 55369,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "non_manifold_edges": 0,
+        "boundary_edges": 28722,
+        "winding_inconsistent_pairs": 0,
+        "winding_pairs_checked": 135594,
+        "components": 1,
+        "small_components": 0,
+        "small_component_face_threshold": 64,
+        "largest_component_faces": 99970,
+        "self_intersection_heuristic": {
+          "checked_pairs": 29975,
+          "hit_pairs": 0
+        },
+        "pass": true
+      },
+      "json_mb": 13.244
+    },
+    "high": {
+      "method": "pyvista_decimate_pro",
+      "target_faces": 200000,
+      "before": {
+        "faces": 199997,
+        "vertices": 102194,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "non_manifold_edges": 0,
+        "boundary_edges": 11883,
+        "winding_inconsistent_pairs": 1,
+        "winding_pairs_checked": 294054,
+        "components": 2,
+        "small_components": 1,
+        "small_component_face_threshold": 64,
+        "largest_component_faces": 199991,
+        "self_intersection_heuristic": {
+          "checked_pairs": 29973,
+          "hit_pairs": 0
+        },
+        "pass": false
+      },
+      "repair": {
+        "removed_degenerate": 0,
+        "removed_duplicates": 0,
+        "orientation_flips": 1,
+        "orientation_components": 2,
+        "global_outward_flip": false,
+        "removed_small_component_faces": 6,
+        "post_compact_orientation_flips": 0,
+        "post_compact_outward_flip": false
+      },
+      "after": {
+        "faces": 199991,
+        "vertices": 102190,
+        "degenerate_faces": 0,
+        "duplicate_faces": 0,
+        "non_manifold_edges": 0,
+        "boundary_edges": 11877,
+        "winding_inconsistent_pairs": 0,
+        "winding_pairs_checked": 294048,
+        "components": 1,
+        "small_components": 0,
+        "small_component_face_threshold": 64,
+        "largest_component_faces": 199991,
+        "self_intersection_heuristic": {
+          "checked_pairs": 29972,
+          "hit_pairs": 0
+        },
+        "pass": true
+      },
+      "json_mb": 24.435
+    }
+  }
+}
