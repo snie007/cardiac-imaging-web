@@ -1,0 +1,486 @@
+{
+  "scenario": "spiral_protocol_optimization",
+  "device": "cuda:0",
+  "sweep": {
+    "num_candidates": 6,
+    "seed": 20260310,
+    "dt_ms": 0.15,
+    "tail_ms": 420.0,
+    "results": [
+      {
+        "id": "cand_04",
+        "runtime_sec": 269.00335454940796,
+        "duration_ms": 1590.5,
+        "protocol": {
+          "id": "cand_04",
+          "s1": {
+            "region": "left_band",
+            "start": 0.0,
+            "period": 240.0,
+            "count": 5,
+            "duration": 2.5,
+            "intensity": 65.0
+          },
+          "s2": {
+            "region": "top_band",
+            "start": 1082.5,
+            "duration": 4.0,
+            "intensity": 40.0,
+            "coupling_interval": 120.0
+          },
+          "extra": [
+            {
+              "region": "top_band",
+              "start": 1117.5,
+              "duration": 1.5,
+              "intensity": 35.0
+            },
+            {
+              "region": "center_spot",
+              "start": 1167.5,
+              "duration": 3.0,
+              "intensity": 48.0
+            }
+          ],
+          "protocol_end_ms": 1170.5
+        },
+        "score": 0.6741587301587302,
+        "classification": "strong_reentry_like",
+        "markers": {
+          "frame_dt_ms": 122.34615384615384,
+          "post_start_ms": 1101.1153846153845,
+          "active_fraction_mean": 0.4764056704616418,
+          "active_fraction_peak": 0.7676601900969152,
+          "active_fraction_post_mean": 0.5568118061281105,
+          "reactivated_ge2_post_fraction": 0.3369553381142759,
+          "reactivated_ge3_post_fraction": 0.0,
+          "spatial_entropy_mean": 0.7802792811388699,
+          "spatial_entropy_post_mean": 0.9011100813018954,
+          "heterogeneity_post_persistent_fraction": 0.4,
+          "sustained_midband_activity_fraction": 0.2,
+          "peak_count": 3,
+          "peak_times_ms": [
+            244.69230769230768,
+            734.0769230769231,
+            1101.1153846153845
+          ],
+          "cycle_interval_mean_ms": 428.21153846153845,
+          "cycle_interval_cv": 0.14285714285714302
+        }
+      },
+      {
+        "id": "cand_03",
+        "runtime_sec": 218.31368374824524,
+        "duration_ms": 1414.5,
+        "protocol": {
+          "id": "cand_03",
+          "s1": {
+            "region": "left_band",
+            "start": 0.0,
+            "period": 220.0,
+            "count": 4,
+            "duration": 2.0,
+            "intensity": 55.0
+          },
+          "s2": {
+            "region": "right_band",
+            "start": 872.0,
+            "duration": 3.0,
+            "intensity": 40.0,
+            "coupling_interval": 210.0
+          },
+          "extra": [
+            {
+              "region": "right_band",
+              "start": 922.0,
+              "duration": 3.0,
+              "intensity": 35.0
+            },
+            {
+              "region": "upper_right_spot",
+              "start": 992.0,
+              "duration": 2.5,
+              "intensity": 55.0
+            }
+          ],
+          "protocol_end_ms": 994.5
+        },
+        "score": 0.33077463308208116,
+        "classification": "weak_reentry_like",
+        "markers": {
+          "frame_dt_ms": 128.5909090909091,
+          "post_start_ms": 1028.7272727272727,
+          "active_fraction_mean": 0.3861710889521508,
+          "active_fraction_peak": 0.8073622367759231,
+          "active_fraction_post_mean": 0.35626319037174164,
+          "reactivated_ge2_post_fraction": 0.0,
+          "reactivated_ge3_post_fraction": 0.0,
+          "spatial_entropy_mean": 0.6611090790145816,
+          "spatial_entropy_post_mean": 0.6019091520834777,
+          "heterogeneity_post_persistent_fraction": 0.75,
+          "sustained_midband_activity_fraction": 0.25,
+          "peak_count": 3,
+          "peak_times_ms": [
+            257.1818181818182,
+            642.9545454545455,
+            1157.3181818181818
+          ],
+          "cycle_interval_mean_ms": 450.06818181818176,
+          "cycle_interval_cv": 0.1428571428571427
+        }
+      },
+      {
+        "id": "cand_02",
+        "runtime_sec": 190.45821619033813,
+        "duration_ms": 1284.5,
+        "protocol": {
+          "id": "cand_02",
+          "s1": {
+            "region": "left_band",
+            "start": 0.0,
+            "period": 180.0,
+            "count": 4,
+            "duration": 2.0,
+            "intensity": 45.0
+          },
+          "s2": {
+            "region": "right_band",
+            "start": 722.0,
+            "duration": 2.0,
+            "intensity": 50.0,
+            "coupling_interval": 180.0
+          },
+          "extra": [
+            {
+              "region": "lower_left_spot",
+              "start": 772.0,
+              "duration": 2.0,
+              "intensity": 55.0
+            },
+            {
+              "region": "right_band",
+              "start": 862.0,
+              "duration": 2.5,
+              "intensity": 48.0
+            }
+          ],
+          "protocol_end_ms": 864.5
+        },
+        "score": 0.2517172017436054,
+        "classification": "weak_reentry_like",
+        "markers": {
+          "frame_dt_ms": 128.45,
+          "post_start_ms": 899.1499999999999,
+          "active_fraction_mean": 0.4037002101031471,
+          "active_fraction_peak": 0.9603368438519256,
+          "active_fraction_post_mean": 0.3493951226088805,
+          "reactivated_ge2_post_fraction": 0.0,
+          "reactivated_ge3_post_fraction": 0.0,
+          "spatial_entropy_mean": 0.6708699991497693,
+          "spatial_entropy_post_mean": 0.5856553152547772,
+          "heterogeneity_post_persistent_fraction": 0.5,
+          "sustained_midband_activity_fraction": 0.25,
+          "peak_count": 3,
+          "peak_times_ms": [
+            256.9,
+            642.25,
+            1027.6
+          ],
+          "cycle_interval_mean_ms": 385.34999999999997,
+          "cycle_interval_cv": 1.4751114275543796e-16
+        }
+      },
+      {
+        "id": "cand_05",
+        "runtime_sec": 195.05986785888672,
+        "duration_ms": 1374.0,
+        "protocol": {
+          "id": "cand_05",
+          "s1": {
+            "region": "bottom_band",
+            "start": 0.0,
+            "period": 220.0,
+            "count": 4,
+            "duration": 2.0,
+            "intensity": 45.0
+          },
+          "s2": {
+            "region": "right_band",
+            "start": 812.0,
+            "duration": 3.0,
+            "intensity": 50.0,
+            "coupling_interval": 150.0
+          },
+          "extra": [
+            {
+              "region": "top_band",
+              "start": 882.0,
+              "duration": 2.0,
+              "intensity": 48.0
+            },
+            {
+              "region": "lower_left_spot",
+              "start": 952.0,
+              "duration": 2.0,
+              "intensity": 55.0
+            }
+          ],
+          "protocol_end_ms": 954.0
+        },
+        "score": 0.11305499930263845,
+        "classification": "weak_reentry_like",
+        "markers": {
+          "frame_dt_ms": 124.9090909090909,
+          "post_start_ms": 999.2727272727273,
+          "active_fraction_mean": 0.39446190197166353,
+          "active_fraction_peak": 0.9963391046881239,
+          "active_fraction_post_mean": 0.3262001617846087,
+          "reactivated_ge2_post_fraction": 0.0,
+          "reactivated_ge3_post_fraction": 0.0,
+          "spatial_entropy_mean": 0.5621033018518066,
+          "spatial_entropy_post_mean": 0.4624176933787735,
+          "heterogeneity_post_persistent_fraction": 0.25,
+          "sustained_midband_activity_fraction": 0.0,
+          "peak_count": 3,
+          "peak_times_ms": [
+            124.9090909090909,
+            624.5454545454545,
+            999.2727272727273
+          ],
+          "cycle_interval_mean_ms": 437.1818181818182,
+          "cycle_interval_cv": 0.14285714285714282
+        }
+      },
+      {
+        "id": "cand_00",
+        "runtime_sec": 197.5503635406494,
+        "duration_ms": 1335.0,
+        "protocol": {
+          "id": "cand_00",
+          "s1": {
+            "region": "bottom_band",
+            "start": 0.0,
+            "period": 220.0,
+            "count": 4,
+            "duration": 2.5,
+            "intensity": 45.0
+          },
+          "s2": {
+            "region": "right_band",
+            "start": 842.5,
+            "duration": 4.0,
+            "intensity": 60.0,
+            "coupling_interval": 180.0
+          },
+          "extra": [
+            {
+              "region": "lower_left_spot",
+              "start": 912.5,
+              "duration": 2.5,
+              "intensity": 42.0
+            }
+          ],
+          "protocol_end_ms": 915.0
+        },
+        "score": 0.10750809930872889,
+        "classification": "weak_reentry_like",
+        "markers": {
+          "frame_dt_ms": 121.36363636363636,
+          "post_start_ms": 849.5454545454545,
+          "active_fraction_mean": 0.3952168103887843,
+          "active_fraction_peak": 0.9963546609004973,
+          "active_fraction_post_mean": 0.3003567558037636,
+          "reactivated_ge2_post_fraction": 0.0,
+          "reactivated_ge3_post_fraction": 0.0,
+          "spatial_entropy_mean": 0.5405837514870734,
+          "spatial_entropy_post_mean": 0.4500328005340883,
+          "heterogeneity_post_persistent_fraction": 0.2,
+          "sustained_midband_activity_fraction": 0.2,
+          "peak_count": 3,
+          "peak_times_ms": [
+            121.36363636363636,
+            606.8181818181818,
+            1092.2727272727273
+          ],
+          "cycle_interval_mean_ms": 485.45454545454544,
+          "cycle_interval_cv": 1.1709318491926745e-16
+        }
+      },
+      {
+        "id": "cand_01",
+        "runtime_sec": 140.54563426971436,
+        "duration_ms": 1044.0,
+        "protocol": {
+          "id": "cand_01",
+          "s1": {
+            "region": "bottom_band",
+            "start": 0.0,
+            "period": 200.0,
+            "count": 3,
+            "duration": 1.5,
+            "intensity": 55.0
+          },
+          "s2": {
+            "region": "top_band",
+            "start": 551.5,
+            "duration": 2.0,
+            "intensity": 60.0,
+            "coupling_interval": 150.0
+          },
+          "extra": [
+            {
+              "region": "lower_left_spot",
+              "start": 621.5,
+              "duration": 2.5,
+              "intensity": 48.0
+            }
+          ],
+          "protocol_end_ms": 624.0
+        },
+        "score": 0.10380952380952382,
+        "classification": "weak_reentry_like",
+        "markers": {
+          "frame_dt_ms": 130.5,
+          "post_start_ms": 652.5,
+          "active_fraction_mean": 0.3422637515476991,
+          "active_fraction_peak": 0.9328982779272903,
+          "active_fraction_post_mean": 0.21459794969120918,
+          "reactivated_ge2_post_fraction": 0.0,
+          "reactivated_ge3_post_fraction": 0.0,
+          "spatial_entropy_mean": 0.45926265344932143,
+          "spatial_entropy_post_mean": 0.3333135771724063,
+          "heterogeneity_post_persistent_fraction": 0.25,
+          "sustained_midband_activity_fraction": 0.25,
+          "peak_count": 2,
+          "peak_times_ms": [
+            130.5,
+            652.5
+          ],
+          "cycle_interval_mean_ms": 522.0,
+          "cycle_interval_cv": 0.0
+        }
+      }
+    ]
+  },
+  "selected_protocol": {
+    "id": "cand_04",
+    "s1": {
+      "region": "left_band",
+      "start": 0.0,
+      "period": 240.0,
+      "count": 5,
+      "duration": 2.5,
+      "intensity": 65.0
+    },
+    "s2": {
+      "region": "top_band",
+      "start": 1082.5,
+      "duration": 4.0,
+      "intensity": 40.0,
+      "coupling_interval": 120.0
+    },
+    "extra": [
+      {
+        "region": "top_band",
+        "start": 1117.5,
+        "duration": 1.5,
+        "intensity": 35.0
+      },
+      {
+        "region": "center_spot",
+        "start": 1167.5,
+        "duration": 3.0,
+        "intensity": 48.0
+      }
+    ],
+    "protocol_end_ms": 1170.5
+  },
+  "selected_from_sweep": {
+    "id": "cand_04",
+    "score": 0.6741587301587302,
+    "classification": "strong_reentry_like"
+  },
+  "confirmation": {
+    "run": "best_confirmation",
+    "duration_ms": 1770.5,
+    "dt_ms": 0.1,
+    "runtime_sec": 343.821435213089,
+    "score": 0.6649431617437755,
+    "classification": "near_reentry_like",
+    "markers": {
+      "frame_dt_ms": 126.46428571428571,
+      "post_start_ms": 1138.1785714285713,
+      "active_fraction_mean": 0.47962533726732665,
+      "active_fraction_peak": 0.7639137356169853,
+      "active_fraction_post_mean": 0.5516712557493167,
+      "reactivated_ge2_post_fraction": 0.5166451472395501,
+      "reactivated_ge3_post_fraction": 0.02195759376507008,
+      "spatial_entropy_mean": 0.7929210191276399,
+      "spatial_entropy_post_mean": 0.9130208466133752,
+      "heterogeneity_post_persistent_fraction": 0.3333333333333333,
+      "sustained_midband_activity_fraction": 0.16666666666666666,
+      "peak_count": 4,
+      "peak_times_ms": [
+        252.92857142857142,
+        758.7857142857142,
+        1138.1785714285713,
+        1517.5714285714284
+      ],
+      "cycle_interval_mean_ms": 421.547619047619,
+      "cycle_interval_cv": 0.14142135623730948
+    },
+    "time_series": {
+      "active_fraction": [
+        0.0,
+        0.7111185435236895,
+        0.7639137356169853,
+        0.1553547075691344,
+        0.0,
+        0.681165056598686,
+        0.7172969525379961,
+        0.39238990090692716,
+        0.4631136277605795,
+        0.7576419893284383,
+        0.2579505208738443,
+        0.35028960482035165,
+        0.7170843509688928,
+        0.7028089334142257,
+        0.5242521350901482
+      ],
+      "spatial_entropy": [
+        0.0,
+        0.955689632411651,
+        0.973073143044343,
+        0.652763518873344,
+        0.0,
+        0.9418582330138033,
+        0.9580504729541423,
+        0.9777019111342304,
+        0.9565532958028342,
+        0.9847901012849412,
+        0.7029819197207487,
+        0.8427417469278126,
+        0.9758181223905252,
+        0.9926381034363564,
+        0.9791550859198676
+      ],
+      "heterogeneity_cv": [
+        0.0,
+        0.4194349167819571,
+        0.32004222208714644,
+        1.0556537360173366,
+        0.0,
+        0.4789528450514238,
+        0.397098316177889,
+        0.299466059179371,
+        0.40572719358601966,
+        0.24997079341065567,
+        0.9741585215000766,
+        0.6567914280261677,
+        0.3160649610348923,
+        0.17606921596472824,
+        0.29111611002268434
+      ]
+    }
+  }
+}

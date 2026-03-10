@@ -1,6 +1,6 @@
 # Mesh QA Diagnostics
 
-Run: `atrium_spiral_t1200`
+Run: `protocol_sweep_20260310/best_confirmation`
 
 Smoothing: Taubin (iters=8, lambda=0.5, mu=-0.53, boundary_protect=True)
 

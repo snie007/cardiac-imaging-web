@@ -1,36 +1,36 @@
 {
-  "run": "atrium_spiral_t1200",
+  "run": "protocol_sweep_20260310/best_confirmation",
   "benchmarks": [
     {
       "preset": "100",
       "method": "random",
       "points": 100,
       "generation_sec": 0.004,
-      "json_mb": 0.027,
+      "json_mb": 0.028,
       "path": "/home/snie007/Documents/project/2026/freeze_combined_out7/torchcor_demo/web/data/atrium_demo_100.json"
     },
     {
       "preset": "2000",
       "method": "voxel",
       "points": 2000,
-      "generation_sec": 0.102,
-      "json_mb": 0.536,
+      "generation_sec": 0.125,
+      "json_mb": 0.542,
       "path": "/home/snie007/Documents/project/2026/freeze_combined_out7/torchcor_demo/web/data/atrium_demo_2000.json"
     },
     {
       "preset": "8000",
       "method": "fps",
       "points": 8000,
-      "generation_sec": 1.617,
-      "json_mb": 2.142,
+      "generation_sec": 1.607,
+      "json_mb": 2.168,
       "path": "/home/snie007/Documents/project/2026/freeze_combined_out7/torchcor_demo/web/data/atrium_demo_8000.json"
     },
     {
       "preset": "16000",
       "method": "voxel",
       "points": 16000,
-      "generation_sec": 0.085,
-      "json_mb": 4.287,
+      "generation_sec": 0.084,
+      "json_mb": 4.339,
       "path": "/home/snie007/Documents/project/2026/freeze_combined_out7/torchcor_demo/web/data/atrium_demo_16000.json"
     }
   ]

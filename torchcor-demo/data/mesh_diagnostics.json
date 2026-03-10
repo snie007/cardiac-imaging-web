@@ -1,5 +1,5 @@
 {
-  "run": "atrium_spiral_t1200",
+  "run": "protocol_sweep_20260310/best_confirmation",
   "small_component_threshold": 64,
   "smoothing": {
     "iterations": 8,
@@ -91,7 +91,7 @@
         },
         "pass": true
       },
-      "json_mb": 9.532
+      "json_mb": 9.562
     },
     "med": {
       "method": "pymeshlab_qem",
@@ -176,7 +176,7 @@
         },
         "pass": true
       },
-      "json_mb": 20.412
+      "json_mb": 20.601
     },
     "high": {
       "method": "pyvista_decimate_pro",
@@ -260,7 +260,7 @@
         },
         "pass": true
       },
-      "json_mb": 38.064
+      "json_mb": 38.328
     }
   },
   "lod_transition": {

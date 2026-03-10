@@ -1,0 +1,33 @@
+{
+  "id": "cand_04",
+  "s1": {
+    "region": "left_band",
+    "start": 0.0,
+    "period": 240.0,
+    "count": 5,
+    "duration": 2.5,
+    "intensity": 65.0
+  },
+  "s2": {
+    "region": "top_band",
+    "start": 1082.5,
+    "duration": 4.0,
+    "intensity": 40.0,
+    "coupling_interval": 120.0
+  },
+  "extra": [
+    {
+      "region": "top_band",
+      "start": 1117.5,
+      "duration": 1.5,
+      "intensity": 35.0
+    },
+    {
+      "region": "center_spot",
+      "start": 1167.5,
+      "duration": 3.0,
+      "intensity": 48.0
+    }
+  ],
+  "protocol_end_ms": 1170.5
+}
